@@ -27,3 +27,11 @@
   box-shadow: var(--shadow-hard);
   cursor: default;
 }
+
+/* With a mouse, the bubble lets the pointer through: it covers the next rows,
+   and they must stay hoverable. Touch keeps it tappable to close. */
+@media (hover: hover) {
+  .bubble {
+    pointer-events: none;
+  }
+}

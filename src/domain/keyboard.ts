@@ -183,23 +183,24 @@ export function keyCapLabel(id: string, platform: Platform): string {
 }
 
 // Site tokens to key ids. A modifier lights both of its keys (either works);
-// a shifted symbol lights its physical key.
+// a symbol printed with Shift lights its physical key and Shift, since those
+// are the keys a finger presses on a US QWERTY.
 const TOKEN_KEYS: Record<string, string[]> = {
   "`": ["Backquote"],
   "-": ["Minus"],
   "=": ["Equal"],
-  "+": ["Equal"],
+  "+": ["Equal", "ShiftLeft", "ShiftRight"],
   "[": ["BracketLeft"],
   "]": ["BracketRight"],
   "\\": ["Backslash"],
   ";": ["Semicolon"],
   "'": ["Quote"],
   ",": ["Comma"],
-  "<": ["Comma"],
+  "<": ["Comma", "ShiftLeft", "ShiftRight"],
   ".": ["Period"],
-  ">": ["Period"],
+  ">": ["Period", "ShiftLeft", "ShiftRight"],
   "/": ["Slash"],
-  ")": ["0"],
+  ")": ["0", "ShiftLeft", "ShiftRight"],
   Esc: ["Esc"],
   Tab: ["Tab"],
   Return: ["Return"],

@@ -9,7 +9,7 @@ import {
   type ReactNode,
 } from "react";
 import { Keyboard } from "@/components/ui/Keyboard";
-import { keyboardUnits, keysToLight, type Lit } from "@/domain/keyboard";
+import { keyboardUnits, keysToLight } from "@/domain/keyboard";
 import { comboLabel } from "@/domain/keys";
 import type { Locale } from "@/domain/locale";
 import type { Platform } from "@/domain/schema";
@@ -32,22 +32,26 @@ function release(owner: object) {
   if (current?.owner === owner) current = null;
 }
 
-type Placement = { right: number; top: number };
+// Where the keys are, read at open time. The bubble's own height is measured
+// once it is drawn (see keepOnScreen), never estimated.
+type Placement = { right: number; top: number; bottom: number };
 
-// Where the bubble goes, computed once at open time from the drawing's size
-// (same unit formula as the CSS): under the keys, or above when there is no
-// room below. Horizontal clamping is done in CSS.
-function placeFor(trigger: HTMLElement, lit: Lit): Placement {
+function placeFor(trigger: HTMLElement): Placement {
   const rect = trigger.getBoundingClientRect();
-  const unit = Math.min(22, (window.innerWidth - 110) / keyboardUnits(lit));
-  const gap = Math.max(2, unit * 0.12);
-  const height = 6 * unit + 5 * gap + 52;
-  const below = rect.bottom + 10;
+  return { right: rect.right, top: rect.top, bottom: rect.bottom };
+}
+
+// Under the keys, or above them when the drawn bubble would run past the
+// bottom of the screen. Sets a CSS variable on the node: no React state.
+function keepOnScreen(node: HTMLSpanElement | null, at: Placement) {
+  if (!node) return;
+  const height = node.getBoundingClientRect().height;
+  const below = at.bottom + 10;
   const top =
     below + height > window.innerHeight - 8
-      ? Math.max(8, rect.top - 10 - height)
+      ? Math.max(8, at.top - 10 - height)
       : below;
-  return { right: rect.right, top };
+  node.style.setProperty("--top", `${top}px`);
 }
 
 export function KeyboardBubble({
@@ -73,7 +77,7 @@ export function KeyboardBubble({
     const trigger = wrap.current;
     if (!trigger) return;
     claim(owner.current, () => setPlacement(null));
-    setPlacement(placeFor(trigger, lit));
+    setPlacement(placeFor(trigger));
   }
 
   function close() {
@@ -145,11 +149,11 @@ export function KeyboardBubble({
         <span
           className={styles.bubble}
           aria-hidden="true"
+          ref={(node) => keepOnScreen(node, placement)}
           style={
             {
               "--units": keyboardUnits(lit),
               "--right": `${placement.right}px`,
-              "--top": `${placement.top}px`,
             } as CSSProperties
           }
         >
