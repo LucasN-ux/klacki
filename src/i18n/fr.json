@@ -239,5 +239,10 @@
     "showAll": "Afficher tous les logiciels",
     "trap": "piège",
     "traps": "pièges"
+  },
+  "keyboard": {
+    "caption": "QWERTY américain",
+    "pc": "PC",
+    "mac": "Mac"
   }
 }

@@ -1,7 +1,8 @@
 import { CopyButton } from "@/components/features/CopyButton";
+import { KeyboardBubble } from "@/components/features/KeyboardBubble";
 import { FavoriteStar } from "@/components/features/FavoriteStar";
 import { shortcutText } from "@/domain/copy";
-import { isSameOnBothPlatforms } from "@/domain/keys";
+import { isSameOnBothPlatforms, keysFor } from "@/domain/keys";
 import type { Locale } from "@/domain/locale";
 import type { FlaggedRows } from "@/domain/platformDifference";
 import { summarizePlatformDifference } from "@/domain/platformDifference";
@@ -89,7 +90,13 @@ export function ShortcutRow({
           </>
         )}
       </span>
-      <KeyCombos keys={shortcut.keys} platform={platform} locale={locale} />
+      <KeyboardBubble
+        combos={keysFor(shortcut.keys, platform)}
+        platform={platform}
+        locale={locale}
+      >
+        <KeyCombos keys={shortcut.keys} platform={platform} locale={locale} />
+      </KeyboardBubble>
       <span className={styles.tools}>
         <CopyButton
           text={shortcutText(
