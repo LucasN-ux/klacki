@@ -63,6 +63,8 @@
     "placeholder": "Rechercher un raccourci ou une action…",
     "label": "Rechercher sur tout le site",
     "results": "résultats",
+    "more": "Voir plus",
+    "remaining": "restants",
     "empty": "Aucun raccourci trouvé.",
     "hint": "Essaie une action (« annuler ») ou une touche (« F9 », « ctrl+z »)."
   },
