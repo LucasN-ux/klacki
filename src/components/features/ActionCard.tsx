@@ -7,6 +7,7 @@ import { comboLabel } from "@/domain/keys";
 import type { Locale } from "@/domain/locale";
 import type { Keys } from "@/domain/schema";
 import { getDictionary } from "@/i18n";
+import { KeyboardBubble } from "./KeyboardBubble";
 import styles from "./ActionCard.module.css";
 
 // Past eight badges a line folds behind "+N": a hundred software agreeing on
@@ -54,7 +55,13 @@ function Line({ line, locale }: { line: KeyLine; locale: Locale }) {
 
   return (
     <div className={`${styles.line} ${count > 0 ? styles.trap : ""}`}>
-      <KeyCombos keys={keys} platform={line.platform} locale={locale} />
+      <KeyboardBubble
+        combos={[line.combo]}
+        platform={line.platform}
+        locale={locale}
+      >
+        <KeyCombos keys={keys} platform={line.platform} locale={locale} />
+      </KeyboardBubble>
       <div className={styles.body}>
         <Badges software={line.software} locale={locale} />
         {count > 0 && (

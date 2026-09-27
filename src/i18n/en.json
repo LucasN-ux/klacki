@@ -239,5 +239,10 @@
     "showAll": "Show every software",
     "trap": "trap",
     "traps": "traps"
+  },
+  "keyboard": {
+    "caption": "US QWERTY",
+    "pc": "PC",
+    "mac": "Mac"
   }
 }

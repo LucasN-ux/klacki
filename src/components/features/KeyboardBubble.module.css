@@ -1,0 +1,37 @@
+/* The keys of a shortcut: the only trigger of the bubble. */
+.wrap {
+  display: inline-flex;
+  cursor: help;
+}
+
+/* Fixed, so no card or list can clip it; its width follows the drawing
+   (same unit formula as Keyboard.module.css) and CSS keeps it on screen. */
+.bubble {
+  --unit: min(22px, calc((100vw - 110px) / var(--units)));
+  --gap: max(2px, calc(var(--unit) * 0.12));
+  --bubble-w: calc(var(--units) * (var(--unit) + var(--gap)) + 30px);
+  position: fixed;
+  z-index: 30;
+  top: var(--top);
+  left: clamp(
+    8px,
+    calc(var(--right) - var(--bubble-w)),
+    calc(100vw - var(--bubble-w) - 8px)
+  );
+  display: block;
+  width: var(--bubble-w);
+  padding: var(--space-3) var(--space-3) var(--space-2);
+  background: var(--card);
+  border: var(--stroke-2) solid var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard);
+  cursor: default;
+}
+
+/* With a mouse, the bubble lets the pointer through: it covers the next rows,
+   and they must stay hoverable. Touch keeps it tappable to close. */
+@media (hover: hover) {
+  .bubble {
+    pointer-events: none;
+  }
+}
