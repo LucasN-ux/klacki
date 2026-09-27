@@ -1,29 +1,55 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo } from "react";
+import { LoadState } from "@/components/ui/LoadState";
 import { ShortcutList } from "@/components/ui/ShortcutRow";
-import { SOFTWARE_LIST } from "@/data";
+import { softwareSet } from "@/data/load";
 import { localeHref, type Locale } from "@/domain/locale";
-import { summarizePlatformDifference } from "@/domain/platformDifference";
 import { inLocale } from "@/domain/schema";
+import type { SoftwareSummary } from "@/domain/summary";
 import { favoriteKey, useFavorites } from "@/hooks/useFavorites";
 import { shownPlatform } from "@/domain/keys";
+import { useLoaded } from "@/hooks/useLoaded";
 import { usePlatform } from "@/hooks/usePlatform";
 import { getDictionary } from "@/i18n";
 import styles from "./SearchResults.module.css";
 
-export function FavoritesList({ locale }: { locale: Locale }) {
+export function FavoritesList({
+  locale,
+  summaries,
+}: {
+  locale: Locale;
+  /** Every software: the ids a favourite may point to, and their flags. */
+  summaries: SoftwareSummary[];
+}) {
   const { keys, count } = useFavorites();
   const { platform: chosenPlatform } = usePlatform();
   const { favorites, site } = getDictionary(locale);
 
-  // The kept shortcuts, grouped by software and in the order of the data files.
-  const groups = SOFTWARE_LIST.map((software) => ({
-    software,
-    shortcuts: software.shortcuts.filter((shortcut) =>
-      keys.includes(favoriteKey(software.id, shortcut.id)),
-    ),
-  })).filter((group) => group.shortcuts.length > 0);
+  // Only the software holding a kept shortcut are downloaded, in catalogue
+  // order; one that has left the catalogue is never asked for.
+  const holders = summaries.filter((software) =>
+    keys.some((key) => key.startsWith(`${software.id}:`)),
+  );
+  const loaded = useLoaded(
+    holders.map((software) => software.id).join(","),
+    softwareSet,
+  );
+  const flags = useMemo(
+    () => new Map(summaries.map((one) => [one.id, one.flag])),
+    [summaries],
+  );
+
+  // The kept shortcuts, grouped by software and in catalogue order.
+  const groups = (loaded.data ?? loaded.latest ?? [])
+    .map((software) => ({
+      software,
+      shortcuts: software.shortcuts.filter((shortcut) =>
+        keys.includes(favoriteKey(software.id, shortcut.id)),
+      ),
+    }))
+    .filter((group) => group.shortcuts.length > 0);
 
   if (count === 0) {
     return (
@@ -40,6 +66,13 @@ export function FavoritesList({ locale }: { locale: Locale }) {
       <p className={styles.count}>
         {count} {site.shortcutCount} · {favorites.kept}
       </p>
+      {groups.length === 0 && (
+        <LoadState
+          status={loaded.status}
+          locale={locale}
+          onRetry={loaded.retry}
+        />
+      )}
       {groups.map((group) => (
         <section key={group.software.id} className={styles.group}>
           <Link
@@ -58,7 +91,7 @@ export function FavoritesList({ locale }: { locale: Locale }) {
             softwareName={group.software.name}
             platform={shownPlatform(group.software.platforms, chosenPlatform)}
             locale={locale}
-            flag={summarizePlatformDifference(group.software.shortcuts).flag}
+            flag={flags.get(group.software.id) ?? null}
           />
         </section>
       ))}
