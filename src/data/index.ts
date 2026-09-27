@@ -1,37 +1,18 @@
-import { Software, type Family } from "@/domain/schema";
-import blender from "./software/blender.json";
-import embergen from "./software/embergen.json";
-import gaea from "./software/gaea.json";
-import houdini from "./software/houdini.json";
-import mari from "./software/mari.json";
-import marmosetToolbag from "./software/marmoset-toolbag.json";
-import marvelousDesigner from "./software/marvelous-designer.json";
-import maya from "./software/maya.json";
-import nuke from "./software/nuke.json";
-import premierePro from "./software/premiere-pro.json";
-import substanceDesigner from "./software/substance-designer.json";
-import substancePainter from "./software/substance-painter.json";
-import touchdesigner from "./software/touchdesigner.json";
-import zbrush from "./software/zbrush.json";
+import "server-only";
+import { readdirSync, readFileSync } from "node:fs";
+import path from "node:path";
+import { Software } from "@/domain/schema";
+import { FAMILY_ORDER, summarize } from "@/domain/summary";
 
-// Every software file, listed once. Adding a software = adding its JSON file
-// and one line here; no other code changes.
-const RAW_SOFTWARE: unknown[] = [
-  blender,
-  embergen,
-  gaea,
-  houdini,
-  mari,
-  marmosetToolbag,
-  marvelousDesigner,
-  maya,
-  nuke,
-  premierePro,
-  substanceDesigner,
-  substancePainter,
-  touchdesigner,
-  zbrush,
-];
+// Every file in src/data/software is a software: adding one is dropping its
+// JSON there, nothing to register. Read and checked at build time on the
+// server; a client component importing this module breaks the build.
+const FOLDER = path.join(process.cwd(), "src/data/software");
+
+const RAW_SOFTWARE: unknown[] = readdirSync(FOLDER)
+  .filter((name) => name.endsWith(".json"))
+  .sort()
+  .map((name) => JSON.parse(readFileSync(path.join(FOLDER, name), "utf8")));
 
 // Parsed at build time: an invalid file stops the build instead of shipping a
 // wrong shortcut. Zod also strips anything the schema does not describe.
@@ -47,19 +28,18 @@ export function getSoftwareIds(): string[] {
   return SOFTWARE_LIST.map((software) => software.id);
 }
 
-// Families in the order the home page shows them, each with its software.
-export const FAMILY_ORDER: Family[] = [
-  "3d-sculpt",
-  "texture",
-  "render-sim-terrain",
-  "cloth",
-  "compositing-video",
-  "2d-realtime",
-];
-
+// Each family, in the home page order, with its software.
 export function softwareByFamily() {
   return FAMILY_ORDER.map((family) => ({
     family,
     software: SOFTWARE_LIST.filter((item) => item.family === family),
   })).filter((group) => group.software.length > 0);
+}
+
+export { FAMILY_ORDER };
+
+// One summary per software, for the pages that list software without
+// showing their shortcuts.
+export function softwareSummaries() {
+  return SOFTWARE_LIST.map(summarize);
 }

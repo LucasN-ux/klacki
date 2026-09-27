@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { BoardView } from "@/components/features/BoardView";
 import shell from "@/components/ui/PageShell.module.css";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
+import { softwareSummaries } from "@/data";
 import { DEFAULT_LOCALE, LOCALES, isLocale, localeHref } from "@/domain/locale";
 import { getDictionary } from "@/i18n";
 import styles from "./page.module.css";
@@ -53,7 +54,7 @@ export default async function BoardPage({
         </header>
         {/* The selection and a shared link only exist in the browser. */}
         <Suspense>
-          <BoardView locale={locale} />
+          <BoardView locale={locale} summaries={softwareSummaries()} />
         </Suspense>
       </main>
       <SiteFooter locale={locale} />

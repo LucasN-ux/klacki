@@ -1,0 +1,522 @@
+{
+  "id": "lightroom-classic",
+  "name": "Lightroom Classic",
+  "initials": "LC",
+  "family": "photo-image",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/lightroom-classic/desktop/introduction-to-lightroom-classic/keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["save-file"],
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [
+          ["Ctrl", "Shift", "Z"],
+          ["Ctrl", "Y"]
+        ],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a catalog",
+        "fr": "Ouvrir un catalogue"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Cmd", "Shift", "O"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import photos from disk",
+        "fr": "Importer des photos depuis le disque"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "I"]],
+        "mac": [["Cmd", "Shift", "I"]]
+      }
+    },
+    {
+      "id": "export-selected",
+      "category": "file",
+      "action": {
+        "en": "Export the selected photos",
+        "fr": "Exporter les photos sélectionnées"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "E"]],
+        "mac": [["Cmd", "Shift", "E"]]
+      }
+    },
+    {
+      "id": "export-previous",
+      "category": "file",
+      "action": {
+        "en": "Export with the previous settings",
+        "fr": "Exporter avec les réglages précédents"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Shift", "E"]],
+        "mac": [["Cmd", "Option", "Shift", "E"]]
+      }
+    },
+    {
+      "id": "print",
+      "category": "file",
+      "action": {
+        "en": "Print",
+        "fr": "Imprimer"
+      },
+      "keys": {
+        "win": [["Ctrl", "P"]],
+        "mac": [["Cmd", "P"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [
+          ["Cmd", "D"],
+          ["Cmd", "Shift", "A"]
+        ]
+      }
+    },
+    {
+      "id": "rename-photo",
+      "category": "edit",
+      "action": {
+        "en": "Rename the photo",
+        "fr": "Renommer la photo"
+      },
+      "keys": {
+        "win": [["F2"]],
+        "mac": [["F2"]]
+      }
+    },
+    {
+      "id": "delete-photo",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selected photos",
+        "fr": "Supprimer les photos sélectionnées"
+      },
+      "keys": {
+        "win": [["Backspace"], ["Delete"]],
+        "mac": [["Delete"]]
+      }
+    },
+    {
+      "id": "virtual-copy",
+      "category": "edit",
+      "action": {
+        "en": "Create a virtual copy",
+        "fr": "Créer une copie virtuelle"
+      },
+      "keys": {
+        "win": [["Ctrl", "'"]],
+        "mac": [["Cmd", "'"]]
+      }
+    },
+    {
+      "id": "rotate-right",
+      "category": "edit",
+      "action": {
+        "en": "Rotate the photo clockwise",
+        "fr": "Faire pivoter la photo à droite"
+      },
+      "keys": {
+        "win": [["Ctrl", "]"]],
+        "mac": [["Cmd", "]"]]
+      }
+    },
+    {
+      "id": "rotate-left",
+      "category": "edit",
+      "action": {
+        "en": "Rotate the photo counterclockwise",
+        "fr": "Faire pivoter la photo à gauche"
+      },
+      "keys": {
+        "win": [["Ctrl", "["]],
+        "mac": [["Cmd", "["]]
+      }
+    },
+    {
+      "id": "flag-pick",
+      "category": "edit",
+      "action": {
+        "en": "Flag as a pick",
+        "fr": "Marquer comme retenue"
+      },
+      "keys": {
+        "win": [["P"]],
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "flag-reject",
+      "category": "edit",
+      "action": {
+        "en": "Flag as a reject",
+        "fr": "Marquer comme rejetée"
+      },
+      "keys": {
+        "win": [["X"]],
+        "mac": [["X"]]
+      }
+    },
+    {
+      "id": "rate-1",
+      "category": "edit",
+      "action": {
+        "en": "Rate one star",
+        "fr": "Noter une étoile"
+      },
+      "keys": {
+        "win": [["1"]],
+        "mac": [["1"]]
+      }
+    },
+    {
+      "id": "rate-5",
+      "category": "edit",
+      "action": {
+        "en": "Rate five stars",
+        "fr": "Noter cinq étoiles"
+      },
+      "keys": {
+        "win": [["5"]],
+        "mac": [["5"]]
+      }
+    },
+    {
+      "id": "remove-rating",
+      "category": "edit",
+      "action": {
+        "en": "Remove the star rating",
+        "fr": "Retirer la note"
+      },
+      "keys": {
+        "win": [["0"]],
+        "mac": [["0"]]
+      }
+    },
+    {
+      "id": "copy-develop-settings",
+      "category": "edit",
+      "action": {
+        "en": "Copy the Develop settings",
+        "fr": "Copier les réglages Développement"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "C"]],
+        "mac": [["Cmd", "Shift", "C"]]
+      }
+    },
+    {
+      "id": "paste-develop-settings",
+      "category": "edit",
+      "action": {
+        "en": "Paste the Develop settings",
+        "fr": "Coller les réglages Développement"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "V"]],
+        "mac": [["Cmd", "Shift", "V"]]
+      }
+    },
+    {
+      "id": "paste-previous-settings",
+      "category": "edit",
+      "action": {
+        "en": "Paste the settings of the previous photo",
+        "fr": "Coller les réglages de la photo précédente"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "V"]],
+        "mac": [["Cmd", "Option", "V"]]
+      }
+    },
+    {
+      "id": "auto-tone",
+      "category": "edit",
+      "action": {
+        "en": "Auto tone",
+        "fr": "Tonalité automatique"
+      },
+      "keys": {
+        "win": [["Ctrl", "U"]],
+        "mac": [["Cmd", "U"]]
+      }
+    },
+    {
+      "id": "auto-white-balance",
+      "category": "edit",
+      "action": {
+        "en": "Auto white balance",
+        "fr": "Balance des blancs automatique"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "U"]],
+        "mac": [["Cmd", "Shift", "U"]]
+      }
+    },
+    {
+      "id": "show-clipping",
+      "category": "view",
+      "action": {
+        "en": "Show clipping",
+        "fr": "Afficher l'écrêtage"
+      },
+      "keys": {
+        "win": [["J"]],
+        "mac": [["J"]]
+      }
+    },
+    {
+      "id": "go-library",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the Library module",
+        "fr": "Aller au module Bibliothèque"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "1"]],
+        "mac": [["Cmd", "Option", "1"]]
+      }
+    },
+    {
+      "id": "go-develop",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the Develop module",
+        "fr": "Aller au module Développement"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "2"]],
+        "mac": [["Cmd", "Option", "2"]]
+      }
+    },
+    {
+      "id": "grid-view",
+      "category": "view",
+      "action": {
+        "en": "Grid view",
+        "fr": "Vue Grille"
+      },
+      "keys": {
+        "win": [["G"]],
+        "mac": [["G"]]
+      }
+    },
+    {
+      "id": "loupe-view",
+      "category": "view",
+      "action": {
+        "en": "Loupe view",
+        "fr": "Vue Loupe"
+      },
+      "keys": {
+        "win": [["E"]],
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "compare-view",
+      "category": "view",
+      "action": {
+        "en": "Compare view",
+        "fr": "Vue Comparaison"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "survey-view",
+      "category": "view",
+      "action": {
+        "en": "Survey view",
+        "fr": "Vue Ensemble"
+      },
+      "keys": {
+        "win": [["N"]],
+        "mac": [["N"]]
+      }
+    },
+    {
+      "id": "open-in-develop",
+      "category": "navigation",
+      "action": {
+        "en": "Open the photo in Develop",
+        "fr": "Ouvrir la photo dans Développement"
+      },
+      "keys": {
+        "win": [["D"]],
+        "mac": [["D"]]
+      }
+    },
+    {
+      "id": "next-photo",
+      "category": "navigation",
+      "action": {
+        "en": "Next photo",
+        "fr": "Photo suivante"
+      },
+      "keys": {
+        "win": [["Right"]],
+        "mac": [["Right"]]
+      }
+    },
+    {
+      "id": "previous-photo",
+      "category": "navigation",
+      "action": {
+        "en": "Previous photo",
+        "fr": "Photo précédente"
+      },
+      "keys": {
+        "win": [["Left"]],
+        "mac": [["Left"]]
+      }
+    },
+    {
+      "id": "toggle-zoom",
+      "category": "navigation",
+      "action": {
+        "en": "Switch between fit and 1:1 zoom",
+        "fr": "Basculer entre ajusté et zoom 1:1"
+      },
+      "keys": {
+        "win": [["Z"], ["Space"]],
+        "mac": [["Z"], ["Space"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Cmd", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "lights-out",
+      "category": "view",
+      "action": {
+        "en": "Cycle the Lights Out modes",
+        "fr": "Changer de mode Éclairage tamisé"
+      },
+      "keys": {
+        "win": [["L"]],
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "hide-side-panels",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the side panels",
+        "fr": "Afficher ou masquer les panneaux latéraux"
+      },
+      "keys": {
+        "win": [["Tab"]],
+        "mac": [["Tab"]]
+      }
+    },
+    {
+      "id": "hide-panels",
+      "category": "view",
+      "action": {
+        "en": "Show or hide all panels",
+        "fr": "Afficher ou masquer tous les panneaux"
+      },
+      "keys": {
+        "win": [["Shift", "Tab"]],
+        "mac": [["Shift", "Tab"]]
+      }
+    },
+    {
+      "id": "toggle-toolbar",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the toolbar",
+        "fr": "Afficher ou masquer la barre d'outils"
+      },
+      "keys": {
+        "win": [["T"]],
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "toggle-filmstrip",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the filmstrip",
+        "fr": "Afficher ou masquer le film fixe"
+      },
+      "keys": {
+        "win": [["F6"]],
+        "mac": [["F6"]]
+      }
+    }
+  ]
+}

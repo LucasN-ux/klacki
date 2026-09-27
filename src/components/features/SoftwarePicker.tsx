@@ -1,10 +1,9 @@
 "use client";
 
 import { useId, useState, type KeyboardEvent } from "react";
-import { FAMILY_ORDER, SOFTWARE_LIST } from "@/data";
 import { matchesName } from "@/domain/board";
 import type { Locale } from "@/domain/locale";
-import type { Software } from "@/domain/schema";
+import { FAMILY_ORDER, type SoftwareSummary } from "@/domain/summary";
 import { getDictionary } from "@/i18n";
 import styles from "./SoftwarePicker.module.css";
 
@@ -12,14 +11,17 @@ import styles from "./SoftwarePicker.module.css";
 // types, grouped by family, however large the catalogue grows.
 export function SoftwarePicker({
   locale,
+  summaries,
   picked,
   readOnly,
   onAdd,
   onRemove,
 }: {
   locale: Locale;
+  /** Every software, in catalogue order. */
+  summaries: SoftwareSummary[];
   /** Catalogue order. */
-  picked: Software[];
+  picked: SoftwareSummary[];
   /** A shared board: chips without ✕ and no field. */
   readOnly: boolean;
   onAdd: (id: string) => void;
@@ -32,7 +34,7 @@ export function SoftwarePicker({
   const [highlight, setHighlight] = useState(0);
 
   const pickedIds = new Set(picked.map((software) => software.id));
-  const suggestions = SOFTWARE_LIST.filter(
+  const suggestions = summaries.filter(
     (software) =>
       !pickedIds.has(software.id) && matchesName(software.name, query),
   );
@@ -47,7 +49,7 @@ export function SoftwarePicker({
 
   // The list closes once a software is added: left open, it would cover the
   // board, and a click meant for the board would land on a suggestion.
-  function add(software: Software) {
+  function add(software: SoftwareSummary) {
     onAdd(software.id);
     setQuery("");
     setHighlight(0);

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FavoritesList } from "@/components/features/FavoritesList";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
+import { softwareSummaries } from "@/data";
 import shell from "@/components/ui/PageShell.module.css";
 import { LOCALES, isLocale } from "@/domain/locale";
 import { getDictionary } from "@/i18n";
@@ -37,7 +38,7 @@ export default async function FavoritesPage({
           {getDictionary(locale).favorites.title}
         </h1>
         {/* The list lives in the browser, so it is drawn there. */}
-        <FavoritesList locale={locale} />
+        <FavoritesList locale={locale} summaries={softwareSummaries()} />
       </main>
       <SiteFooter locale={locale} />
     </>

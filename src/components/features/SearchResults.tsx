@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { LoadState } from "@/components/ui/LoadState";
 import { SearchField } from "@/components/ui/SearchField";
 import { ShortcutList } from "@/components/ui/ShortcutRow";
-import { SOFTWARE_LIST } from "@/data";
 import { localeHref, type Locale } from "@/domain/locale";
-import { summarizePlatformDifference } from "@/domain/platformDifference";
-import { countHits, firstHits, searchShortcuts } from "@/domain/search";
+import { searchIndexOf } from "@/data/load";
+import { countHits, firstHits, searchIndex } from "@/domain/search";
+import type { SoftwareSummary } from "@/domain/summary";
 import { shownPlatform } from "@/domain/keys";
+import { useLoaded } from "@/hooks/useLoaded";
 import { usePlatform } from "@/hooks/usePlatform";
 import { getDictionary } from "@/i18n";
 import styles from "./SearchResults.module.css";
@@ -18,7 +20,14 @@ const MIN_QUERY_LENGTH = 2;
 // Results shown at first, and added by each "Show more".
 const PAGE_SIZE = 40;
 
-export function SearchResults({ locale }: { locale: Locale }) {
+export function SearchResults({
+  locale,
+  summaries,
+}: {
+  locale: Locale;
+  /** Every software, for the group heads: names, initials, platforms. */
+  summaries: SoftwareSummary[];
+}) {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const [limit, setLimit] = useState(PAGE_SIZE);
@@ -30,12 +39,23 @@ export function SearchResults({ locale }: { locale: Locale }) {
   const { search } = getDictionary(locale);
   const trimmed = query.trim();
 
-  // Everything happens in the browser: the data is already in the page,
-  // so there is no request and no waiting between two letters.
-  const hits = useMemo(
-    () => searchShortcuts(SOFTWARE_LIST, query, locale),
-    [query, locale],
+  const byId = useMemo(
+    () => new Map(summaries.map((one) => [one.id, one])),
+    [summaries],
   );
+  // The index of this language starts loading as soon as the page opens;
+  // once it is here, every letter is searched in the browser, no request.
+  const index = useLoaded(locale, searchIndexOf);
+  // A software the page has no summary for (an index from a newer deploy)
+  // is left out before counting, so it never eats the first page of rows.
+  const hits = useMemo(
+    () =>
+      index.data
+        ? searchIndex(index.data, query).filter((hit) => byId.has(hit.software))
+        : [],
+    [index.data, query, byId],
+  );
+  const typed = trimmed.length >= MIN_QUERY_LENGTH;
 
   const total = countHits(hits);
   const shown = firstHits(hits, limit);
@@ -86,45 +106,57 @@ export function SearchResults({ locale }: { locale: Locale }) {
       />
 
       <p className={styles.count} aria-live="polite">
-        {trimmed.length >= MIN_QUERY_LENGTH
-          ? `${total} ${search.results}`
-          : search.hint}
+        {!typed
+          ? search.hint
+          : index.status === "ready"
+            ? `${total} ${search.results}`
+            : ""}
       </p>
 
-      {trimmed.length >= MIN_QUERY_LENGTH && hits.length === 0 && (
+      <LoadState
+        status={typed ? index.status : "ready"}
+        locale={locale}
+        onRetry={index.retry}
+      />
+
+      {typed && index.status === "ready" && hits.length === 0 && (
         <p className={styles.empty}>{search.empty}</p>
       )}
 
       <div ref={list}>
-        {shown.map((hit) => (
-          <section key={hit.software.id} className={styles.group}>
-            <Link
-              href={localeHref(locale, `/${hit.software.id}`)}
-              className={styles.groupHead}
-            >
-              <span className={styles.badge} aria-hidden="true">
-                {hit.software.initials}
-              </span>
-              {hit.software.name}
-              <span className={styles.groupCount}>
-                {/* The whole group, even when the page cuts it. */}
-                {
-                  hits.find((all) => all.software === hit.software)?.shortcuts
-                    .length
-                }
-              </span>
-            </Link>
-            <ShortcutList
-              shortcuts={hit.shortcuts}
-              softwareId={hit.software.id}
-              softwareName={hit.software.name}
-              platform={shownPlatform(hit.software.platforms, chosenPlatform)}
-              locale={locale}
-              // Decided from the whole software, not from the few results shown.
-              flag={summarizePlatformDifference(hit.software.shortcuts).flag}
-            />
-          </section>
-        ))}
+        {shown.map((hit) => {
+          const software = byId.get(hit.software);
+          if (!software) return null;
+          return (
+            <section key={hit.software} className={styles.group}>
+              <Link
+                href={localeHref(locale, `/${software.id}`)}
+                className={styles.groupHead}
+              >
+                <span className={styles.badge} aria-hidden="true">
+                  {software.initials}
+                </span>
+                {software.name}
+                <span className={styles.groupCount}>
+                  {/* The whole group, even when the page cuts it. */}
+                  {
+                    hits.find((all) => all.software === hit.software)?.shortcuts
+                      .length
+                  }
+                </span>
+              </Link>
+              <ShortcutList
+                shortcuts={hit.shortcuts}
+                softwareId={software.id}
+                softwareName={software.name}
+                platform={shownPlatform(software.platforms, chosenPlatform)}
+                locale={locale}
+                // Decided from the whole software, not from the few results shown.
+                flag={software.flag}
+              />
+            </section>
+          );
+        })}
       </div>
 
       {total > limit && (

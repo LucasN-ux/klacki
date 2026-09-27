@@ -1,0 +1,308 @@
+{
+  "id": "substance-sampler",
+  "name": "Substance 3D Sampler",
+  "initials": "SA",
+  "family": "texture",
+  "version": "5.1",
+  "docUrl": "https://experienceleague.adobe.com/en/docs/substance-3d-sampler/using/getting-started/shortcuts",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["open-file"],
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Z"]],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save",
+        "fr": "Enregistrer"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "export",
+      "category": "file",
+      "action": {
+        "en": "Export",
+        "fr": "Exporter"
+      },
+      "keys": {
+        "win": [["Ctrl", "E"]],
+        "mac": [["Cmd", "E"]]
+      }
+    },
+    {
+      "id": "viewport-3d",
+      "category": "view",
+      "action": {
+        "en": "Show the 3D view only",
+        "fr": "Afficher uniquement la vue 3D"
+      },
+      "keys": {
+        "win": [["3"]],
+        "mac": [["3"]]
+      }
+    },
+    {
+      "id": "viewport-2d",
+      "category": "view",
+      "action": {
+        "en": "Show the 2D view only",
+        "fr": "Afficher uniquement la vue 2D"
+      },
+      "keys": {
+        "win": [["2"]],
+        "mac": [["2"]]
+      }
+    },
+    {
+      "id": "orbit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Orbit the camera",
+        "fr": "Orbiter la caméra"
+      },
+      "context": {
+        "en": "3D view",
+        "fr": "Vue 3D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseLeft"], ["MouseLeft"]],
+        "mac": [["Option", "MouseLeft"], ["MouseLeft"]]
+      }
+    },
+    {
+      "id": "pan-view",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the camera",
+        "fr": "Déplacer la caméra"
+      },
+      "context": {
+        "en": "3D view",
+        "fr": "Vue 3D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseMiddle"], ["MouseMiddle"]],
+        "mac": [["Option", "MouseMiddle"], ["MouseMiddle"]]
+      }
+    },
+    {
+      "id": "zoom-view",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the camera",
+        "fr": "Zoomer la caméra"
+      },
+      "context": {
+        "en": "3D view",
+        "fr": "Vue 3D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseRight"], ["MouseWheel"]],
+        "mac": [["Option", "MouseRight"], ["MouseWheel"]]
+      }
+    },
+    {
+      "id": "frame-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the selection",
+        "fr": "Cadrer la sélection"
+      },
+      "context": {
+        "en": "3D view",
+        "fr": "Vue 3D"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
+      }
+    },
+    {
+      "id": "rotate-environment",
+      "category": "view",
+      "action": {
+        "en": "Rotate the environment",
+        "fr": "Tourner l'environnement"
+      },
+      "context": {
+        "en": "3D view",
+        "fr": "Vue 3D"
+      },
+      "keys": {
+        "win": [["Shift", "MouseRight"]],
+        "mac": [["Shift", "MouseRight"]]
+      }
+    },
+    {
+      "id": "toggle-environment",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the environment",
+        "fr": "Afficher ou masquer l'environnement"
+      },
+      "context": {
+        "en": "3D view",
+        "fr": "Vue 3D"
+      },
+      "keys": {
+        "win": [["1"]],
+        "mac": [["1"]]
+      }
+    },
+    {
+      "id": "pan-view-2d",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the 2D view",
+        "fr": "Déplacer la vue 2D"
+      },
+      "context": {
+        "en": "2D view",
+        "fr": "Vue 2D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseMiddle"]],
+        "mac": [["Option", "MouseMiddle"]]
+      }
+    },
+    {
+      "id": "zoom-view-2d",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the 2D view",
+        "fr": "Zoomer dans la vue 2D"
+      },
+      "context": {
+        "en": "2D view",
+        "fr": "Vue 2D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseRight"], ["MouseWheel"]],
+        "mac": [["Option", "MouseRight"], ["MouseWheel"]]
+      }
+    },
+    {
+      "id": "texture-tiling",
+      "category": "view",
+      "action": {
+        "en": "Show the texture tiled",
+        "fr": "Afficher la texture en mosaïque"
+      },
+      "context": {
+        "en": "2D view",
+        "fr": "Vue 2D"
+      },
+      "keys": {
+        "win": [["T"]],
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "cycle-channels",
+      "category": "view",
+      "action": {
+        "en": "Cycle through the channels",
+        "fr": "Passer d'un canal à l'autre"
+      },
+      "context": {
+        "en": "2D view",
+        "fr": "Vue 2D"
+      },
+      "keys": {
+        "win": [["C"], ["Shift", "C"]],
+        "mac": [["C"], ["Shift", "C"]]
+      }
+    },
+    {
+      "id": "erase-brush-mode",
+      "category": "tools",
+      "action": {
+        "en": "Switch between erase and brush modes",
+        "fr": "Basculer entre gomme et pinceau"
+      },
+      "context": {
+        "en": "2D view",
+        "fr": "Vue 2D"
+      },
+      "keys": {
+        "win": [["E"]],
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "add-base-material",
+      "category": "edit",
+      "action": {
+        "en": "Add a base material",
+        "fr": "Ajouter un matériau de base"
+      },
+      "keys": {
+        "win": [["Shift", "B"]],
+        "mac": [["Shift", "B"]]
+      }
+    },
+    {
+      "id": "filters-menu",
+      "category": "tools",
+      "action": {
+        "en": "Open the filters menu",
+        "fr": "Ouvrir le menu des filtres"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "flatten-layers",
+      "category": "edit",
+      "action": {
+        "en": "Flatten the layers",
+        "fr": "Aplatir les calques"
+      },
+      "keys": {
+        "win": [["Ctrl", "M"]],
+        "mac": [["Cmd", "M"]]
+      }
+    }
+  ]
+}

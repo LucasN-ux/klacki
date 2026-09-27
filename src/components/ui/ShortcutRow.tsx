@@ -6,7 +6,7 @@ import { isSameOnBothPlatforms, keysFor } from "@/domain/keys";
 import type { Locale } from "@/domain/locale";
 import type { FlaggedRows } from "@/domain/platformDifference";
 import { summarizePlatformDifference } from "@/domain/platformDifference";
-import type { Platform, Shortcut } from "@/domain/schema";
+import type { LocaleShortcut, Platform, Shortcut } from "@/domain/schema";
 import { KeyCombos } from "./Keycap";
 import { getDictionary } from "@/i18n";
 import styles from "./ShortcutRow.module.css";
@@ -55,7 +55,7 @@ export function ShortcutRow({
   locale,
   flag,
 }: {
-  shortcut: Shortcut;
+  shortcut: LocaleShortcut;
   softwareId: string;
   softwareName: string;
   platform: Platform;
@@ -72,7 +72,7 @@ export function ShortcutRow({
   return (
     <li className={styles.row}>
       <span>
-        <span className={styles.action}>{shortcut.action[locale]}</span>
+        <span className={styles.action}>{shortcut.action}</span>
         {showFlag && (
           <span
             className={
@@ -86,7 +86,7 @@ export function ShortcutRow({
         {shortcut.context && (
           <>
             <br />
-            <span className={styles.context}>{shortcut.context[locale]}</span>
+            <span className={styles.context}>{shortcut.context}</span>
           </>
         )}
       </span>
@@ -106,13 +106,13 @@ export function ShortcutRow({
             locale,
             labels.or,
           )}
-          action={shortcut.action[locale]}
+          action={shortcut.action}
           locale={locale}
         />
         <FavoriteStar
           softwareId={softwareId}
           shortcutId={shortcut.id}
-          action={shortcut.action[locale]}
+          action={shortcut.action}
           locale={locale}
         />
       </span>
@@ -128,7 +128,7 @@ export function ShortcutList({
   locale,
   flag,
 }: {
-  shortcuts: Shortcut[];
+  shortcuts: LocaleShortcut[];
   softwareId: string;
   softwareName: string;
   platform: Platform;

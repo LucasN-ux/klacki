@@ -3,6 +3,7 @@
     "tagline": "Les raccourcis clavier de vos logiciels de création, sur une seule planche.",
     "description": "Les raccourcis clavier des logiciels de création : 3D, texture, VFX, vidéo et 2D. Windows et Mac, vérifiés dans la documentation officielle.",
     "softwareCount": "logiciels",
+    "softwareCountOne": "logiciel",
     "shortcutCount": "raccourcis"
   },
   "nav": {
@@ -25,7 +26,11 @@
     "render-sim-terrain": "Rendu, simulation & terrain",
     "cloth": "Vêtements 3D",
     "compositing-video": "Compositing & vidéo",
-    "2d-realtime": "2D & temps réel"
+    "2d-realtime": "2D & temps réel",
+    "photo-image": "Photo & image",
+    "design-layout": "Design & mise en page",
+    "audio": "Audio",
+    "web-docs": "Web & documents"
   },
   "categories": {
     "general": "Général",
@@ -247,5 +252,10 @@
     "caption": "QWERTY américain",
     "pc": "PC",
     "mac": "Mac"
+  },
+  "data": {
+    "loading": "Chargement…",
+    "failed": "Impossible de charger les raccourcis.",
+    "retry": "Réessayer"
   }
 }

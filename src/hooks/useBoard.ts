@@ -2,8 +2,6 @@
 
 import { useCallback, useSyncExternalStore } from "react";
 import { z } from "zod";
-import { getSoftwareIds } from "@/data";
-import { cleanBoardIds } from "@/domain/board";
 
 const STORAGE_KEY = "klacki.board";
 const CHANGE_EVENT = "klacki:board-change";
@@ -20,11 +18,9 @@ function readRaw(): string {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === null) return chosenInThisVisit ?? "[]";
     const parsed = StoredBoard.safeParse(JSON.parse(stored));
-    // Invalid data, or a software that has left the catalogue, is dropped
-    // rather than crashing the page.
-    return parsed.success
-      ? JSON.stringify(cleanBoardIds(parsed.data, getSoftwareIds()))
-      : "[]";
+    // Invalid data is dropped rather than crashing the page. A software
+    // that has left the catalogue is dropped by the board, which knows it.
+    return parsed.success ? JSON.stringify(parsed.data) : "[]";
   } catch {
     return chosenInThisVisit ?? "[]";
   }
@@ -51,7 +47,7 @@ function subscribe(onChange: () => void): () => void {
 }
 
 function save(ids: string[]) {
-  const value = JSON.stringify(cleanBoardIds(ids, getSoftwareIds()));
+  const value = JSON.stringify(ids);
   chosenInThisVisit = value;
   try {
     localStorage.setItem(STORAGE_KEY, value);

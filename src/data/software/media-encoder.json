@@ -1,0 +1,426 @@
+{
+  "id": "media-encoder",
+  "name": "Media Encoder",
+  "initials": "ME",
+  "family": "compositing-video",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/media-encoder/desktop/encoding-quick-start-and-basics/default-keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["open-file"],
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [
+          ["Shift", "Ctrl", "Z"],
+          ["Ctrl", "Y"]
+        ],
+        "mac": [
+          ["Shift", "Cmd", "Z"],
+          ["Cmd", "Y"]
+        ]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save the queue",
+        "fr": "Enregistrer la file d'attente"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Add a source",
+        "fr": "Ajouter une source"
+      },
+      "keys": {
+        "win": [["Ctrl", "I"]],
+        "mac": [["Cmd", "I"]]
+      }
+    },
+    {
+      "id": "add-watch-folder",
+      "category": "file",
+      "action": {
+        "en": "Add a watch folder",
+        "fr": "Ajouter un dossier de contrôle"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "I"]],
+        "mac": [["Cmd", "Option", "I"]]
+      }
+    },
+    {
+      "id": "export-settings",
+      "category": "file",
+      "action": {
+        "en": "Open the export settings",
+        "fr": "Ouvrir les paramètres d'exportation"
+      },
+      "keys": {
+        "win": [["Ctrl", "E"]],
+        "mac": [["Cmd", "E"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "preferences",
+      "category": "general",
+      "action": {
+        "en": "Open the preferences",
+        "fr": "Ouvrir les préférences"
+      },
+      "keys": {
+        "win": [["Ctrl", ","]],
+        "mac": [["Cmd", ","]]
+      }
+    },
+    {
+      "id": "help",
+      "category": "general",
+      "action": {
+        "en": "Show the help",
+        "fr": "Afficher l'aide"
+      },
+      "keys": {
+        "win": [["F1"]],
+        "mac": [["F1"]]
+      }
+    },
+    {
+      "id": "start-queue",
+      "category": "general",
+      "action": {
+        "en": "Start or pause the queue",
+        "fr": "Lancer ou mettre en pause la file d'attente"
+      },
+      "keys": {
+        "win": [["Return"]],
+        "mac": [["Return"]]
+      }
+    },
+    {
+      "id": "stop-queue",
+      "category": "general",
+      "action": {
+        "en": "Stop the queue",
+        "fr": "Arrêter la file d'attente"
+      },
+      "keys": {
+        "win": [["Esc"]],
+        "mac": [["Esc"]]
+      }
+    },
+    {
+      "id": "show-log",
+      "category": "view",
+      "action": {
+        "en": "Show the log",
+        "fr": "Afficher le journal"
+      },
+      "keys": {
+        "win": [["Ctrl", "L"]],
+        "mac": [["Cmd", "L"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Cmd", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Cmd", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Cmd", "V"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "keys": {
+        "win": [["Delete"]],
+        "mac": [["Delete"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "A"]],
+        "mac": [["Cmd", "Shift", "A"]]
+      }
+    },
+    {
+      "id": "apply-to-queue",
+      "category": "edit",
+      "action": {
+        "en": "Apply the preset to the queue",
+        "fr": "Appliquer le paramètre prédéfini à la file d'attente"
+      },
+      "keys": {
+        "win": [["Ctrl", "U"]],
+        "mac": [["Cmd", "U"]]
+      }
+    },
+    {
+      "id": "new-preset",
+      "category": "file",
+      "action": {
+        "en": "Create an encoding preset",
+        "fr": "Créer un paramètre de codage prédéfini"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "mark-in",
+      "category": "navigation",
+      "action": {
+        "en": "Set the in point",
+        "fr": "Poser le point d'entrée"
+      },
+      "keys": {
+        "win": [["I"]],
+        "mac": [["I"]]
+      }
+    },
+    {
+      "id": "mark-out",
+      "category": "navigation",
+      "action": {
+        "en": "Set the out point",
+        "fr": "Poser le point de sortie"
+      },
+      "keys": {
+        "win": [["O"]],
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "clear-in-out",
+      "category": "navigation",
+      "action": {
+        "en": "Clear the in and out points",
+        "fr": "Effacer les points d'entrée et de sortie"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "toggle-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop playback",
+        "fr": "Lancer ou arrêter la lecture"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "play-backward",
+      "category": "navigation",
+      "action": {
+        "en": "Play backward",
+        "fr": "Lire en arrière"
+      },
+      "keys": {
+        "win": [["J"]],
+        "mac": [["J"]]
+      }
+    },
+    {
+      "id": "pause-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Pause playback",
+        "fr": "Mettre en pause"
+      },
+      "keys": {
+        "win": [["K"]],
+        "mac": [["K"]]
+      }
+    },
+    {
+      "id": "play-forward",
+      "category": "navigation",
+      "action": {
+        "en": "Play forward",
+        "fr": "Lire en avant"
+      },
+      "keys": {
+        "win": [["L"]],
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "next-frame",
+      "category": "navigation",
+      "action": {
+        "en": "Move forward one frame",
+        "fr": "Avancer d'une image"
+      },
+      "keys": {
+        "win": [["Right"]],
+        "mac": [["Right"]]
+      }
+    },
+    {
+      "id": "previous-frame",
+      "category": "navigation",
+      "action": {
+        "en": "Move back one frame",
+        "fr": "Reculer d'une image"
+      },
+      "keys": {
+        "win": [["Left"]],
+        "mac": [["Left"]]
+      }
+    },
+    {
+      "id": "go-to-in-point",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the in point",
+        "fr": "Aller au point d'entrée"
+      },
+      "keys": {
+        "win": [["Q"]],
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "go-to-out-point",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the out point",
+        "fr": "Aller au point de sortie"
+      },
+      "keys": {
+        "win": [["W"]],
+        "mac": [["W"]]
+      }
+    },
+    {
+      "id": "close-panel",
+      "category": "view",
+      "action": {
+        "en": "Close the current panel",
+        "fr": "Fermer le panneau actif"
+      },
+      "keys": {
+        "win": [["Ctrl", "W"]],
+        "mac": [["Cmd", "W"]]
+      }
+    },
+    {
+      "id": "maximize-panel",
+      "category": "view",
+      "action": {
+        "en": "Maximise the panel under the pointer",
+        "fr": "Agrandir le panneau sous le pointeur"
+      },
+      "keys": {
+        "win": [["`"]],
+        "mac": [["`"]]
+      }
+    }
+  ]
+}

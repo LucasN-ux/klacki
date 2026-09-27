@@ -1,0 +1,348 @@
+{
+  "id": "animate",
+  "name": "Animate",
+  "initials": "AN",
+  "family": "2d-realtime",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/animate/desktop/introduction-to-animate/animate-keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import a file",
+        "fr": "Importer un fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "open-as-library",
+      "category": "file",
+      "action": {
+        "en": "Open as a library",
+        "fr": "Ouvrir comme bibliothèque"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "O"]],
+        "mac": [["Cmd", "Shift", "O"]]
+      }
+    },
+    {
+      "id": "export-movie",
+      "category": "file",
+      "action": {
+        "en": "Export the movie",
+        "fr": "Exporter l'animation"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Alt", "S"]],
+        "mac": [["Cmd", "Shift", "Option", "S"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "A"]],
+        "mac": [["Cmd", "Shift", "A"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "paste-in-place",
+      "category": "edit",
+      "action": {
+        "en": "Paste in place",
+        "fr": "Coller en place"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "V"]],
+        "mac": [["Cmd", "Shift", "V"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the selection",
+        "fr": "Grouper la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Cmd", "G"]]
+      }
+    },
+    {
+      "id": "ungroup",
+      "category": "edit",
+      "action": {
+        "en": "Ungroup the selection",
+        "fr": "Dégrouper la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "G"]],
+        "mac": [["Cmd", "Shift", "G"]]
+      }
+    },
+    {
+      "id": "break-apart",
+      "category": "edit",
+      "action": {
+        "en": "Break apart",
+        "fr": "Séparer"
+      },
+      "keys": {
+        "win": [["Ctrl", "B"]],
+        "mac": [["Cmd", "B"]]
+      }
+    },
+    {
+      "id": "bring-to-front",
+      "category": "edit",
+      "action": {
+        "en": "Bring to the front",
+        "fr": "Mettre au premier plan"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Up"]],
+        "mac": [["Cmd", "Shift", "Up"]]
+      }
+    },
+    {
+      "id": "send-to-back",
+      "category": "edit",
+      "action": {
+        "en": "Send to the back",
+        "fr": "Mettre à l'arrière-plan"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Down"]],
+        "mac": [["Cmd", "Shift", "Down"]]
+      }
+    },
+    {
+      "id": "bring-forward",
+      "category": "edit",
+      "action": {
+        "en": "Bring the selection forward",
+        "fr": "Avancer la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "Up"]],
+        "mac": [["Cmd", "Up"]]
+      }
+    },
+    {
+      "id": "send-backward",
+      "category": "edit",
+      "action": {
+        "en": "Send the selection backward",
+        "fr": "Reculer la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "Down"]],
+        "mac": [["Cmd", "Down"]]
+      }
+    },
+    {
+      "id": "remove-transform",
+      "category": "edit",
+      "action": {
+        "en": "Remove the transformation",
+        "fr": "Supprimer la transformation"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Z"]],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "edit-symbol",
+      "category": "general",
+      "action": {
+        "en": "Switch between editing the movie and the symbol",
+        "fr": "Basculer entre l'animation et le symbole"
+      },
+      "keys": {
+        "win": [["Ctrl", "E"]],
+        "mac": [["Cmd", "E"]]
+      }
+    },
+    {
+      "id": "actual-size",
+      "category": "navigation",
+      "action": {
+        "en": "View at 100%",
+        "fr": "Afficher à 100 %"
+      },
+      "keys": {
+        "win": [["Ctrl", "1"]],
+        "mac": [["Cmd", "1"]]
+      }
+    },
+    {
+      "id": "show-frame",
+      "category": "navigation",
+      "action": {
+        "en": "Show the frame",
+        "fr": "Afficher l'image"
+      },
+      "keys": {
+        "win": [["Ctrl", "2"]],
+        "mac": [["Cmd", "2"]]
+      }
+    },
+    {
+      "id": "show-all-view",
+      "category": "navigation",
+      "action": {
+        "en": "Show everything",
+        "fr": "Tout afficher"
+      },
+      "keys": {
+        "win": [["Ctrl", "3"]],
+        "mac": [["Cmd", "3"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Cmd", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "show-rulers",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the rulers",
+        "fr": "Afficher ou masquer les règles"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Alt", "R"]],
+        "mac": [["Cmd", "Shift", "Option", "R"]]
+      }
+    },
+    {
+      "id": "toggle-timeline",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the timeline",
+        "fr": "Afficher ou masquer le scénario"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "T"]],
+        "mac": [["Cmd", "Option", "T"]]
+      }
+    },
+    {
+      "id": "library-panel",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Library panel",
+        "fr": "Afficher ou masquer le panneau Bibliothèque"
+      },
+      "keys": {
+        "win": [["Ctrl", "L"]],
+        "mac": [["Cmd", "L"]]
+      }
+    },
+    {
+      "id": "properties-panel",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Properties panel",
+        "fr": "Afficher ou masquer le panneau Propriétés"
+      },
+      "keys": {
+        "win": [["Ctrl", "F3"]],
+        "mac": [["Cmd", "F3"]]
+      }
+    },
+    {
+      "id": "transform-panel",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Transform panel",
+        "fr": "Afficher ou masquer le panneau Transformer"
+      },
+      "keys": {
+        "win": [["Ctrl", "T"]],
+        "mac": [["Cmd", "T"]]
+      }
+    },
+    {
+      "id": "history-panel",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the History panel",
+        "fr": "Afficher ou masquer le panneau Historique"
+      },
+      "keys": {
+        "win": [["Ctrl", "F10"]],
+        "mac": [["Cmd", "F10"]]
+      }
+    }
+  ]
+}

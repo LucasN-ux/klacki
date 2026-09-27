@@ -1,0 +1,420 @@
+{
+  "id": "dreamweaver",
+  "name": "Dreamweaver",
+  "initials": "DW",
+  "family": "web-docs",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/dreamweaver/desktop/introduction/keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New file",
+        "fr": "Nouveau fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "N"]],
+        "mac": [["Cmd", "Shift", "N"]]
+      }
+    },
+    {
+      "id": "new-folder",
+      "category": "file",
+      "action": {
+        "en": "New folder",
+        "fr": "Nouveau dossier"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Shift", "N"]],
+        "mac": [["Cmd", "Option", "Shift", "N"]]
+      }
+    },
+    {
+      "id": "close-project",
+      "category": "file",
+      "action": {
+        "en": "Close the window",
+        "fr": "Fermer la fenêtre"
+      },
+      "keys": {
+        "win": [["Ctrl", "W"]],
+        "mac": [["Cmd", "W"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "preferences",
+      "category": "general",
+      "action": {
+        "en": "Open the preferences",
+        "fr": "Ouvrir les préférences"
+      },
+      "keys": {
+        "win": [["Ctrl", "U"]],
+        "mac": [["Cmd", "U"]]
+      }
+    },
+    {
+      "id": "find",
+      "category": "general",
+      "action": {
+        "en": "Find in the document",
+        "fr": "Rechercher dans le document"
+      },
+      "keys": {
+        "win": [["Ctrl", "F"]],
+        "mac": [["Cmd", "F"]]
+      }
+    },
+    {
+      "id": "replace",
+      "category": "general",
+      "action": {
+        "en": "Replace in the document",
+        "fr": "Remplacer dans le document"
+      },
+      "keys": {
+        "win": [["Ctrl", "H"]],
+        "mac": [["Cmd", "Option", "F"]]
+      }
+    },
+    {
+      "id": "find-in-files",
+      "category": "general",
+      "action": {
+        "en": "Find and replace in files",
+        "fr": "Rechercher et remplacer dans les fichiers"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "F"]],
+        "mac": [["Cmd", "Shift", "F"]]
+      }
+    },
+    {
+      "id": "find-next",
+      "category": "general",
+      "action": {
+        "en": "Find the next occurrence",
+        "fr": "Rechercher l'occurrence suivante"
+      },
+      "keys": {
+        "win": [["F3"]],
+        "mac": [["Cmd", "G"]]
+      }
+    },
+    {
+      "id": "find-previous",
+      "category": "general",
+      "action": {
+        "en": "Find the previous occurrence",
+        "fr": "Rechercher l'occurrence précédente"
+      },
+      "keys": {
+        "win": [["Shift", "F3"]],
+        "mac": [["Cmd", "Shift", "G"]]
+      }
+    },
+    {
+      "id": "go-to-line",
+      "category": "navigation",
+      "action": {
+        "en": "Go to a line",
+        "fr": "Aller à une ligne"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Cmd", ","]]
+      }
+    },
+    {
+      "id": "code-hints",
+      "category": "tools",
+      "action": {
+        "en": "Show the code hints",
+        "fr": "Afficher les conseils de code"
+      },
+      "keys": {
+        "win": [["Ctrl", "Space"]],
+        "mac": [["Ctrl", "Space"]]
+      }
+    },
+    {
+      "id": "toggle-line-comment",
+      "category": "edit",
+      "action": {
+        "en": "Comment or uncomment the line",
+        "fr": "Commenter ou décommenter la ligne"
+      },
+      "keys": {
+        "win": [["Ctrl", "/"]],
+        "mac": [["Cmd", "/"]]
+      }
+    },
+    {
+      "id": "indent-code",
+      "category": "edit",
+      "action": {
+        "en": "Indent the code",
+        "fr": "Indenter le code"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", ">"]],
+        "mac": [["Cmd", "Shift", ">"]]
+      }
+    },
+    {
+      "id": "outdent-code",
+      "category": "edit",
+      "action": {
+        "en": "Outdent the code",
+        "fr": "Désindenter le code"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "<"]],
+        "mac": [["Cmd", "Shift", "<"]]
+      }
+    },
+    {
+      "id": "balance-braces",
+      "category": "selection",
+      "action": {
+        "en": "Balance the braces",
+        "fr": "Équilibrer les accolades"
+      },
+      "keys": {
+        "win": [["Ctrl", "'"]],
+        "mac": [["Cmd", "'"]]
+      }
+    },
+    {
+      "id": "select-parent-tag",
+      "category": "selection",
+      "action": {
+        "en": "Select the parent tag",
+        "fr": "Sélectionner la balise parente"
+      },
+      "keys": {
+        "win": [["Ctrl", "["]],
+        "mac": [["Cmd", "["]]
+      }
+    },
+    {
+      "id": "select-child",
+      "category": "selection",
+      "action": {
+        "en": "Select the child tag",
+        "fr": "Sélectionner la balise enfant"
+      },
+      "keys": {
+        "win": [["Ctrl", "]"]],
+        "mac": [["Cmd", "]"]]
+      }
+    },
+    {
+      "id": "collapse-selection",
+      "category": "view",
+      "action": {
+        "en": "Collapse the selection",
+        "fr": "Réduire la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "C"]],
+        "mac": [["Cmd", "Shift", "C"]]
+      }
+    },
+    {
+      "id": "expand-selection",
+      "category": "view",
+      "action": {
+        "en": "Expand the selection",
+        "fr": "Développer la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "E"]],
+        "mac": [["Cmd", "Shift", "E"]]
+      }
+    },
+    {
+      "id": "expand-all",
+      "category": "view",
+      "action": {
+        "en": "Expand everything",
+        "fr": "Tout développer"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "E"]],
+        "mac": [["Cmd", "Option", "E"]]
+      }
+    },
+    {
+      "id": "bold",
+      "category": "edit",
+      "action": {
+        "en": "Bold",
+        "fr": "Gras"
+      },
+      "keys": {
+        "win": [["Ctrl", "B"]],
+        "mac": [["Cmd", "B"]]
+      }
+    },
+    {
+      "id": "italic",
+      "category": "edit",
+      "action": {
+        "en": "Italic",
+        "fr": "Italique"
+      },
+      "keys": {
+        "win": [["Ctrl", "I"]],
+        "mac": [["Cmd", "I"]]
+      }
+    },
+    {
+      "id": "insert-image",
+      "category": "edit",
+      "action": {
+        "en": "Insert an image",
+        "fr": "Insérer une image"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "I"]],
+        "mac": [["Cmd", "Option", "I"]]
+      }
+    },
+    {
+      "id": "insert-table",
+      "category": "edit",
+      "action": {
+        "en": "Insert a table",
+        "fr": "Insérer un tableau"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "T"]],
+        "mac": [["Cmd", "Option", "T"]]
+      }
+    },
+    {
+      "id": "design-live-view",
+      "category": "view",
+      "action": {
+        "en": "Switch between Design and Live view",
+        "fr": "Basculer entre les modes Création et Dynamique"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "F11"]],
+        "mac": [["Cmd", "Shift", "F11"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Cmd", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "toggle-guides",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the guides",
+        "fr": "Afficher ou masquer les repères"
+      },
+      "keys": {
+        "win": [["Ctrl", ";"]],
+        "mac": [["Cmd", ";"]]
+      }
+    },
+    {
+      "id": "toggle-grid",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the grid",
+        "fr": "Afficher ou masquer la grille"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "G"]],
+        "mac": [["Cmd", "Option", "G"]]
+      }
+    },
+    {
+      "id": "show-rulers",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the rulers",
+        "fr": "Afficher ou masquer les règles"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "R"]],
+        "mac": [["Cmd", "Option", "R"]]
+      }
+    },
+    {
+      "id": "show-panels",
+      "category": "view",
+      "action": {
+        "en": "Show the panels",
+        "fr": "Afficher les panneaux"
+      },
+      "keys": {
+        "win": [["F4"]],
+        "mac": [["F4"]]
+      }
+    },
+    {
+      "id": "files-panel",
+      "category": "view",
+      "action": {
+        "en": "Show the Files panel",
+        "fr": "Afficher le panneau Fichiers"
+      },
+      "keys": {
+        "win": [["F8"]],
+        "mac": [["F8"]]
+      }
+    },
+    {
+      "id": "properties-panel",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Properties panel",
+        "fr": "Afficher ou masquer le panneau Propriétés"
+      },
+      "keys": {
+        "win": [["Ctrl", "F3"]],
+        "mac": [["Cmd", "F3"]]
+      }
+    }
+  ]
+}

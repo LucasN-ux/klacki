@@ -47,15 +47,33 @@ function placeFor(trigger: HTMLElement): Placement {
 }
 
 // Under the keys, or above them when the drawn bubble would run past the
-// bottom of the screen, with the arrow over the middle of the keys. Sets CSS
-// variables on the node: no React state.
+// bottom of the screen, with the arrow over the middle of the keys. When it
+// fits on neither side at full size (a phone held sideways), it goes to the
+// roomier side and the drawing shrinks, a pixel of key unit at a time, until
+// it fits: it never covers the keys it explains. Sets CSS variables on the
+// node: no React state.
+const GAP_TO_KEYS = 12;
+const SCREEN_MARGIN = 8;
+const SMALLEST_UNIT = 8;
+
 function keepOnScreen(node: HTMLSpanElement | null, at: Placement) {
   if (!node) return;
-  const height = node.getBoundingClientRect().height;
-  const below = at.bottom + 12;
-  const above = below + height > window.innerHeight - 8;
-  const top = above ? Math.max(8, at.top - 12 - height) : below;
-  node.style.setProperty("--top", `${top}px`);
+  node.style.removeProperty("--unit-cap");
+  const roomBelow =
+    window.innerHeight - SCREEN_MARGIN - (at.bottom + GAP_TO_KEYS);
+  const roomAbove = at.top - GAP_TO_KEYS - SCREEN_MARGIN;
+  let height = node.getBoundingClientRect().height;
+
+  const above =
+    height > roomBelow && (height <= roomAbove || roomAbove > roomBelow);
+  const room = above ? roomAbove : roomBelow;
+  for (let cap = 21; height > room && cap >= SMALLEST_UNIT; cap--) {
+    node.style.setProperty("--unit-cap", `${cap}px`);
+    height = node.getBoundingClientRect().height;
+  }
+
+  const top = above ? at.top - GAP_TO_KEYS - height : at.bottom + GAP_TO_KEYS;
+  node.style.setProperty("--top", `${Math.max(SCREEN_MARGIN, top)}px`);
   node.dataset.side = above ? "above" : "below";
 
   const box = node.getBoundingClientRect();

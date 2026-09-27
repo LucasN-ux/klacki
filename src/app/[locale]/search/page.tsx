@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { SearchResults } from "@/components/features/SearchResults";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
+import { softwareSummaries } from "@/data";
 import { LOCALES, isLocale } from "@/domain/locale";
 import { getDictionary } from "@/i18n";
 import shell from "@/components/ui/PageShell.module.css";
@@ -37,7 +38,7 @@ export default async function SearchPage({
         <h1 className={styles.title}>{getDictionary(locale).search.title}</h1>
         {/* The query is read from the address, which only exists in the browser. */}
         <Suspense>
-          <SearchResults locale={locale} />
+          <SearchResults locale={locale} summaries={softwareSummaries()} />
         </Suspense>
       </main>
       <SiteFooter locale={locale} />
