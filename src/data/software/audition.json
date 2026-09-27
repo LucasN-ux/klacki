@@ -1,0 +1,288 @@
+{
+  "id": "audition",
+  "name": "Audition",
+  "initials": "AU",
+  "family": "audio",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/audition/desktop/keyboard-shortcuts/default-keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "switch-editor",
+      "category": "view",
+      "action": {
+        "en": "Switch between the Waveform and Multitrack editors",
+        "fr": "Basculer entre les éditeurs Forme d'onde et Multipiste"
+      },
+      "keys": {
+        "win": [["1"]],
+        "mac": [["1"]]
+      }
+    },
+    {
+      "id": "toggle-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop playback",
+        "fr": "Lancer ou arrêter la lecture"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "go-to-start",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the start of the timeline",
+        "fr": "Aller au début de la timeline"
+      },
+      "keys": {
+        "win": [["Home"]],
+        "mac": [["Home"]]
+      }
+    },
+    {
+      "id": "go-to-end",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the end of the timeline",
+        "fr": "Aller à la fin de la timeline"
+      },
+      "keys": {
+        "win": [["End"]],
+        "mac": [["End"]]
+      }
+    },
+    {
+      "id": "previous-edge",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the previous marker, clip or selection edge",
+        "fr": "Aller au repère, clip ou bord de sélection précédent"
+      },
+      "keys": {
+        "win": [["Ctrl", "Left"]],
+        "mac": [["Cmd", "Left"]]
+      }
+    },
+    {
+      "id": "next-edge",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the next marker, clip or selection edge",
+        "fr": "Aller au repère, clip ou bord de sélection suivant"
+      },
+      "keys": {
+        "win": [["Ctrl", "Right"]],
+        "mac": [["Cmd", "Right"]]
+      }
+    },
+    {
+      "id": "zoom-in-horizontal",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in horizontally",
+        "fr": "Zoomer horizontalement"
+      },
+      "keys": {
+        "win": [["="]],
+        "mac": [["="]]
+      }
+    },
+    {
+      "id": "zoom-out-horizontal",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out horizontally",
+        "fr": "Dézoomer horizontalement"
+      },
+      "keys": {
+        "win": [["-"]],
+        "mac": [["-"]]
+      }
+    },
+    {
+      "id": "zoom-in-vertical",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in vertically",
+        "fr": "Zoomer verticalement"
+      },
+      "keys": {
+        "win": [["Alt", "="]],
+        "mac": [["Option", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-vertical",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out vertically",
+        "fr": "Dézoomer verticalement"
+      },
+      "keys": {
+        "win": [["Alt", "-"]],
+        "mac": [["Option", "-"]]
+      }
+    },
+    {
+      "id": "add-marker",
+      "category": "navigation",
+      "action": {
+        "en": "Add a marker",
+        "fr": "Ajouter un repère"
+      },
+      "keys": {
+        "win": [["M"]],
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "previous-marker",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the previous marker",
+        "fr": "Aller au repère précédent"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Left"]],
+        "mac": [["Cmd", "Option", "Left"]]
+      }
+    },
+    {
+      "id": "next-marker",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the next marker",
+        "fr": "Aller au repère suivant"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Right"]],
+        "mac": [["Cmd", "Option", "Right"]]
+      }
+    },
+    {
+      "id": "repeat-command",
+      "category": "edit",
+      "action": {
+        "en": "Repeat the previous command",
+        "fr": "Répéter la commande précédente"
+      },
+      "keys": {
+        "win": [["Shift", "R"]],
+        "mac": [["Shift", "R"]]
+      }
+    },
+    {
+      "id": "repeat-command-dialog",
+      "category": "edit",
+      "action": {
+        "en": "Repeat the previous command with its dialog",
+        "fr": "Répéter la commande précédente avec sa boîte de dialogue"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "convert-sample-type",
+      "category": "edit",
+      "action": {
+        "en": "Convert the sample type",
+        "fr": "Convertir le type d'échantillon"
+      },
+      "keys": {
+        "win": [["Shift", "T"]],
+        "mac": [["Shift", "T"]]
+      }
+    },
+    {
+      "id": "noise-print",
+      "category": "edit",
+      "action": {
+        "en": "Capture a noise reduction print",
+        "fr": "Capturer une empreinte de bruit"
+      },
+      "keys": {
+        "win": [["Shift", "P"]],
+        "mac": [["Shift", "P"]]
+      }
+    },
+    {
+      "id": "left-channel",
+      "category": "edit",
+      "action": {
+        "en": "Edit the left channel",
+        "fr": "Modifier le canal gauche"
+      },
+      "keys": {
+        "win": [["Up"]],
+        "mac": [["Up"]]
+      }
+    },
+    {
+      "id": "right-channel",
+      "category": "edit",
+      "action": {
+        "en": "Edit the right channel",
+        "fr": "Modifier le canal droit"
+      },
+      "keys": {
+        "win": [["Down"]],
+        "mac": [["Down"]]
+      }
+    },
+    {
+      "id": "nudge-left",
+      "category": "edit",
+      "action": {
+        "en": "Nudge the clip to the left",
+        "fr": "Décaler le clip vers la gauche"
+      },
+      "keys": {
+        "win": [["Alt", ","]],
+        "mac": [["Option", ","]]
+      }
+    },
+    {
+      "id": "nudge-right",
+      "category": "edit",
+      "action": {
+        "en": "Nudge the clip to the right",
+        "fr": "Décaler le clip vers la droite"
+      },
+      "keys": {
+        "win": [["Alt", "."]],
+        "mac": [["Option", "."]]
+      }
+    },
+    {
+      "id": "nudge-up",
+      "category": "edit",
+      "action": {
+        "en": "Nudge the clip up",
+        "fr": "Décaler le clip vers le haut"
+      },
+      "keys": {
+        "win": [["Alt", "Up"]],
+        "mac": [["Option", "Up"]]
+      }
+    },
+    {
+      "id": "nudge-down",
+      "category": "edit",
+      "action": {
+        "en": "Nudge the clip down",
+        "fr": "Décaler le clip vers le bas"
+      },
+      "keys": {
+        "win": [["Alt", "Down"]],
+        "mac": [["Option", "Down"]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "id": "character-animator",
+  "name": "Character Animator",
+  "initials": "CH",
+  "family": "2d-realtime",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/adobe-character-animator/desktop/introduction/keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Z"]],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New project",
+        "fr": "Nouveau projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "N"]],
+        "mac": [["Cmd", "Option", "N"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a project",
+        "fr": "Ouvrir un projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save a new project version",
+        "fr": "Enregistrer une nouvelle version du projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import files into the project",
+        "fr": "Importer des fichiers dans le projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "I"]],
+        "mac": [["Cmd", "I"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [
+          ["Ctrl", "Q"],
+          ["Alt", "F4"]
+        ],
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "preferences",
+      "category": "general",
+      "action": {
+        "en": "Open the preferences",
+        "fr": "Ouvrir les préférences"
+      },
+      "keys": {
+        "win": [["Ctrl", "K"]],
+        "mac": [["Cmd", ","]]
+      }
+    },
+    {
+      "id": "help",
+      "category": "general",
+      "action": {
+        "en": "Show the help",
+        "fr": "Afficher l'aide"
+      },
+      "keys": {
+        "win": [["F1"]],
+        "mac": [["F1"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "A"]],
+        "mac": [["Cmd", "Shift", "A"]]
+      }
+    },
+    {
+      "id": "rename",
+      "category": "edit",
+      "action": {
+        "en": "Rename the selection",
+        "fr": "Renommer la sélection"
+      },
+      "keys": {
+        "win": [["Return"]],
+        "mac": [["Return"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "keys": {
+        "win": [["Delete"], ["Backspace"]],
+        "mac": [["Delete"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "split-takes",
+      "category": "edit",
+      "action": {
+        "en": "Split the selected tracks or takes",
+        "fr": "Scinder les pistes ou prises sélectionnées"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "D"]],
+        "mac": [["Cmd", "Shift", "D"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the selected layers",
+        "fr": "Grouper les calques sélectionnés"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Cmd", "G"]]
+      }
+    },
+    {
+      "id": "new-scene",
+      "category": "file",
+      "action": {
+        "en": "Create an empty scene",
+        "fr": "Créer une scène vide"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "new-puppet",
+      "category": "file",
+      "action": {
+        "en": "Create an empty puppet",
+        "fr": "Créer une marionnette vide"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "N"]],
+        "mac": [["Cmd", "Shift", "N"]]
+      }
+    },
+    {
+      "id": "calibrate",
+      "category": "general",
+      "action": {
+        "en": "Calibrate the tracked puppet",
+        "fr": "Étalonner la marionnette suivie"
+      },
+      "keys": {
+        "win": [["Ctrl", "P"]],
+        "mac": [["Cmd", "P"]]
+      }
+    },
+    {
+      "id": "refresh-scene",
+      "category": "view",
+      "action": {
+        "en": "Refresh the scene",
+        "fr": "Actualiser la scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "R"], ["F5"]],
+        "mac": [["Cmd", "Shift", "R"], ["F5"]]
+      }
+    },
+    {
+      "id": "toggle-recording",
+      "category": "general",
+      "action": {
+        "en": "Start or stop recording",
+        "fr": "Lancer ou arrêter l'enregistrement"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "toggle-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop playback",
+        "fr": "Lancer ou arrêter la lecture"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["V"]],
+        "mac": [["V"]]
+      }
+    },
+    {
+      "id": "hand-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Hand tool",
+        "fr": "Outil main"
+      },
+      "keys": {
+        "win": [["H"]],
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "zoom-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom tool",
+        "fr": "Outil zoom"
+      },
+      "keys": {
+        "win": [["Z"]],
+        "mac": [["Z"]]
+      }
+    },
+    {
+      "id": "handle-tool",
+      "category": "tools",
+      "action": {
+        "en": "Handle tool",
+        "fr": "Outil poignée"
+      },
+      "keys": {
+        "win": [["L"]],
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "stick-tool",
+      "category": "tools",
+      "action": {
+        "en": "Stick tool",
+        "fr": "Outil bâton"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "pin-tool",
+      "category": "tools",
+      "action": {
+        "en": "Pin tool",
+        "fr": "Outil épingle"
+      },
+      "keys": {
+        "win": [["P"]],
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "dragger-tool",
+      "category": "tools",
+      "action": {
+        "en": "Dragger tool",
+        "fr": "Outil glisser"
+      },
+      "keys": {
+        "win": [["M"]],
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "dangle-tool",
+      "category": "tools",
+      "action": {
+        "en": "Dangle tool",
+        "fr": "Outil balancement"
+      },
+      "keys": {
+        "win": [["D"]],
+        "mac": [["D"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Cmd", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "fit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Fit the scene in the panel",
+        "fr": "Adapter la scène au panneau"
+      },
+      "keys": {
+        "win": [["Shift", "/"]],
+        "mac": [["Shift", "/"]]
+      }
+    },
+    {
+      "id": "home-workspace",
+      "category": "view",
+      "action": {
+        "en": "Switch to the Home workspace",
+        "fr": "Passer à l'espace de travail Accueil"
+      },
+      "keys": {
+        "win": [["Alt", "Shift", "1"]],
+        "mac": [["Option", "Shift", "1"]]
+      }
+    },
+    {
+      "id": "rig-workspace",
+      "category": "view",
+      "action": {
+        "en": "Switch to the Rig workspace",
+        "fr": "Passer à l'espace de travail Rig"
+      },
+      "keys": {
+        "win": [["Alt", "Shift", "2"]],
+        "mac": [["Option", "Shift", "2"]]
+      }
+    },
+    {
+      "id": "record-workspace",
+      "category": "view",
+      "action": {
+        "en": "Switch to the Record workspace",
+        "fr": "Passer à l'espace de travail Enregistrement"
+      },
+      "keys": {
+        "win": [["Alt", "Shift", "3"]],
+        "mac": [["Option", "Shift", "3"]]
+      }
+    },
+    {
+      "id": "maximize-panel",
+      "category": "view",
+      "action": {
+        "en": "Maximise the panel under the pointer",
+        "fr": "Agrandir le panneau sous le pointeur"
+      },
+      "keys": {
+        "win": [["`"]],
+        "mac": [["`"]]
+      }
+    }
+  ]
+}

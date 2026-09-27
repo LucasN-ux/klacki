@@ -1,0 +1,172 @@
+{
+  "id": "bridge",
+  "name": "Bridge",
+  "initials": "BR",
+  "family": "photo-image",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/bridge/desktop/get-started/keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "next-view",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the next view",
+        "fr": "Aller à la vue suivante"
+      },
+      "keys": {
+        "win": [["Ctrl", "\\"]],
+        "mac": [["Cmd", "\\"]]
+      }
+    },
+    {
+      "id": "previous-view",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the previous view",
+        "fr": "Aller à la vue précédente"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "\\"]],
+        "mac": [["Cmd", "Shift", "\\"]]
+      }
+    },
+    {
+      "id": "hide-panels",
+      "category": "view",
+      "action": {
+        "en": "Show or hide all panels",
+        "fr": "Afficher ou masquer tous les panneaux"
+      },
+      "keys": {
+        "win": [["Tab"]],
+        "mac": [["Tab"]]
+      }
+    },
+    {
+      "id": "toggle-star",
+      "category": "edit",
+      "action": {
+        "en": "Switch between no star and one star",
+        "fr": "Basculer entre zéro et une étoile"
+      },
+      "keys": {
+        "win": [["Ctrl", "'"]],
+        "mac": [["Cmd", "'"]]
+      }
+    },
+    {
+      "id": "bigger-thumbnails",
+      "category": "view",
+      "action": {
+        "en": "Make the thumbnails bigger",
+        "fr": "Agrandir les vignettes"
+      },
+      "keys": {
+        "win": [["Ctrl", "+"]],
+        "mac": [["Cmd", "+"]]
+      }
+    },
+    {
+      "id": "smaller-thumbnails",
+      "category": "view",
+      "action": {
+        "en": "Make the thumbnails smaller",
+        "fr": "Réduire les vignettes"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "parent-folder",
+      "category": "navigation",
+      "action": {
+        "en": "Go up one folder level",
+        "fr": "Remonter d'un niveau de dossier"
+      },
+      "keys": {
+        "win": [["Ctrl", "Up"]],
+        "mac": [["Cmd", "Up"]]
+      }
+    },
+    {
+      "id": "first-item",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the first item",
+        "fr": "Aller au premier élément"
+      },
+      "keys": {
+        "win": [["Home"]],
+        "mac": [["Home"]]
+      }
+    },
+    {
+      "id": "last-item",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the last item",
+        "fr": "Aller au dernier élément"
+      },
+      "keys": {
+        "win": [["End"]],
+        "mac": [["End"]]
+      }
+    },
+    {
+      "id": "refresh",
+      "category": "view",
+      "action": {
+        "en": "Refresh the content panels",
+        "fr": "Actualiser les panneaux de contenu"
+      },
+      "keys": {
+        "win": [["F5"]],
+        "mac": [["F5"]]
+      }
+    },
+    {
+      "id": "help",
+      "category": "general",
+      "action": {
+        "en": "Show the help",
+        "fr": "Afficher l'aide"
+      },
+      "keys": {
+        "win": [["F1"]],
+        "mac": [["Cmd", "/"]]
+      }
+    },
+    {
+      "id": "clear-filters",
+      "category": "view",
+      "action": {
+        "en": "Clear the filters",
+        "fr": "Effacer les filtres"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "A"]],
+        "mac": [["Cmd", "Option", "A"]]
+      }
+    },
+    {
+      "id": "rename-next",
+      "category": "edit",
+      "action": {
+        "en": "Rename the next file",
+        "fr": "Renommer le fichier suivant"
+      },
+      "context": {
+        "en": "While renaming a file",
+        "fr": "Pendant qu'on renomme un fichier"
+      },
+      "keys": {
+        "win": [["Tab"]],
+        "mac": [["Tab"]]
+      }
+    }
+  ]
+}
