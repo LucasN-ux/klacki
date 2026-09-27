@@ -1,0 +1,386 @@
+{
+  "id": "indesign",
+  "name": "InDesign",
+  "initials": "ID",
+  "family": "design-layout",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/indesign/desktop/get-started/settings-and-preferences/keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "new-default-document",
+      "category": "file",
+      "action": {
+        "en": "New document with the default settings",
+        "fr": "Nouveau document avec les réglages par défaut"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "N"]],
+        "mac": [["Cmd", "Option", "N"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["V"], ["Esc"]],
+        "mac": [["V"], ["Esc"]]
+      }
+    },
+    {
+      "id": "direct-select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Direct selection tool",
+        "fr": "Outil de sélection directe"
+      },
+      "keys": {
+        "win": [["A"]],
+        "mac": [["A"]]
+      }
+    },
+    {
+      "id": "page-tool",
+      "category": "tools",
+      "action": {
+        "en": "Page tool",
+        "fr": "Outil page"
+      },
+      "keys": {
+        "win": [["Shift", "P"]],
+        "mac": [["Shift", "P"]]
+      }
+    },
+    {
+      "id": "gap-tool",
+      "category": "tools",
+      "action": {
+        "en": "Gap tool",
+        "fr": "Outil espace"
+      },
+      "keys": {
+        "win": [["U"]],
+        "mac": [["U"]]
+      }
+    },
+    {
+      "id": "hand-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Hand tool",
+        "fr": "Outil main"
+      },
+      "keys": {
+        "win": [["H"]],
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "pen-tool",
+      "category": "tools",
+      "action": {
+        "en": "Pen tool",
+        "fr": "Outil plume"
+      },
+      "keys": {
+        "win": [["P"]],
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "type-tool",
+      "category": "tools",
+      "action": {
+        "en": "Type tool",
+        "fr": "Outil texte"
+      },
+      "keys": {
+        "win": [["T"]],
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "line-tool",
+      "category": "tools",
+      "action": {
+        "en": "Line segment tool",
+        "fr": "Outil segment de droite"
+      },
+      "keys": {
+        "win": [["\\"]],
+        "mac": [["\\"]]
+      }
+    },
+    {
+      "id": "rectangle-frame-tool",
+      "category": "tools",
+      "action": {
+        "en": "Rectangle frame tool",
+        "fr": "Outil bloc rectangulaire"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
+      }
+    },
+    {
+      "id": "rectangle-tool",
+      "category": "tools",
+      "action": {
+        "en": "Rectangle tool",
+        "fr": "Outil rectangle"
+      },
+      "keys": {
+        "win": [["M"]],
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "ellipse-tool",
+      "category": "tools",
+      "action": {
+        "en": "Ellipse tool",
+        "fr": "Outil ellipse"
+      },
+      "keys": {
+        "win": [["L"]],
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "rotate-tool",
+      "category": "tools",
+      "action": {
+        "en": "Rotate tool",
+        "fr": "Outil rotation"
+      },
+      "keys": {
+        "win": [["R"]],
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "scale-tool",
+      "category": "tools",
+      "action": {
+        "en": "Scale tool",
+        "fr": "Outil mise à l'échelle"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "free-transform-tool",
+      "category": "tools",
+      "action": {
+        "en": "Free transform tool",
+        "fr": "Outil transformation manuelle"
+      },
+      "keys": {
+        "win": [["E"]],
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "eyedropper-tool",
+      "category": "tools",
+      "action": {
+        "en": "Eyedropper tool",
+        "fr": "Outil pipette"
+      },
+      "keys": {
+        "win": [["I"]],
+        "mac": [["I"]]
+      }
+    },
+    {
+      "id": "gradient-tool",
+      "category": "tools",
+      "action": {
+        "en": "Gradient tool",
+        "fr": "Outil dégradé"
+      },
+      "keys": {
+        "win": [["G"]],
+        "mac": [["G"]]
+      }
+    },
+    {
+      "id": "gradient-feather-tool",
+      "category": "tools",
+      "action": {
+        "en": "Gradient feather tool",
+        "fr": "Outil contour progressif dégradé"
+      },
+      "keys": {
+        "win": [["Shift", "G"]],
+        "mac": [["Shift", "G"]]
+      }
+    },
+    {
+      "id": "scissors-tool",
+      "category": "tools",
+      "action": {
+        "en": "Scissors tool",
+        "fr": "Outil ciseaux"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "swap-fill-stroke",
+      "category": "tools",
+      "action": {
+        "en": "Swap fill and stroke",
+        "fr": "Intervertir fond et contour"
+      },
+      "keys": {
+        "win": [["Shift", "X"]],
+        "mac": [["Shift", "X"]]
+      }
+    },
+    {
+      "id": "duplicate-offset",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate and offset the selection",
+        "fr": "Dupliquer et décaler la sélection"
+      },
+      "keys": {
+        "win": [
+          ["Alt", "Left"],
+          ["Alt", "Right"],
+          ["Alt", "Up"],
+          ["Alt", "Down"]
+        ],
+        "mac": [
+          ["Option", "Left"],
+          ["Option", "Right"],
+          ["Option", "Up"],
+          ["Option", "Down"]
+        ]
+      }
+    },
+    {
+      "id": "select-all-guides",
+      "category": "selection",
+      "action": {
+        "en": "Select all guides",
+        "fr": "Sélectionner tous les repères"
+      },
+      "keys": {
+        "win": [["Alt", "Ctrl", "G"]],
+        "mac": [["Option", "Cmd", "G"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "context": {
+        "en": "In a story",
+        "fr": "Dans un article"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "previous-next-spread",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the previous or next spread",
+        "fr": "Aller à la planche précédente ou suivante"
+      },
+      "keys": {
+        "win": [
+          ["Alt", "Page Up"],
+          ["Alt", "Page Down"]
+        ],
+        "mac": [
+          ["Option", "Page Up"],
+          ["Option", "Page Down"]
+        ]
+      }
+    },
+    {
+      "id": "character-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Character panel",
+        "fr": "Ouvrir le panneau Caractère"
+      },
+      "keys": {
+        "win": [["Ctrl", "T"]],
+        "mac": [["Cmd", "T"]]
+      }
+    },
+    {
+      "id": "paragraph-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Paragraph panel",
+        "fr": "Ouvrir le panneau Paragraphe"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "T"]],
+        "mac": [["Cmd", "Option", "T"]]
+      }
+    },
+    {
+      "id": "paragraph-styles-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Paragraph Styles panel",
+        "fr": "Ouvrir le panneau Styles de paragraphe"
+      },
+      "keys": {
+        "win": [["F11"]],
+        "mac": [["Cmd", "F11"]]
+      }
+    },
+    {
+      "id": "character-styles-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Character Styles panel",
+        "fr": "Ouvrir le panneau Styles de caractère"
+      },
+      "keys": {
+        "win": [["Shift", "F11"]],
+        "mac": [["Cmd", "Shift", "F11"]]
+      }
+    },
+    {
+      "id": "find-next",
+      "category": "general",
+      "action": {
+        "en": "Find the next occurrence",
+        "fr": "Rechercher l'occurrence suivante"
+      },
+      "keys": {
+        "win": [
+          ["Shift", "F2"],
+          ["Alt", "Ctrl", "F"]
+        ],
+        "mac": [
+          ["Shift", "F2"],
+          ["Option", "Cmd", "F"]
+        ]
+      }
+    }
+  ]
+}

@@ -37,4 +37,8 @@ export const FAMILY_ORDER: Family[] = [
   "cloth",
   "compositing-video",
   "2d-realtime",
+  "photo-image",
+  "design-layout",
+  "audio",
+  "web-docs",
 ];

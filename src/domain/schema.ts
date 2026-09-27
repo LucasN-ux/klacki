@@ -86,6 +86,10 @@ export const FAMILIES = [
   "cloth",
   "compositing-video",
   "2d-realtime",
+  "photo-image",
+  "design-layout",
+  "audio",
+  "web-docs",
 ] as const;
 
 export const Software = z

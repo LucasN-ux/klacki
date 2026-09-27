@@ -25,7 +25,11 @@
     "render-sim-terrain": "Rendering, simulation & terrain",
     "cloth": "3D clothing",
     "compositing-video": "Compositing & video",
-    "2d-realtime": "2D & real time"
+    "2d-realtime": "2D & real time",
+    "photo-image": "Photo & image",
+    "design-layout": "Design & layout",
+    "audio": "Audio",
+    "web-docs": "Web & documents"
   },
   "categories": {
     "general": "General",

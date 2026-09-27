@@ -224,6 +224,10 @@ const TOKEN_KEYS: Record<string, string[]> = {
   "Numpad +": ["NumpadPlus"],
   "Numpad -": ["NumpadMinus"],
   "Numpad .": ["NumpadPeriod"],
+  // "Numpad 0" to "Numpad 9": the digits of the numeric pad.
+  ...Object.fromEntries(
+    [..."0123456789"].map((digit) => [`Numpad ${digit}`, [`Numpad${digit}`]]),
+  ),
 };
 
 const MOUSE = new Set<string>(MOUSE_BUTTONS);

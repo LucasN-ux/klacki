@@ -1,0 +1,611 @@
+{
+  "id": "after-effects",
+  "name": "After Effects",
+  "initials": "AE",
+  "family": "compositing-video",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/after-effects/desktop/get-started/keyboard-shortcuts/keyboard-shortcuts-reference.html",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Z"]],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New project",
+        "fr": "Nouveau projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "N"]],
+        "mac": [["Cmd", "Option", "N"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a project",
+        "fr": "Ouvrir un projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save the project",
+        "fr": "Enregistrer le projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import a file",
+        "fr": "Importer un fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "I"]],
+        "mac": [["Cmd", "I"]]
+      }
+    },
+    {
+      "id": "new-composition",
+      "category": "file",
+      "action": {
+        "en": "New composition",
+        "fr": "Nouvelle composition"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "add-to-render-queue",
+      "category": "file",
+      "action": {
+        "en": "Add to the render queue",
+        "fr": "Ajouter à la file d'attente de rendu"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "/"]],
+        "mac": [["Cmd", "Shift", "/"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["F2"], ["Ctrl", "Shift", "A"]],
+        "mac": [["F2"], ["Cmd", "Shift", "A"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "rename-layer",
+      "category": "edit",
+      "action": {
+        "en": "Rename the selected layer",
+        "fr": "Renommer le calque sélectionné"
+      },
+      "keys": {
+        "win": [["Return"]],
+        "mac": [["Return"]]
+      }
+    },
+    {
+      "id": "split-layer",
+      "category": "edit",
+      "action": {
+        "en": "Split the selected layers",
+        "fr": "Scinder les calques sélectionnés"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "D"]],
+        "mac": [["Cmd", "Shift", "D"]]
+      }
+    },
+    {
+      "id": "precompose",
+      "category": "edit",
+      "action": {
+        "en": "Precompose the selected layers",
+        "fr": "Précomposer les calques sélectionnés"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "C"]],
+        "mac": [["Cmd", "Shift", "C"]]
+      }
+    },
+    {
+      "id": "lock-layer",
+      "category": "edit",
+      "action": {
+        "en": "Lock the selected layers",
+        "fr": "Verrouiller les calques sélectionnés"
+      },
+      "keys": {
+        "win": [["Ctrl", "L"]],
+        "mac": [["Cmd", "L"]]
+      }
+    },
+    {
+      "id": "new-solid",
+      "category": "edit",
+      "action": {
+        "en": "New solid layer",
+        "fr": "Nouveau solide"
+      },
+      "keys": {
+        "win": [["Ctrl", "Y"]],
+        "mac": [["Cmd", "Y"]]
+      }
+    },
+    {
+      "id": "new-null",
+      "category": "edit",
+      "action": {
+        "en": "New null object",
+        "fr": "Nouvel objet nul"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Shift", "Y"]],
+        "mac": [["Cmd", "Option", "Shift", "Y"]]
+      }
+    },
+    {
+      "id": "new-adjustment-layer",
+      "category": "edit",
+      "action": {
+        "en": "New adjustment layer",
+        "fr": "Nouveau calque d'effets"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Y"]],
+        "mac": [["Cmd", "Option", "Y"]]
+      }
+    },
+    {
+      "id": "fit-layer-to-comp",
+      "category": "edit",
+      "action": {
+        "en": "Fit the layers to the composition",
+        "fr": "Ajuster les calques à la composition"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "F"]],
+        "mac": [["Cmd", "Option", "F"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["V"]],
+        "mac": [["V"]]
+      }
+    },
+    {
+      "id": "hand-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Hand tool",
+        "fr": "Outil main"
+      },
+      "keys": {
+        "win": [["H"]],
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "zoom-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom tool",
+        "fr": "Outil zoom"
+      },
+      "keys": {
+        "win": [["Z"]],
+        "mac": [["Z"]]
+      }
+    },
+    {
+      "id": "rotation-tool",
+      "category": "tools",
+      "action": {
+        "en": "Rotation tool",
+        "fr": "Outil rotation"
+      },
+      "keys": {
+        "win": [["W"]],
+        "mac": [["W"]]
+      }
+    },
+    {
+      "id": "camera-tools",
+      "category": "tools",
+      "action": {
+        "en": "Cycle through the camera tools",
+        "fr": "Passer d'un outil caméra à l'autre"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "pan-behind-tool",
+      "category": "tools",
+      "action": {
+        "en": "Pan behind tool",
+        "fr": "Outil déplacer l'arrière-plan"
+      },
+      "keys": {
+        "win": [["Y"]],
+        "mac": [["Y"]]
+      }
+    },
+    {
+      "id": "shape-tools",
+      "category": "tools",
+      "action": {
+        "en": "Cycle through the mask and shape tools",
+        "fr": "Passer d'un outil masque ou forme à l'autre"
+      },
+      "keys": {
+        "win": [["Q"]],
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "type-tool",
+      "category": "tools",
+      "action": {
+        "en": "Type tool",
+        "fr": "Outil texte"
+      },
+      "keys": {
+        "win": [["Ctrl", "T"]],
+        "mac": [["Cmd", "T"]]
+      }
+    },
+    {
+      "id": "brush-tools",
+      "category": "tools",
+      "action": {
+        "en": "Cycle through the brush, clone and eraser tools",
+        "fr": "Passer entre pinceau, tampon et gomme"
+      },
+      "keys": {
+        "win": [["Ctrl", "B"]],
+        "mac": [["Cmd", "B"]]
+      }
+    },
+    {
+      "id": "play-pause",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop the preview",
+        "fr": "Lancer ou arrêter l'aperçu"
+      },
+      "keys": {
+        "win": [["Space"], ["Numpad 0"]],
+        "mac": [["Space"], ["Numpad 0"]]
+      }
+    },
+    {
+      "id": "next-frame",
+      "category": "navigation",
+      "action": {
+        "en": "Move forward one frame",
+        "fr": "Avancer d'une image"
+      },
+      "keys": {
+        "win": [["Page Down"], ["Ctrl", "Right"]],
+        "mac": [["Page Down"], ["Cmd", "Right"]]
+      }
+    },
+    {
+      "id": "previous-frame",
+      "category": "navigation",
+      "action": {
+        "en": "Move back one frame",
+        "fr": "Reculer d'une image"
+      },
+      "keys": {
+        "win": [["Page Up"], ["Ctrl", "Left"]],
+        "mac": [["Page Up"], ["Cmd", "Left"]]
+      }
+    },
+    {
+      "id": "go-to-start",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the start of the composition",
+        "fr": "Aller au début de la composition"
+      },
+      "keys": {
+        "win": [["Home"]],
+        "mac": [["Home"]]
+      }
+    },
+    {
+      "id": "go-to-end",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the end of the composition",
+        "fr": "Aller à la fin de la composition"
+      },
+      "keys": {
+        "win": [["End"]],
+        "mac": [["End"]]
+      }
+    },
+    {
+      "id": "go-to-in-point",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the layer in point",
+        "fr": "Aller au point d'entrée du calque"
+      },
+      "keys": {
+        "win": [["I"]],
+        "mac": [["I"]]
+      }
+    },
+    {
+      "id": "go-to-out-point",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the layer out point",
+        "fr": "Aller au point de sortie du calque"
+      },
+      "keys": {
+        "win": [["O"]],
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in on the timeline",
+        "fr": "Zoomer dans la timeline"
+      },
+      "keys": {
+        "win": [["="]],
+        "mac": [["="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out on the timeline",
+        "fr": "Dézoomer dans la timeline"
+      },
+      "keys": {
+        "win": [["-"]],
+        "mac": [["-"]]
+      }
+    },
+    {
+      "id": "fit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Fit the composition in the panel",
+        "fr": "Adapter la composition au panneau"
+      },
+      "keys": {
+        "win": [["Shift", "/"]],
+        "mac": [["Shift", "/"]]
+      }
+    },
+    {
+      "id": "show-position",
+      "category": "view",
+      "action": {
+        "en": "Show only Position",
+        "fr": "Afficher uniquement Position"
+      },
+      "keys": {
+        "win": [["P"]],
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "show-scale",
+      "category": "view",
+      "action": {
+        "en": "Show only Scale",
+        "fr": "Afficher uniquement Échelle"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "show-rotation",
+      "category": "view",
+      "action": {
+        "en": "Show only Rotation",
+        "fr": "Afficher uniquement Rotation"
+      },
+      "keys": {
+        "win": [["R"]],
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "show-opacity",
+      "category": "view",
+      "action": {
+        "en": "Show only Opacity",
+        "fr": "Afficher uniquement Opacité"
+      },
+      "keys": {
+        "win": [["T"]],
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "show-anchor-point",
+      "category": "view",
+      "action": {
+        "en": "Show only Anchor Point",
+        "fr": "Afficher uniquement Point d'ancrage"
+      },
+      "keys": {
+        "win": [["A"]],
+        "mac": [["A"]]
+      }
+    },
+    {
+      "id": "show-keyframed",
+      "category": "view",
+      "action": {
+        "en": "Show the properties with keyframes",
+        "fr": "Afficher les propriétés animées"
+      },
+      "keys": {
+        "win": [["U"]],
+        "mac": [["U"]]
+      }
+    },
+    {
+      "id": "show-rulers",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the rulers",
+        "fr": "Afficher ou masquer les règles"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "toggle-guides",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the guides",
+        "fr": "Afficher ou masquer les repères"
+      },
+      "keys": {
+        "win": [["Ctrl", ";"]],
+        "mac": [["Cmd", ";"]]
+      }
+    },
+    {
+      "id": "toggle-grid",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the grid",
+        "fr": "Afficher ou masquer la grille"
+      },
+      "keys": {
+        "win": [["Ctrl", "'"]],
+        "mac": [["Cmd", "'"]]
+      }
+    },
+    {
+      "id": "maximize-panel",
+      "category": "view",
+      "action": {
+        "en": "Maximise the panel under the pointer",
+        "fr": "Agrandir le panneau sous le pointeur"
+      },
+      "keys": {
+        "win": [["`"]],
+        "mac": [["`"]]
+      }
+    }
+  ]
+}
