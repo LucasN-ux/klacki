@@ -1,4 +1,5 @@
-import { Software, type Family } from "@/domain/schema";
+import { Software } from "@/domain/schema";
+import { FAMILY_ORDER, summarize } from "@/domain/summary";
 import blender from "./software/blender.json";
 import embergen from "./software/embergen.json";
 import gaea from "./software/gaea.json";
@@ -47,19 +48,18 @@ export function getSoftwareIds(): string[] {
   return SOFTWARE_LIST.map((software) => software.id);
 }
 
-// Families in the order the home page shows them, each with its software.
-export const FAMILY_ORDER: Family[] = [
-  "3d-sculpt",
-  "texture",
-  "render-sim-terrain",
-  "cloth",
-  "compositing-video",
-  "2d-realtime",
-];
-
+// Each family, in the home page order, with its software.
 export function softwareByFamily() {
   return FAMILY_ORDER.map((family) => ({
     family,
     software: SOFTWARE_LIST.filter((item) => item.family === family),
   })).filter((group) => group.software.length > 0);
+}
+
+export { FAMILY_ORDER };
+
+// One summary per software, for the pages that list software without
+// showing their shortcuts.
+export function softwareSummaries() {
+  return SOFTWARE_LIST.map(summarize);
 }
