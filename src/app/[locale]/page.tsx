@@ -8,9 +8,10 @@ import ghostStar from "@/../public/ghost-star.png";
 import { HeaderSearch } from "@/components/features/HeaderSearch";
 import { PlatformShowcase } from "@/components/features/PlatformShowcase";
 import { Reveal } from "@/components/features/Reveal";
+import { KeyCombos } from "@/components/ui/Keycap";
 import { Keyboard } from "@/components/ui/Keyboard";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
-import { SOFTWARE_LIST, softwareByFamily } from "@/data";
+import { FAMILY_ORDER, SOFTWARE_LIST, softwareByFamily } from "@/data";
 import { isLocale, localeHref } from "@/domain/locale";
 import { keysToLight } from "@/domain/keyboard";
 import { comboLabel } from "@/domain/keys";
@@ -34,6 +35,42 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { tour } = home;
   // The keyboard of the tour: a real drawing, with the keys of Redo lit.
   const redo = [["Shift", "Ctrl", "Z"]];
+  // Real rows for the tour, read from the data: one action answered by
+  // software of different families, and a few sources with their dates.
+  const spread = (list: typeof SOFTWARE_LIST, count: number) => {
+    const families = new Set<string>();
+    // In the order of the families, so 3D comes before audio.
+    return [...list]
+      .sort(
+        (a, b) =>
+          FAMILY_ORDER.indexOf(a.family) - FAMILY_ORDER.indexOf(b.family),
+      )
+      .filter((software) => {
+        if (families.has(software.family)) return false;
+        families.add(software.family);
+        return true;
+      })
+      .slice(0, count);
+  };
+  const searchQuery = "frame-selection";
+  const searchRows = spread(
+    SOFTWARE_LIST.filter(
+      (software) =>
+        software.platforms.includes("win") &&
+        software.shortcuts.some((shortcut) => shortcut.id === searchQuery),
+    ),
+    3,
+  ).map((software) => ({
+    software,
+    shortcut: software.shortcuts.find(
+      (shortcut) => shortcut.id === searchQuery,
+    )!,
+  }));
+  const sourceRows = spread(SOFTWARE_LIST, 3);
+  const dateOf = (iso: string) =>
+    new Intl.DateTimeFormat(locale, { dateStyle: "medium" }).format(
+      new Date(iso),
+    );
 
   return (
     <>
@@ -107,7 +144,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
         <Reveal className={styles.step}>
           <div className={styles.wrap}>
-            <section className={styles.feature}>
+            <section className={`${styles.feature} ${styles.wide}`}>
               <div className={styles.featureText}>
                 <span className={styles.num}>01</span>
                 <h3>{tour.search.title}</h3>
@@ -118,6 +155,27 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 >
                   {tour.search.cta} →
                 </Link>
+              </div>
+              <div
+                className={`${styles.sample} ${styles.demo}`}
+                aria-hidden="true"
+              >
+                <p className={styles.sampleQuery}>
+                  {searchRows[0]?.shortcut.action[locale]}
+                </p>
+                {searchRows.map(({ software, shortcut }) => (
+                  <p key={software.id} className={styles.sampleRow}>
+                    <span className={styles.sampleBadge}>
+                      {software.initials}
+                    </span>
+                    <span className={styles.sampleName}>{software.name}</span>
+                    <KeyCombos
+                      keys={shortcut.keys}
+                      platform="win"
+                      locale={locale}
+                    />
+                  </p>
+                ))}
               </div>
             </section>
           </div>
@@ -210,7 +268,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
         <Reveal className={styles.step}>
           <div className={styles.wrap}>
-            <section className={styles.feature}>
+            <section className={`${styles.feature} ${styles.wide}`}>
               <div className={styles.featureText}>
                 <span className={styles.num}>06</span>
                 <h3>{tour.trust.title}</h3>
@@ -221,6 +279,21 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 >
                   {tour.trust.cta} →
                 </Link>
+              </div>
+              <div className={`${styles.sample} ${styles.demo}`}>
+                {sourceRows.map((software) => (
+                  <p key={software.id} className={styles.sampleRow}>
+                    <span className={styles.sampleBadge}>
+                      {software.initials}
+                    </span>
+                    <span className={styles.sampleName}>
+                      {software.name} {software.version}
+                    </span>
+                    <span className={styles.sampleDate}>
+                      ✓ {dateOf(software.verifiedAt)}
+                    </span>
+                  </p>
+                ))}
               </div>
             </section>
           </div>

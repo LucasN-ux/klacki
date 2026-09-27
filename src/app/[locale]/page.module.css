@@ -175,7 +175,6 @@
   display: grid;
   gap: var(--space-6);
   align-items: center;
-  min-height: 78vh;
   padding: var(--space-7) 0;
 }
 
@@ -251,11 +250,11 @@
 
 /* Ghost, text, then the demo when there is one. */
 .withGhost {
-  grid-template-columns: 260px 1fr auto;
+  grid-template-columns: 200px 1fr auto;
 }
 
 .reverse {
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 240px;
 }
 
 .reverse .featureGhost {
@@ -269,15 +268,15 @@
 
 .featureText h3 {
   margin: var(--space-1) 0 var(--space-3);
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .featureText p {
   margin: 0;
-  max-width: 58ch;
-  font-size: 17px;
-  line-height: 27px;
+  max-width: 52ch;
+  font-size: 16px;
+  line-height: 26px;
   color: var(--ink-soft);
 }
 
@@ -318,6 +317,70 @@
   box-shadow: var(--shadow-hard);
 }
 
+/* A small card of real rows: an action found in several software, or the
+   sources with their dates. */
+.sample {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--card);
+  border: var(--stroke-3) solid var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard);
+}
+
+.sampleQuery {
+  margin: 0 0 var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  background: var(--key-face);
+  border: var(--stroke-2) solid var(--ink);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+}
+
+.sampleQuery::before {
+  content: "⌕ ";
+  color: var(--ink-muted);
+}
+
+.sampleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0;
+  padding: var(--space-2) 0;
+  border-bottom: var(--stroke-2) solid var(--paper-deep);
+  font-size: 14px;
+}
+
+.sampleRow:last-child {
+  border-bottom: 0;
+}
+
+.sampleBadge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 32px;
+  padding: 2px 4px;
+  background: var(--green);
+  border: var(--stroke-2) solid var(--ink);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sampleName {
+  flex: 1;
+  font-weight: 700;
+}
+
+.sampleDate {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
 /* The drawn keyboard sits in a small frame of its own. */
 .keyboard {
   padding: var(--space-3);
@@ -349,7 +412,7 @@
   }
 
   .featureGhost {
-    width: 180px;
+    width: 150px;
   }
 
   .feature {
