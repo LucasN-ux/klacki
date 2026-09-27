@@ -46,9 +46,14 @@ export function SearchResults({
   // The index of this language starts loading as soon as the page opens;
   // once it is here, every letter is searched in the browser, no request.
   const index = useLoaded(locale, searchIndexOf);
+  // A software the page has no summary for (an index from a newer deploy)
+  // is left out before counting, so it never eats the first page of rows.
   const hits = useMemo(
-    () => (index.data ? searchIndex(index.data, query) : []),
-    [index.data, query],
+    () =>
+      index.data
+        ? searchIndex(index.data, query).filter((hit) => byId.has(hit.software))
+        : [],
+    [index.data, query, byId],
   );
   const typed = trimmed.length >= MIN_QUERY_LENGTH;
 
