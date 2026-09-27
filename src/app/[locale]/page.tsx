@@ -7,6 +7,7 @@ import ghostPoint from "@/../public/ghost-point.png";
 import ghostStar from "@/../public/ghost-star.png";
 import { HeaderSearch } from "@/components/features/HeaderSearch";
 import { PlatformShowcase } from "@/components/features/PlatformShowcase";
+import { Reveal } from "@/components/features/Reveal";
 import { Keyboard } from "@/components/ui/Keyboard";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
 import { SOFTWARE_LIST, softwareByFamily } from "@/data";
@@ -104,7 +105,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </header>
         </div>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step}>
           <div className={styles.wrap}>
             <section className={styles.feature}>
               <div className={styles.featureText}>
@@ -120,9 +121,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </div>
             </section>
           </div>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step}>
           <div className={styles.wrap}>
             <section className={`${styles.feature} ${styles.wide}`}>
               <div className={styles.featureText}>
@@ -136,12 +137,14 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                   {tour.platform.cta} →
                 </Link>
               </div>
-              <PlatformShowcase rows={demoRows} locale={locale} />
+              <div className={styles.demo}>
+                <PlatformShowcase rows={demoRows} locale={locale} />
+              </div>
             </section>
           </div>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step}>
           <div className={styles.wrap}>
             <section className={`${styles.feature} ${styles.withGhost}`}>
               <Image src={ghostKeys} alt="" className={styles.featureGhost} />
@@ -150,7 +153,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 <h3>{tour.keyboard.title}</h3>
                 <p>{tour.keyboard.text}</p>
               </div>
-              <div className={styles.keyboard} aria-hidden="true">
+              <div
+                className={`${styles.keyboard} ${styles.demo}`}
+                aria-hidden="true"
+              >
                 <Keyboard
                   lit={keysToLight(redo, "win")}
                   platform="win"
@@ -160,9 +166,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </div>
             </section>
           </div>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step}>
           <div className={styles.wrap}>
             <section
               className={`${styles.feature} ${styles.withGhost} ${styles.reverse}`}
@@ -181,9 +187,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </div>
             </section>
           </div>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step}>
           <div className={styles.wrap}>
             <section className={`${styles.feature} ${styles.withGhost}`}>
               <Image src={ghostStar} alt="" className={styles.featureGhost} />
@@ -200,9 +206,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </div>
             </section>
           </div>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step}>
           <div className={styles.wrap}>
             <section className={styles.feature}>
               <div className={styles.featureText}>
@@ -218,7 +224,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </div>
             </section>
           </div>
-        </div>
+        </Reveal>
       </main>
       <SiteFooter locale={locale} />
     </>
