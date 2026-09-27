@@ -65,6 +65,7 @@
     "results": "results",
     "more": "Show more",
     "remaining": "left",
+    "remainingOne": "left",
     "empty": "No shortcut found.",
     "hint": "Try an action (“undo”) or a key (“F9”, “ctrl+z”)."
   },

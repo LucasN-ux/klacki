@@ -129,7 +129,7 @@ export function SearchResults({ locale }: { locale: Locale }) {
 
       {total > limit && (
         <button type="button" className={styles.more} onClick={showMore}>
-          {`${search.more} (${total - limit} ${search.remaining})`}
+          {`${search.more} (${total - limit} ${total - limit === 1 ? search.remainingOne : search.remaining})`}
         </button>
       )}
     </>

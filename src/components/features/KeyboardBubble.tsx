@@ -114,9 +114,11 @@ export function KeyboardBubble({
     else open();
   }
 
-  // While open, Escape, a press outside, a scroll or a resize closes it: a
-  // fixed bubble would otherwise drift away from its keys. Scroll events do
-  // not bubble, so the listener captures them from every scrolling box.
+  // While open, Escape, a press outside, a scroll or a change of width closes
+  // it: a fixed bubble would otherwise drift away from its keys. Scroll events
+  // do not bubble, so the listener captures them from every scrolling box. A
+  // change of height alone is a phone's on-screen keyboard folding away,
+  // often right after the tap that opened the bubble: it stays.
   useEffect(() => {
     if (!placement) return;
     const me = owner.current;
@@ -132,13 +134,17 @@ export function KeyboardBubble({
     };
     document.addEventListener("keydown", onKey);
     document.addEventListener("pointerdown", onDown);
+    const width = window.innerWidth;
+    const onResize = () => {
+      if (window.innerWidth !== width) shut();
+    };
     document.addEventListener("scroll", shut, { capture: true, passive: true });
-    window.addEventListener("resize", shut);
+    window.addEventListener("resize", onResize);
     return () => {
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("pointerdown", onDown);
       document.removeEventListener("scroll", shut, { capture: true });
-      window.removeEventListener("resize", shut);
+      window.removeEventListener("resize", onResize);
     };
   }, [placement]);
 

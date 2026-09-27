@@ -65,6 +65,7 @@
     "results": "résultats",
     "more": "Voir plus",
     "remaining": "restants",
+    "remainingOne": "restant",
     "empty": "Aucun raccourci trouvé.",
     "hint": "Essaie une action (« annuler ») ou une touche (« F9 », « ctrl+z »)."
   },
