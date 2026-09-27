@@ -81,14 +81,15 @@
   color: var(--ink-soft);
 }
 
-/* Full width: the list of names is the widest thing on the page. */
+/* Full width: the families of the catalogue, one pill each. */
 .band {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--space-2) var(--space-5);
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
   margin: 0;
-  padding: var(--space-3) var(--space-5);
+  padding: var(--space-4) var(--space-5);
   background: var(--green-deep);
   border-top: var(--stroke-3) solid var(--ink);
   border-bottom: var(--stroke-3) solid var(--ink);
@@ -100,8 +101,31 @@
   text-transform: uppercase;
 }
 
-.band a:hover {
+.family {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  min-height: 36px;
+  padding: 6px var(--space-4);
+  border: var(--stroke-2) solid var(--paper);
+  border-radius: var(--radius-pill);
+}
+
+.familyCount {
   color: var(--yellow);
+  font-size: 12px;
+}
+
+.family:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.family:hover .familyCount {
+  color: var(--ink);
+}
+
+.bandAll:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
@@ -109,6 +133,7 @@
 
 /* The way out of the band, once the name you wanted is not in it. */
 .bandAll {
+  margin-left: var(--space-2);
   color: var(--yellow);
   font-weight: 700;
 }

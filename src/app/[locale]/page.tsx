@@ -5,7 +5,7 @@ import ghost from "@/../public/ghost.png";
 import { HeaderSearch } from "@/components/features/HeaderSearch";
 import { PlatformShowcase } from "@/components/features/PlatformShowcase";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
-import { SOFTWARE_LIST } from "@/data";
+import { SOFTWARE_LIST, softwareByFamily } from "@/data";
 import { isLocale, localeHref } from "@/domain/locale";
 import { platformShowcase } from "@/domain/showcase";
 import { getDictionary } from "@/i18n";
@@ -65,22 +65,24 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </section>
         </div>
 
-        {/* The names people came looking for, each one a way in: this band is
-            the catalogue, not a decoration. */}
+        {/* The catalogue, one way in per family: the band keeps its size
+            however many software join, and each family leads to its section. */}
         <nav className={styles.band} aria-label={dictionary.nav.catalogue}>
-          {SOFTWARE_LIST.map((software) => (
+          {softwareByFamily().map((group) => (
             <Link
-              key={software.id}
-              href={localeHref(locale, `/${software.id}`)}
+              key={group.family}
+              className={styles.family}
+              href={`${localeHref(locale, "/software")}#${group.family}`}
             >
-              {software.name}
+              {dictionary.families[group.family]}{" "}
+              <b className={styles.familyCount}>{group.software.length}</b>
             </Link>
           ))}
           <Link
             className={styles.bandAll}
             href={localeHref(locale, "/software")}
           >
-            {home.bandCta} →
+            {home.bandCta} ({SOFTWARE_LIST.length}) →
           </Link>
         </nav>
 
