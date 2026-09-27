@@ -126,13 +126,15 @@ export function BoardView({
         onRemove={remove}
       />
 
-      {waiting && (loaded.status === "error" || cards.length === 0) && (
-        <LoadState
-          status={loaded.status}
-          locale={locale}
-          onRetry={loaded.retry}
-        />
-      )}
+      <LoadState
+        status={
+          waiting && (loaded.status === "error" || cards.length === 0)
+            ? loaded.status
+            : "ready"
+        }
+        locale={locale}
+        onRetry={loaded.retry}
+      />
 
       {picked.length < 2 ? (
         <p className={styles.invite}>{board.invite}</p>

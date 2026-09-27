@@ -66,13 +66,17 @@ export function FavoritesList({
       <p className={styles.count}>
         {count} {site.shortcutCount} · {favorites.kept}
       </p>
-      {groups.length === 0 && (
-        <LoadState
-          status={loaded.status}
-          locale={locale}
-          onRetry={loaded.retry}
-        />
-      )}
+      {/* An error shows even over groups already here: a favourite starred
+          in another tab may be the one that failed. */}
+      <LoadState
+        status={
+          groups.length === 0 || loaded.status === "error"
+            ? loaded.status
+            : "ready"
+        }
+        locale={locale}
+        onRetry={loaded.retry}
+      />
       {groups.map((group) => (
         <section key={group.software.id} className={styles.group}>
           <Link

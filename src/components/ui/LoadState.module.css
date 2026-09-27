@@ -1,8 +1,14 @@
 .line {
   margin: var(--space-4) 0 0;
+  outline-offset: 4px;
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--ink-muted);
+}
+
+/* Nothing to say: the line takes no room, but stays in the page. */
+.line:empty {
+  margin: 0;
 }
 
 .retry {

@@ -108,13 +108,11 @@ export function SearchResults({
             : ""}
       </p>
 
-      {typed && (
-        <LoadState
-          status={index.status}
-          locale={locale}
-          onRetry={index.retry}
-        />
-      )}
+      <LoadState
+        status={typed ? index.status : "ready"}
+        locale={locale}
+        onRetry={index.retry}
+      />
 
       {typed && index.status === "ready" && hits.length === 0 && (
         <p className={styles.empty}>{search.empty}</p>
