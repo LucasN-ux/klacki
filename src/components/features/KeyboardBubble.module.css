@@ -7,7 +7,7 @@
 /* Fixed, so no card or list can clip it; its width follows the drawing
    (same unit formula as Keyboard.module.css) and CSS keeps it on screen. */
 .bubble {
-  --unit: min(22px, calc((100vw - 110px) / var(--units)));
+  --unit: min(var(--unit-cap, 22px), calc((100vw - 110px) / var(--units)));
   --gap: max(2px, calc(var(--unit) * 0.12));
   --bubble-w: calc(var(--units) * (var(--unit) + var(--gap)) + 30px);
   position: fixed;

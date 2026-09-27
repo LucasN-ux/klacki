@@ -1,7 +1,8 @@
 /* One key unit: 22px, smaller on a narrow screen so the drawing always fits.
-   --units (the drawing's width in key units) is set inline. */
+   --units (the drawing's width in key units) is set inline; the bubble may
+   lower --unit-cap so the drawing fits a short screen too. */
 .keyboard {
-  --unit: min(22px, calc((100vw - 110px) / var(--units)));
+  --unit: min(var(--unit-cap, 22px), calc((100vw - 110px) / var(--units)));
   --gap: max(2px, calc(var(--unit) * 0.12));
   display: block;
 }
