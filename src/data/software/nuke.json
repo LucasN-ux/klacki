@@ -566,6 +566,108 @@
         "win": [["F7"]],
         "mac": [["F7"]]
       }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Nest the selected nodes in a Group",
+        "fr": "Regrouper les nœuds sélectionnés dans un Group"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Cmd", "G"]]
+      }
+    },
+    {
+      "id": "pan-graph",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the graph",
+        "fr": "Déplacer le graphe"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["MouseMiddle"], ["Alt", "MouseLeft"]],
+        "mac": [["MouseMiddle"], ["Option", "MouseLeft"]]
+      }
+    },
+    {
+      "id": "zoom-graph",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the graph",
+        "fr": "Zoomer dans le graphe"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["Alt", "MouseMiddle"]],
+        "mac": [["Option", "MouseMiddle"]]
+      }
+    },
+    {
+      "id": "orbit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Orbit the camera",
+        "fr": "Orbiter la caméra"
+      },
+      "context": {
+        "en": "3D Viewer",
+        "fr": "Viewer 3D"
+      },
+      "keys": {
+        "win": [
+          ["Alt", "MouseRight"],
+          ["Ctrl", "MouseLeft"]
+        ],
+        "mac": [
+          ["Option", "MouseRight"],
+          ["Cmd", "MouseLeft"]
+        ]
+      }
+    },
+    {
+      "id": "pan-view",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the camera",
+        "fr": "Déplacer la caméra"
+      },
+      "context": {
+        "en": "3D Viewer",
+        "fr": "Viewer 3D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseLeft"]],
+        "mac": [["Option", "MouseLeft"]]
+      }
+    },
+    {
+      "id": "zoom-view",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the camera",
+        "fr": "Zoomer la caméra"
+      },
+      "context": {
+        "en": "3D Viewer",
+        "fr": "Viewer 3D"
+      },
+      "keys": {
+        "win": [["Alt", "MouseMiddle"]],
+        "mac": [["Option", "MouseMiddle"]]
+      }
     }
   ]
 }

@@ -702,6 +702,66 @@
         "win": [[","]],
         "mac": [[","]]
       }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Ctrl", "D"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the objects",
+        "fr": "Grouper les objets"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Ctrl", "G"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Ctrl", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Ctrl", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Ctrl", "V"]]
+      }
     }
   ]
 }

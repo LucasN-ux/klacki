@@ -586,6 +586,82 @@
         "win": [["Alt", "9"]],
         "mac": [["Option", "9"]]
       }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "context": {
+        "en": "Network editor",
+        "fr": "Éditeur de réseau"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Ctrl", "A"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "context": {
+        "en": "Network editor",
+        "fr": "Éditeur de réseau"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Ctrl", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "context": {
+        "en": "Network editor",
+        "fr": "Éditeur de réseau"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Ctrl", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "context": {
+        "en": "Network editor",
+        "fr": "Éditeur de réseau"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Ctrl", "V"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Ctrl", "Q"]]
+      }
     }
   ]
 }

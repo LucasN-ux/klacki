@@ -350,6 +350,114 @@
         "win": [["Shift", "Space"]],
         "mac": [["Shift", "Space"]]
       }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New scene",
+        "fr": "Nouvelle scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Ctrl", "N"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save the scene as",
+        "fr": "Enregistrer la scène sous"
+      },
+      "keys": {
+        "win": [["Shift", "Ctrl", "S"]],
+        "mac": [["Shift", "Ctrl", "S"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Ctrl", "Q"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Shift", "Ctrl", "D"]],
+        "mac": [["Shift", "Ctrl", "D"]]
+      }
+    },
+    {
+      "id": "hide-selection",
+      "category": "view",
+      "action": {
+        "en": "Hide or show the selection",
+        "fr": "Masquer ou afficher la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "H"]],
+        "mac": [["Ctrl", "H"]]
+      }
+    },
+    {
+      "id": "frame-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the selection",
+        "fr": "Cadrer la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "F"]],
+        "mac": [["Ctrl", "F"]]
+      }
+    },
+    {
+      "id": "frame-all",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the whole scene",
+        "fr": "Cadrer toute la scène"
+      },
+      "keys": {
+        "win": [["Shift", "Ctrl", "F"]],
+        "mac": [["Shift", "Ctrl", "F"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the selection",
+        "fr": "Grouper la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Ctrl", "G"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate the selection",
+        "fr": "Dupliquer la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Ctrl", "D"]]
+      }
     }
   ]
 }
