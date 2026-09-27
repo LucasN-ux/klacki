@@ -102,98 +102,122 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             <h2 className={styles.tourTitle}>{tour.title}</h2>
             <p>{tour.lede}</p>
           </header>
+        </div>
 
-          <section className={styles.feature}>
-            <div className={styles.featureText}>
-              <span className={styles.num}>01</span>
-              <h3>{tour.search.title}</h3>
-              <p>{tour.search.text}</p>
-              <Link
-                className={styles.featureLink}
-                href={localeHref(locale, "/search")}
-              >
-                {tour.search.cta} →
-              </Link>
-            </div>
-          </section>
+        <div className={styles.step}>
+          <div className={styles.wrap}>
+            <section className={styles.feature}>
+              <div className={styles.featureText}>
+                <span className={styles.num}>01</span>
+                <h3>{tour.search.title}</h3>
+                <p>{tour.search.text}</p>
+                <Link
+                  className={styles.featureLink}
+                  href={localeHref(locale, "/search")}
+                >
+                  {tour.search.cta} →
+                </Link>
+              </div>
+            </section>
+          </div>
+        </div>
 
-          <section className={`${styles.feature} ${styles.wide}`}>
-            <div className={styles.featureText}>
-              <span className={styles.num}>02</span>
-              <h3>{tour.platform.title}</h3>
-              <p>{tour.platform.text}</p>
-              <Link
-                className={styles.featureLink}
-                href={localeHref(locale, "/windows-mac")}
-              >
-                {tour.platform.cta} →
-              </Link>
-            </div>
-            <PlatformShowcase rows={demoRows} locale={locale} />
-          </section>
+        <div className={styles.step}>
+          <div className={styles.wrap}>
+            <section className={`${styles.feature} ${styles.wide}`}>
+              <div className={styles.featureText}>
+                <span className={styles.num}>02</span>
+                <h3>{tour.platform.title}</h3>
+                <p>{tour.platform.text}</p>
+                <Link
+                  className={styles.featureLink}
+                  href={localeHref(locale, "/windows-mac")}
+                >
+                  {tour.platform.cta} →
+                </Link>
+              </div>
+              <PlatformShowcase rows={demoRows} locale={locale} />
+            </section>
+          </div>
+        </div>
 
-          <section className={`${styles.feature} ${styles.withGhost}`}>
-            <Image src={ghostKeys} alt="" className={styles.featureGhost} />
-            <div className={styles.featureText}>
-              <span className={styles.num}>03</span>
-              <h3>{tour.keyboard.title}</h3>
-              <p>{tour.keyboard.text}</p>
-            </div>
-            <div className={styles.keyboard} aria-hidden="true">
-              <Keyboard
-                lit={keysToLight(redo, "win")}
-                platform="win"
-                caption={`${dictionary.keyboard.caption} · ${dictionary.keyboard.pc}`}
-                combo={comboLabel(redo[0], "win", locale)}
-              />
-            </div>
-          </section>
+        <div className={styles.step}>
+          <div className={styles.wrap}>
+            <section className={`${styles.feature} ${styles.withGhost}`}>
+              <Image src={ghostKeys} alt="" className={styles.featureGhost} />
+              <div className={styles.featureText}>
+                <span className={styles.num}>03</span>
+                <h3>{tour.keyboard.title}</h3>
+                <p>{tour.keyboard.text}</p>
+              </div>
+              <div className={styles.keyboard} aria-hidden="true">
+                <Keyboard
+                  lit={keysToLight(redo, "win")}
+                  platform="win"
+                  caption={`${dictionary.keyboard.caption} · ${dictionary.keyboard.pc}`}
+                  combo={comboLabel(redo[0], "win", locale)}
+                />
+              </div>
+            </section>
+          </div>
+        </div>
 
-          <section
-            className={`${styles.feature} ${styles.withGhost} ${styles.reverse}`}
-          >
-            <Image src={ghostPoint} alt="" className={styles.featureGhost} />
-            <div className={styles.featureText}>
-              <span className={styles.num}>04</span>
-              <h3>{tour.board.title}</h3>
-              <p>{tour.board.text}</p>
-              <Link
-                className={styles.featureCta}
-                href={localeHref(locale, "/board")}
-              >
-                {tour.board.cta} →
-              </Link>
-            </div>
-          </section>
+        <div className={styles.step}>
+          <div className={styles.wrap}>
+            <section
+              className={`${styles.feature} ${styles.withGhost} ${styles.reverse}`}
+            >
+              <Image src={ghostPoint} alt="" className={styles.featureGhost} />
+              <div className={styles.featureText}>
+                <span className={styles.num}>04</span>
+                <h3>{tour.board.title}</h3>
+                <p>{tour.board.text}</p>
+                <Link
+                  className={styles.featureCta}
+                  href={localeHref(locale, "/board")}
+                >
+                  {tour.board.cta} →
+                </Link>
+              </div>
+            </section>
+          </div>
+        </div>
 
-          <section className={`${styles.feature} ${styles.withGhost}`}>
-            <Image src={ghostStar} alt="" className={styles.featureGhost} />
-            <div className={styles.featureText}>
-              <span className={styles.num}>05</span>
-              <h3>{tour.keep.title}</h3>
-              <p>{tour.keep.text}</p>
-              <Link
-                className={styles.featureLink}
-                href={localeHref(locale, "/favorites")}
-              >
-                {tour.keep.cta} →
-              </Link>
-            </div>
-          </section>
+        <div className={styles.step}>
+          <div className={styles.wrap}>
+            <section className={`${styles.feature} ${styles.withGhost}`}>
+              <Image src={ghostStar} alt="" className={styles.featureGhost} />
+              <div className={styles.featureText}>
+                <span className={styles.num}>05</span>
+                <h3>{tour.keep.title}</h3>
+                <p>{tour.keep.text}</p>
+                <Link
+                  className={styles.featureLink}
+                  href={localeHref(locale, "/favorites")}
+                >
+                  {tour.keep.cta} →
+                </Link>
+              </div>
+            </section>
+          </div>
+        </div>
 
-          <section className={styles.feature}>
-            <div className={styles.featureText}>
-              <span className={styles.num}>06</span>
-              <h3>{tour.trust.title}</h3>
-              <p>{tour.trust.text}</p>
-              <Link
-                className={styles.featureLink}
-                href={localeHref(locale, "/sources")}
-              >
-                {tour.trust.cta} →
-              </Link>
-            </div>
-          </section>
+        <div className={styles.step}>
+          <div className={styles.wrap}>
+            <section className={styles.feature}>
+              <div className={styles.featureText}>
+                <span className={styles.num}>06</span>
+                <h3>{tour.trust.title}</h3>
+                <p>{tour.trust.text}</p>
+                <Link
+                  className={styles.featureLink}
+                  href={localeHref(locale, "/sources")}
+                >
+                  {tour.trust.cta} →
+                </Link>
+              </div>
+            </section>
+          </div>
         </div>
       </main>
       <SiteFooter locale={locale} />
