@@ -320,7 +320,7 @@
       }
     },
     {
-      "id": "dolly-view",
+      "id": "zoom-view",
       "category": "navigation",
       "action": {
         "en": "Move the camera forward or back",
@@ -381,6 +381,22 @@
       "keys": {
         "win": [["Shift"]],
         "mac": [["Shift"]]
+      }
+    },
+    {
+      "id": "frame-all",
+      "category": "navigation",
+      "action": {
+        "en": "Fit the whole graph in view",
+        "fr": "Cadrer tout le graphe"
+      },
+      "context": {
+        "en": "Graph view",
+        "fr": "Vue graphe"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
       }
     }
   ]
