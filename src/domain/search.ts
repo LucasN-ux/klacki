@@ -70,3 +70,20 @@ export function searchShortcuts(
 export function countHits(hits: SearchHit[]): number {
   return hits.reduce((total, hit) => total + hit.shortcuts.length, 0);
 }
+
+// The first `limit` results, groups kept in order. A group past the limit is
+// dropped, the one it falls in is cut: no empty software heading.
+export function firstHits(hits: SearchHit[], limit: number): SearchHit[] {
+  const shown: SearchHit[] = [];
+  let left = limit;
+  for (const hit of hits) {
+    if (left <= 0) break;
+    shown.push(
+      hit.shortcuts.length <= left
+        ? hit
+        : { ...hit, shortcuts: hit.shortcuts.slice(0, left) },
+    );
+    left -= hit.shortcuts.length;
+  }
+  return shown;
+}

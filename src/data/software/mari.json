@@ -475,6 +475,174 @@
         "win": [["F7"]],
         "mac": [["F7"]]
       }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Ctrl", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "E"]],
+        "mac": [["Ctrl", "E"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Ctrl", "Q"]]
+      }
+    },
+    {
+      "id": "pan-view",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the camera",
+        "fr": "Déplacer la caméra"
+      },
+      "keys": {
+        "win": [
+          ["Alt", "Shift", "MouseLeft"],
+          ["Alt", "MouseMiddle"]
+        ],
+        "mac": [
+          ["Option", "Shift", "MouseLeft"],
+          ["Option", "MouseMiddle"]
+        ]
+      }
+    },
+    {
+      "id": "zoom-view",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the camera",
+        "fr": "Zoomer la caméra"
+      },
+      "keys": {
+        "win": [
+          ["Alt", "Ctrl", "MouseLeft"],
+          ["Alt", "MouseRight"]
+        ],
+        "mac": [
+          ["Option", "Ctrl", "MouseLeft"],
+          ["Option", "MouseRight"]
+        ]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the nodes",
+        "fr": "Grouper les nœuds"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Ctrl", "G"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy the selection",
+        "fr": "Copier la sélection"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Ctrl", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Ctrl", "V"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selected nodes",
+        "fr": "Supprimer les nœuds sélectionnés"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["Delete"]],
+        "mac": [["Delete"]]
+      }
+    },
+    {
+      "id": "pan-graph",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the graph",
+        "fr": "Déplacer le graphe"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["MouseMiddle"], ["Alt", "MouseRight"]],
+        "mac": [["MouseMiddle"], ["Option", "MouseRight"]]
+      }
+    },
+    {
+      "id": "zoom-graph",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the graph",
+        "fr": "Zoomer dans le graphe"
+      },
+      "context": {
+        "en": "Node Graph",
+        "fr": "Graphe de nœuds"
+      },
+      "keys": {
+        "win": [["MouseWheel"]],
+        "mac": [["MouseWheel"]]
+      }
     }
   ]
 }

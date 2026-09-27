@@ -34,24 +34,34 @@ function release(owner: object) {
 
 // Where the keys are, read at open time. The bubble's own height is measured
 // once it is drawn (see keepOnScreen), never estimated.
-type Placement = { right: number; top: number; bottom: number };
+type Placement = { left: number; right: number; top: number; bottom: number };
 
 function placeFor(trigger: HTMLElement): Placement {
   const rect = trigger.getBoundingClientRect();
-  return { right: rect.right, top: rect.top, bottom: rect.bottom };
+  return {
+    left: rect.left,
+    right: rect.right,
+    top: rect.top,
+    bottom: rect.bottom,
+  };
 }
 
 // Under the keys, or above them when the drawn bubble would run past the
-// bottom of the screen. Sets a CSS variable on the node: no React state.
+// bottom of the screen, with the arrow over the middle of the keys. Sets CSS
+// variables on the node: no React state.
 function keepOnScreen(node: HTMLSpanElement | null, at: Placement) {
   if (!node) return;
   const height = node.getBoundingClientRect().height;
-  const below = at.bottom + 10;
-  const top =
-    below + height > window.innerHeight - 8
-      ? Math.max(8, at.top - 10 - height)
-      : below;
+  const below = at.bottom + 12;
+  const above = below + height > window.innerHeight - 8;
+  const top = above ? Math.max(8, at.top - 12 - height) : below;
   node.style.setProperty("--top", `${top}px`);
+  node.dataset.side = above ? "above" : "below";
+
+  const box = node.getBoundingClientRect();
+  const middle = (at.left + at.right) / 2 - box.left;
+  const arrow = Math.min(Math.max(middle, 16), box.width - 16);
+  node.style.setProperty("--arrow-x", `${arrow}px`);
 }
 
 export function KeyboardBubble({
@@ -104,8 +114,11 @@ export function KeyboardBubble({
     else open();
   }
 
-  // While open, Escape, a press outside, or a scroll closes it: a fixed
-  // bubble would otherwise drift away from its keys.
+  // While open, Escape, a press outside, a scroll or a change of width closes
+  // it: a fixed bubble would otherwise drift away from its keys. Scroll events
+  // do not bubble, so the listener captures them from every scrolling box. A
+  // change of height alone is a phone's on-screen keyboard folding away,
+  // often right after the tap that opened the bubble: it stays.
   useEffect(() => {
     if (!placement) return;
     const me = owner.current;
@@ -121,11 +134,17 @@ export function KeyboardBubble({
     };
     document.addEventListener("keydown", onKey);
     document.addEventListener("pointerdown", onDown);
-    window.addEventListener("scroll", shut, { passive: true });
+    const width = window.innerWidth;
+    const onResize = () => {
+      if (window.innerWidth !== width) shut();
+    };
+    document.addEventListener("scroll", shut, { capture: true, passive: true });
+    window.addEventListener("resize", onResize);
     return () => {
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("pointerdown", onDown);
-      window.removeEventListener("scroll", shut);
+      document.removeEventListener("scroll", shut, { capture: true });
+      window.removeEventListener("resize", onResize);
     };
   }, [placement]);
 
@@ -157,6 +176,7 @@ export function KeyboardBubble({
             } as CSSProperties
           }
         >
+          <span className={styles.arrow} data-arrow />
           <Keyboard
             lit={lit}
             platform={platform}

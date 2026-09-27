@@ -31,21 +31,34 @@ export function Keyboard({
           <span key={b} className={styles.block}>
             {block.map((row, r) => (
               <span key={r} className={styles.row}>
-                {row.map((slot, s) => (
-                  <span
-                    key={s}
-                    className={
-                      slot.id === null
-                        ? styles.gap
-                        : lit.ids.has(slot.id)
-                          ? `${styles.key} ${styles.lit}`
-                          : styles.key
-                    }
-                    style={{ "--w": slot.width } as CSSProperties}
-                  >
-                    {slot.id === null ? null : keyCapLabel(slot.id, platform)}
-                  </span>
-                ))}
+                {row.map((slot, s) => {
+                  if (slot.id === null) {
+                    return (
+                      <span
+                        key={s}
+                        className={styles.gap}
+                        style={{ "--w": slot.width } as CSSProperties}
+                      />
+                    );
+                  }
+                  const label = keyCapLabel(slot.id, platform);
+                  // Three characters fill a key unit; a longer label
+                  // ("Home", "PgUp") steps down a size rather than clip.
+                  const classes = [
+                    styles.key,
+                    label.length > slot.width * 3 ? styles.small : "",
+                    lit.ids.has(slot.id) ? styles.lit : "",
+                  ];
+                  return (
+                    <span
+                      key={s}
+                      className={classes.filter(Boolean).join(" ")}
+                      style={{ "--w": slot.width } as CSSProperties}
+                    >
+                      {label}
+                    </span>
+                  );
+                })}
               </span>
             ))}
           </span>

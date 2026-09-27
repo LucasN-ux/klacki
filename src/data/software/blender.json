@@ -624,6 +624,62 @@
         "win": [["Shift", "Alt", "I"]],
         "mac": [["Shift", "Option", "I"]]
       }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New file",
+        "fr": "Nouveau fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Ctrl", "N"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Ctrl", "Q"]]
+      }
+    },
+    {
+      "id": "hide-selection",
+      "category": "view",
+      "action": {
+        "en": "Hide the selection",
+        "fr": "Masquer la sélection"
+      },
+      "context": {
+        "en": "Object Mode",
+        "fr": "Mode Objet"
+      },
+      "keys": {
+        "win": [["H"]],
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "hide-unselected",
+      "category": "view",
+      "action": {
+        "en": "Hide everything else",
+        "fr": "Masquer tout le reste"
+      },
+      "context": {
+        "en": "Object Mode",
+        "fr": "Mode Objet"
+      },
+      "keys": {
+        "win": [["Shift", "H"]],
+        "mac": [["Shift", "H"]]
+      }
     }
   ]
 }

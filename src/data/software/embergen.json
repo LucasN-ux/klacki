@@ -128,6 +128,83 @@
       "keys": {
         "win": [["Ctrl", "S"]]
       }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New project",
+        "fr": "Nouveau projet"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "keys": {
+        "win": [["Delete"], ["Backspace"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]]
+      }
     }
   ]
 }
