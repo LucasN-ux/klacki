@@ -28,6 +28,31 @@
   cursor: default;
 }
 
+/* A square turned 45°, half hidden behind the bubble, over the middle of
+   the keys (--arrow-x) on the side facing them (data-side). */
+.arrow {
+  position: absolute;
+  left: var(--arrow-x, 50%);
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  background: var(--card);
+  border: var(--stroke-2) solid var(--ink);
+  transform: rotate(45deg);
+}
+
+.bubble[data-side="below"] .arrow {
+  top: -9px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.bubble[data-side="above"] .arrow {
+  bottom: -9px;
+  border-left: 0;
+  border-top: 0;
+}
+
 /* With a mouse, the bubble lets the pointer through: it covers the next rows,
    and they must stay hoverable. Touch keeps it tappable to close. */
 @media (hover: hover) {

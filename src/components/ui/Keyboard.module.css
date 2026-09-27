@@ -47,6 +47,11 @@
   white-space: nowrap;
 }
 
+.small {
+  font-size: calc(var(--unit) * 0.28);
+  letter-spacing: -0.03em;
+}
+
 .lit {
   background: var(--yellow);
   color: var(--ink);
