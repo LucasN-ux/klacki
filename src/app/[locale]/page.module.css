@@ -138,29 +138,78 @@
   font-weight: 700;
 }
 
-.demo {
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: var(--space-6);
-  align-items: center;
-  padding: var(--space-7) 0 var(--space-5);
+/* The guided tour: one card per feature, stacked with room to breathe. */
+.tourHead {
+  padding: var(--space-7) 0 var(--space-4);
 }
 
-.demoTitle {
+.tourTitle {
   font-size: 30px;
   line-height: 34px;
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-2);
 }
 
-.demoText p {
+.tourHead p {
   margin: 0;
-  max-width: 44ch;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.feature {
+  display: grid;
+  gap: var(--space-5);
+  align-items: center;
+  margin-bottom: var(--space-5);
+  padding: var(--space-5);
+  background: var(--card);
+  border: var(--stroke-3) solid var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard-lg);
+}
+
+.wide {
+  grid-template-columns: 1fr 1.15fr;
+}
+
+/* Ghost, text, then the demo when there is one. */
+.withGhost {
+  grid-template-columns: 180px 1fr auto;
+}
+
+.reverse {
+  grid-template-columns: 1fr 200px;
+}
+
+.reverse .featureGhost {
+  order: 2;
+}
+
+.featureGhost {
+  width: 100%;
+  height: auto;
+}
+
+.featureText h3 {
+  margin: var(--space-1) 0 var(--space-2);
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.featureText p {
+  margin: 0;
+  max-width: 58ch;
   font-size: 15px;
   line-height: 24px;
   color: var(--ink-soft);
 }
 
-.demoLink {
+.num {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--orange-ink);
+}
+
+.featureLink {
   display: inline-block;
   margin-top: var(--space-4);
   font-family: var(--font-mono);
@@ -171,28 +220,32 @@
   text-underline-offset: 4px;
 }
 
-.demoLink:hover {
+.featureLink:hover {
   color: var(--orange-ink);
 }
 
-.trust {
-  margin: 0 0 var(--space-7);
-  max-width: 78ch;
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--ink-soft);
-}
-
-.trust a {
+.featureCta {
+  display: inline-block;
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--yellow);
+  border: var(--stroke-2) solid var(--ink);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-hard-sm);
   font-weight: 700;
-  color: var(--ink);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
 }
 
-.trust a:hover {
-  color: var(--orange-ink);
+.featureCta:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-hard);
+}
+
+/* The drawn keyboard sits in a small frame of its own. */
+.keyboard {
+  padding: var(--space-3);
+  background: var(--paper);
+  border: var(--stroke-2) solid var(--ink);
+  border-radius: var(--radius-sm);
 }
 
 @media (max-width: 900px) {
@@ -211,48 +264,22 @@
     line-height: 40px;
   }
 
-  .demo {
+  .wide,
+  .withGhost,
+  .reverse {
     grid-template-columns: 1fr;
-    gap: var(--space-5);
-    padding: var(--space-6) 0 var(--space-5);
   }
 
-  .demoTitle {
+  .featureGhost {
+    width: 150px;
+  }
+
+  .reverse .featureGhost {
+    order: 0;
+  }
+
+  .tourTitle {
     font-size: 25px;
     line-height: 29px;
   }
-}
-
-/* My board, announced as a card of its own: the site's main feature. */
-.boardPromo {
-  margin-top: var(--space-7);
-  padding: var(--space-5);
-  background: var(--card);
-  border: var(--stroke-3) solid var(--ink);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-hard-lg);
-}
-
-.boardPromo p {
-  margin: 0;
-  max-width: 60ch;
-  font-size: 15px;
-  line-height: 24px;
-  color: var(--ink-soft);
-}
-
-.boardCta {
-  display: inline-block;
-  margin-top: var(--space-4);
-  padding: var(--space-2) var(--space-4);
-  background: var(--yellow);
-  border: var(--stroke-2) solid var(--ink);
-  border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-hard-sm);
-  font-weight: 700;
-}
-
-.boardCta:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: var(--shadow-hard);
 }

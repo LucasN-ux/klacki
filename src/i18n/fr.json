@@ -146,17 +146,40 @@
     "tryLabel": "Essaie :",
     "tries": ["annuler", "extrusion", "F9", "ctrl+s"],
     "noAccount": "aucun compte à créer",
-    "trust": {
-      "text": "Chaque raccourci vient de la documentation de l'éditeur, avec sa version et la date du contrôle. Rien n'est recopié d'un autre site.",
-      "cta": "Voir les sources"
-    },
     "bandCta": "Tous les logiciels",
-    "demoTitle": "Même raccourci, autre clavier",
-    "demoText": "Ctrl ne devient pas toujours ⌘. Change Windows / Mac dans l'en-tête : les touches ci-dessous sont réécrites, directement depuis les données du site.",
-    "demoCta": "Ce qui change entre Windows et Mac",
-    "boardTitle": "Tous tes logiciels, côte à côte",
-    "boardText": "Tu connais Maya et tu apprends Blender ? Coche les deux : chaque action sur une ligne, et les touches qui changent de sens d'un logiciel à l'autre sont signalées.",
-    "boardCta": "Composer mon tableau"
+    "tour": {
+      "title": "Ce que Klacki fait pour toi",
+      "lede": "Six choses, dans l'ordre où tu en auras besoin.",
+      "search": {
+        "title": "Cherche une action ou une touche",
+        "text": "Tape « annuler », « extrusion » ou « F9 » : tous les logiciels répondent en même temps, sans accent ni ordre de mots à respecter.",
+        "cta": "Ouvrir la recherche"
+      },
+      "platform": {
+        "title": "Windows ou Mac, en un clic",
+        "text": "Le bouton de l'en-tête réécrit toutes les touches. Et le site te dit quand Ctrl ne devient pas ⌘ : les lignes ci-contre viennent directement des données.",
+        "cta": "Ce qui change entre Windows et Mac"
+      },
+      "keyboard": {
+        "title": "Vois où sont les touches",
+        "text": "Survole les touches d'un raccourci, ou touche-les sur téléphone : un clavier s'affiche avec les bonnes touches allumées, le pavé numérique et la souris quand il faut."
+      },
+      "board": {
+        "title": "Mets tes logiciels côte à côte",
+        "text": "Tu connais Maya et tu apprends Blender ? Coche les deux : chaque action devient une carte, et les pièges sont signalés, quand la même touche fait autre chose ailleurs. Partage ton tableau par un lien.",
+        "cta": "Composer mon tableau"
+      },
+      "keep": {
+        "title": "Garde ce qui te sert",
+        "text": "L'étoile range un raccourci dans tes favoris, le bouton voisin copie la ligne entière pour tes notes. Tout reste dans ton navigateur : aucun compte à créer.",
+        "cta": "Voir mes favoris"
+      },
+      "trust": {
+        "title": "Jamais deviné",
+        "text": "Chaque raccourci vient de la documentation officielle de l'éditeur, avec la version et la date du contrôle. Quand elle ne dit rien, la page l'écrit au lieu d'inventer.",
+        "cta": "Voir les sources"
+      }
+    }
   },
   "catalogue": {
     "title": "Les logiciels couverts",

@@ -2,11 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ghost from "@/../public/ghost.png";
+import ghostKeys from "@/../public/ghost-keys.png";
+import ghostPoint from "@/../public/ghost-point.png";
+import ghostStar from "@/../public/ghost-star.png";
 import { HeaderSearch } from "@/components/features/HeaderSearch";
 import { PlatformShowcase } from "@/components/features/PlatformShowcase";
+import { Keyboard } from "@/components/ui/Keyboard";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
 import { SOFTWARE_LIST, softwareByFamily } from "@/data";
 import { isLocale, localeHref } from "@/domain/locale";
+import { keysToLight } from "@/domain/keyboard";
+import { comboLabel } from "@/domain/keys";
 import { platformShowcase } from "@/domain/showcase";
 import { getDictionary } from "@/i18n";
 import styles from "./page.module.css";
@@ -24,6 +30,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     0,
   );
   const demoRows = platformShowcase(SOFTWARE_LIST, 4);
+  const { tour } = home;
+  // The keyboard of the tour: a real drawing, with the keys of Redo lit.
+  const redo = [["Shift", "Ctrl", "Z"]];
 
   return (
     <>
@@ -86,39 +95,105 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </Link>
         </nav>
 
+        {/* A guided tour of the site, one block per feature. Each ghost
+            appears once, where its pose says what the block is about. */}
         <div className={styles.wrap}>
-          {/* The flagship feature, right after the catalogue band. */}
-          <section className={styles.boardPromo}>
-            <h2 className={styles.demoTitle}>{home.boardTitle}</h2>
-            <p>{home.boardText}</p>
-            <Link
-              className={styles.boardCta}
-              href={localeHref(locale, "/board")}
-            >
-              {home.boardCta} →
-            </Link>
+          <header className={styles.tourHead}>
+            <h2 className={styles.tourTitle}>{tour.title}</h2>
+            <p>{tour.lede}</p>
+          </header>
+
+          <section className={styles.feature}>
+            <div className={styles.featureText}>
+              <span className={styles.num}>01</span>
+              <h3>{tour.search.title}</h3>
+              <p>{tour.search.text}</p>
+              <Link
+                className={styles.featureLink}
+                href={localeHref(locale, "/search")}
+              >
+                {tour.search.cta} →
+              </Link>
+            </div>
           </section>
 
-          <section className={styles.demo}>
-            <div className={styles.demoText}>
-              <h2 className={styles.demoTitle}>{home.demoTitle}</h2>
-              <p>{home.demoText}</p>
+          <section className={`${styles.feature} ${styles.wide}`}>
+            <div className={styles.featureText}>
+              <span className={styles.num}>02</span>
+              <h3>{tour.platform.title}</h3>
+              <p>{tour.platform.text}</p>
               <Link
-                className={styles.demoLink}
+                className={styles.featureLink}
                 href={localeHref(locale, "/windows-mac")}
               >
-                {home.demoCta} →
+                {tour.platform.cta} →
               </Link>
             </div>
             <PlatformShowcase rows={demoRows} locale={locale} />
           </section>
 
-          <p className={styles.trust}>
-            {home.trust.text}{" "}
-            <Link href={localeHref(locale, "/sources")}>
-              {home.trust.cta} →
-            </Link>
-          </p>
+          <section className={`${styles.feature} ${styles.withGhost}`}>
+            <Image src={ghostKeys} alt="" className={styles.featureGhost} />
+            <div className={styles.featureText}>
+              <span className={styles.num}>03</span>
+              <h3>{tour.keyboard.title}</h3>
+              <p>{tour.keyboard.text}</p>
+            </div>
+            <div className={styles.keyboard} aria-hidden="true">
+              <Keyboard
+                lit={keysToLight(redo, "win")}
+                platform="win"
+                caption={`${dictionary.keyboard.caption} · ${dictionary.keyboard.pc}`}
+                combo={comboLabel(redo[0], "win", locale)}
+              />
+            </div>
+          </section>
+
+          <section
+            className={`${styles.feature} ${styles.withGhost} ${styles.reverse}`}
+          >
+            <Image src={ghostPoint} alt="" className={styles.featureGhost} />
+            <div className={styles.featureText}>
+              <span className={styles.num}>04</span>
+              <h3>{tour.board.title}</h3>
+              <p>{tour.board.text}</p>
+              <Link
+                className={styles.featureCta}
+                href={localeHref(locale, "/board")}
+              >
+                {tour.board.cta} →
+              </Link>
+            </div>
+          </section>
+
+          <section className={`${styles.feature} ${styles.withGhost}`}>
+            <Image src={ghostStar} alt="" className={styles.featureGhost} />
+            <div className={styles.featureText}>
+              <span className={styles.num}>05</span>
+              <h3>{tour.keep.title}</h3>
+              <p>{tour.keep.text}</p>
+              <Link
+                className={styles.featureLink}
+                href={localeHref(locale, "/favorites")}
+              >
+                {tour.keep.cta} →
+              </Link>
+            </div>
+          </section>
+
+          <section className={styles.feature}>
+            <div className={styles.featureText}>
+              <span className={styles.num}>06</span>
+              <h3>{tour.trust.title}</h3>
+              <p>{tour.trust.text}</p>
+              <Link
+                className={styles.featureLink}
+                href={localeHref(locale, "/sources")}
+              >
+                {tour.trust.cta} →
+              </Link>
+            </div>
+          </section>
         </div>
       </main>
       <SiteFooter locale={locale} />

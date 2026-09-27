@@ -146,17 +146,40 @@
     "tryLabel": "Try:",
     "tries": ["undo", "extrude", "F9", "ctrl+s"],
     "noAccount": "no account to create",
-    "trust": {
-      "text": "Every shortcut comes from the publisher's documentation, with its version and the date it was checked. Nothing is copied from another site.",
-      "cta": "See the sources"
-    },
     "bandCta": "All the software",
-    "demoTitle": "Same shortcut, other keyboard",
-    "demoText": "Ctrl does not always become ⌘. Switch Windows / Mac in the header: the keys below are rewritten, straight from the data of the site.",
-    "demoCta": "How Windows and Mac differ",
-    "boardTitle": "All your software, side by side",
-    "boardText": "You know Maya and you are learning Blender? Tick them both: each action on one line, and the keys that change meaning from one to the other are marked.",
-    "boardCta": "Build my board"
+    "tour": {
+      "title": "What Klacki does for you",
+      "lede": "Six things, in the order you will need them.",
+      "search": {
+        "title": "Search an action or a key",
+        "text": "Type \"undo\", \"extrude\" or \"F9\": every software answers at once, accents and word order ignored.",
+        "cta": "Open the search"
+      },
+      "platform": {
+        "title": "Windows or Mac, in one click",
+        "text": "The switch in the header rewrites every key. And the site tells you when Ctrl does not become ⌘: the rows here come straight from the data.",
+        "cta": "What changes between Windows and Mac"
+      },
+      "keyboard": {
+        "title": "See where the keys are",
+        "text": "Hover the keys of a shortcut, or tap them on a phone: a keyboard appears with the right keys lit, plus the numeric pad and the mouse when needed."
+      },
+      "board": {
+        "title": "Put your software side by side",
+        "text": "You know Maya and you are learning Blender? Tick both: each action becomes a card, and the traps are flagged, when the same keys do something else elsewhere. Share your board with a link.",
+        "cta": "Build my board"
+      },
+      "keep": {
+        "title": "Keep what you use",
+        "text": "The star puts a shortcut in your favourites, the button next to it copies the whole line for your notes. Everything stays in your browser: no account to create.",
+        "cta": "See my favourites"
+      },
+      "trust": {
+        "title": "Never guessed",
+        "text": "Every shortcut comes from the publisher's official documentation, with the version and the date it was checked. When it says nothing, the page says so instead of making it up.",
+        "cta": "See the sources"
+      }
+    }
   },
   "catalogue": {
     "title": "The software covered",
