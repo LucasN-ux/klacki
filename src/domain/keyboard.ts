@@ -200,6 +200,7 @@ const TOKEN_KEYS: Record<string, string[]> = {
   ".": ["Period"],
   ">": ["Period", "ShiftLeft", "ShiftRight"],
   "/": ["Slash"],
+  "?": ["Slash", "ShiftLeft", "ShiftRight"],
   ")": ["0", "ShiftLeft", "ShiftRight"],
   Esc: ["Esc"],
   Tab: ["Tab"],
