@@ -5,10 +5,9 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SearchField } from "@/components/ui/SearchField";
 import { ShortcutList } from "@/components/ui/ShortcutRow";
-import { SOFTWARE_LIST } from "@/data";
+import { SOFTWARE_LIST, getSoftware } from "@/data";
 import { localeHref, type Locale } from "@/domain/locale";
 import { summarizePlatformDifference } from "@/domain/platformDifference";
-import { inLocale } from "@/domain/schema";
 import { countHits, firstHits, searchShortcuts } from "@/domain/search";
 import { shownPlatform } from "@/domain/keys";
 import { usePlatform } from "@/hooks/usePlatform";
@@ -97,35 +96,39 @@ export function SearchResults({ locale }: { locale: Locale }) {
       )}
 
       <div ref={list}>
-        {shown.map((hit) => (
-          <section key={hit.software.id} className={styles.group}>
-            <Link
-              href={localeHref(locale, `/${hit.software.id}`)}
-              className={styles.groupHead}
-            >
-              <span className={styles.badge} aria-hidden="true">
-                {hit.software.initials}
-              </span>
-              {hit.software.name}
-              <span className={styles.groupCount}>
-                {/* The whole group, even when the page cuts it. */}
-                {
-                  hits.find((all) => all.software === hit.software)?.shortcuts
-                    .length
-                }
-              </span>
-            </Link>
-            <ShortcutList
-              shortcuts={hit.shortcuts.map((one) => inLocale(one, locale))}
-              softwareId={hit.software.id}
-              softwareName={hit.software.name}
-              platform={shownPlatform(hit.software.platforms, chosenPlatform)}
-              locale={locale}
-              // Decided from the whole software, not from the few results shown.
-              flag={summarizePlatformDifference(hit.software.shortcuts).flag}
-            />
-          </section>
-        ))}
+        {shown.map((hit) => {
+          const software = getSoftware(hit.software);
+          if (!software) return null;
+          return (
+            <section key={hit.software} className={styles.group}>
+              <Link
+                href={localeHref(locale, `/${software.id}`)}
+                className={styles.groupHead}
+              >
+                <span className={styles.badge} aria-hidden="true">
+                  {software.initials}
+                </span>
+                {software.name}
+                <span className={styles.groupCount}>
+                  {/* The whole group, even when the page cuts it. */}
+                  {
+                    hits.find((all) => all.software === hit.software)?.shortcuts
+                      .length
+                  }
+                </span>
+              </Link>
+              <ShortcutList
+                shortcuts={hit.shortcuts}
+                softwareId={software.id}
+                softwareName={software.name}
+                platform={shownPlatform(software.platforms, chosenPlatform)}
+                locale={locale}
+                // Decided from the whole software, not from the few results shown.
+                flag={summarizePlatformDifference(software.shortcuts).flag}
+              />
+            </section>
+          );
+        })}
       </div>
 
       {total > limit && (

@@ -1,11 +1,35 @@
+import { z } from "zod";
 import { keysFor } from "./keys";
 import type { Locale } from "./locale";
-import type { Shortcut, Software } from "./schema";
+import {
+  CATEGORIES,
+  Keys,
+  inLocale,
+  type LocaleShortcut,
+  type Software,
+} from "./schema";
 
-export type SearchHit = {
-  software: Software;
-  shortcuts: Shortcut[];
-};
+// The shortcuts of one software that match, in the page's language.
+export type SearchHit = { software: string; shortcuts: LocaleShortcut[] };
+
+// What the search page downloads: every shortcut, in one language, grouped
+// by software in catalogue order. Checked on arrival like any stored data.
+export type SearchIndex = SearchHit[];
+
+export const SearchIndexSchema = z.array(
+  z.object({
+    software: z.string(),
+    shortcuts: z.array(
+      z.object({
+        id: z.string(),
+        category: z.enum(CATEGORIES),
+        action: z.string(),
+        context: z.string().optional(),
+        keys: Keys,
+      }),
+    ),
+  }),
+);
 
 // "Cadrer la sélection" and "cadrer la selection" must find each other:
 // lower case, accents removed, extra spaces dropped.
@@ -20,20 +44,14 @@ export function normalize(text: string): string {
 
 // A query is treated as plain text, never as code or as a regular expression:
 // a visitor cannot slow the site down with a crafted search.
-function matchesAction(
-  shortcut: Shortcut,
-  query: string,
-  locale: Locale,
-): boolean {
-  const haystack = normalize(
-    `${shortcut.action[locale]} ${shortcut.context?.[locale] ?? ""}`,
-  );
+function matchesAction(shortcut: LocaleShortcut, query: string): boolean {
+  const haystack = normalize(`${shortcut.action} ${shortcut.context ?? ""}`);
   return query.split(" ").every((word) => haystack.includes(word));
 }
 
 // Search by key: "F8", "ctrl+z", "⌘ z". The query is cut into keys, and every
 // one of them must be in the same combination.
-function matchesKeys(shortcut: Shortcut, query: string): boolean {
+function matchesKeys(shortcut: LocaleShortcut, query: string): boolean {
   const asked = query.split(/[\s+]+/).filter(Boolean);
   if (asked.length === 0) return false;
 
@@ -47,24 +65,38 @@ function matchesKeys(shortcut: Shortcut, query: string): boolean {
   );
 }
 
+export function buildSearchIndex(
+  softwareList: Software[],
+  locale: Locale,
+): SearchIndex {
+  return softwareList.map((software) => ({
+    software: software.id,
+    shortcuts: software.shortcuts.map((shortcut) => inLocale(shortcut, locale)),
+  }));
+}
+
+export function searchIndex(index: SearchIndex, rawQuery: string): SearchHit[] {
+  const query = normalize(rawQuery);
+  if (query.length < 2) return [];
+
+  return index
+    .map((group) => ({
+      software: group.software,
+      shortcuts: group.shortcuts.filter(
+        (shortcut) =>
+          matchesAction(shortcut, query) || matchesKeys(shortcut, query),
+      ),
+    }))
+    .filter((hit) => hit.shortcuts.length > 0);
+}
+
+// The same search straight on the catalogue, for server code and tests.
 export function searchShortcuts(
   softwareList: Software[],
   rawQuery: string,
   locale: Locale,
 ): SearchHit[] {
-  const query = normalize(rawQuery);
-  if (query.length < 2) return [];
-
-  return softwareList
-    .map((software) => ({
-      software,
-      shortcuts: software.shortcuts.filter(
-        (shortcut) =>
-          matchesAction(shortcut, query, locale) ||
-          matchesKeys(shortcut, query),
-      ),
-    }))
-    .filter((hit) => hit.shortcuts.length > 0);
+  return searchIndex(buildSearchIndex(softwareList, locale), rawQuery);
 }
 
 export function countHits(hits: SearchHit[]): number {
