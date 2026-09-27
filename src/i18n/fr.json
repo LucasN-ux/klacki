@@ -3,6 +3,7 @@
     "tagline": "Les raccourcis clavier de vos logiciels de création, sur une seule planche.",
     "description": "Les raccourcis clavier des logiciels de création : 3D, texture, VFX, vidéo et 2D. Windows et Mac, vérifiés dans la documentation officielle.",
     "softwareCount": "logiciels",
+    "softwareCountOne": "logiciel",
     "shortcutCount": "raccourcis"
   },
   "nav": {

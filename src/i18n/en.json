@@ -3,6 +3,7 @@
     "tagline": "The keyboard shortcuts of your creative software, on one sheet.",
     "description": "Keyboard shortcuts for creative software: 3D, texturing, VFX, video and 2D. Windows and Mac, checked against the official documentation.",
     "softwareCount": "software",
+    "softwareCountOne": "software",
     "shortcutCount": "shortcuts"
   },
   "nav": {

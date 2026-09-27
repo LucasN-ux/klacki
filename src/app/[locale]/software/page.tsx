@@ -86,8 +86,11 @@ export default async function CataloguePage({
                 <Ribbon>{dictionary.families[group.family]}</Ribbon>
               </h2>
               <p className={styles.familyMeta}>
-                {group.software.length} {dictionary.site.softwareCount} ·{" "}
-                {group.shortcuts} {dictionary.site.shortcutCount}
+                {group.software.length}{" "}
+                {group.software.length === 1
+                  ? dictionary.site.softwareCountOne
+                  : dictionary.site.softwareCount}{" "}
+                · {group.shortcuts} {dictionary.site.shortcutCount}
               </p>
             </div>
             <div className={styles.grid}>
