@@ -9,7 +9,7 @@ import { SOFTWARE_LIST, getSoftware } from "@/data";
 import { actionLabel } from "@/domain/actions";
 import { DEFAULT_LOCALE, LOCALES, isLocale, localeHref } from "@/domain/locale";
 import { summarizePlatformDifference } from "@/domain/platformDifference";
-import { CATEGORIES } from "@/domain/schema";
+import { CATEGORIES, inLocale } from "@/domain/schema";
 import { getDictionary } from "@/i18n";
 import shell from "@/components/ui/PageShell.module.css";
 import styles from "./page.module.css";
@@ -149,7 +149,9 @@ export default async function SoftwarePage({
                   </Ribbon>
                 </h2>
                 <ShortcutListForPlatform
-                  shortcuts={group.shortcuts}
+                  shortcuts={group.shortcuts.map((one) =>
+                    inLocale(one, locale),
+                  )}
                   softwareId={software.id}
                   softwareName={software.name}
                   platforms={software.platforms}

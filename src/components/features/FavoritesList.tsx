@@ -5,6 +5,7 @@ import { ShortcutList } from "@/components/ui/ShortcutRow";
 import { SOFTWARE_LIST } from "@/data";
 import { localeHref, type Locale } from "@/domain/locale";
 import { summarizePlatformDifference } from "@/domain/platformDifference";
+import { inLocale } from "@/domain/schema";
 import { favoriteKey, useFavorites } from "@/hooks/useFavorites";
 import { shownPlatform } from "@/domain/keys";
 import { usePlatform } from "@/hooks/usePlatform";
@@ -52,7 +53,7 @@ export function FavoritesList({ locale }: { locale: Locale }) {
             <span className={styles.groupCount}>{group.shortcuts.length}</span>
           </Link>
           <ShortcutList
-            shortcuts={group.shortcuts}
+            shortcuts={group.shortcuts.map((one) => inLocale(one, locale))}
             softwareId={group.software.id}
             softwareName={group.software.name}
             platform={shownPlatform(group.software.platforms, chosenPlatform)}

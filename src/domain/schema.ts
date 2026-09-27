@@ -1,4 +1,5 @@
 import { z } from "zod";
+import type { Locale } from "./locale";
 
 // Special key tokens. Any other non-empty string is a regular key ("E", "F9", "Tab"…).
 export const MODIFIERS = ["Ctrl", "Shift", "Alt", "Cmd", "Option"] as const;
@@ -179,3 +180,22 @@ export type Family = (typeof FAMILIES)[number];
 export type Shortcut = z.infer<typeof Shortcut>;
 export type Software = z.infer<typeof Software>;
 export type Platform = "win" | "mac";
+
+// A shortcut as a row shows it: its texts in the page's language only.
+export type LocaleShortcut = {
+  id: string;
+  category: Category;
+  action: string;
+  context?: string;
+  keys: Keys;
+};
+
+export function inLocale(shortcut: Shortcut, locale: Locale): LocaleShortcut {
+  return {
+    id: shortcut.id,
+    category: shortcut.category,
+    action: shortcut.action[locale],
+    ...(shortcut.context ? { context: shortcut.context[locale] } : {}),
+    keys: shortcut.keys,
+  };
+}

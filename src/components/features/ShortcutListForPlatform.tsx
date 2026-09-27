@@ -3,7 +3,7 @@
 import { ShortcutList } from "@/components/ui/ShortcutRow";
 import type { Locale } from "@/domain/locale";
 import type { FlaggedRows } from "@/domain/platformDifference";
-import type { Platform, Shortcut } from "@/domain/schema";
+import type { LocaleShortcut, Platform } from "@/domain/schema";
 import { shownPlatform } from "@/domain/keys";
 import { usePlatform } from "@/hooks/usePlatform";
 
@@ -16,7 +16,7 @@ export function ShortcutListForPlatform({
   locale,
   flag,
 }: {
-  shortcuts: Shortcut[];
+  shortcuts: LocaleShortcut[];
   softwareId: string;
   softwareName: string;
   /** Platforms the software runs on: a Windows-only one ignores the toggle. */

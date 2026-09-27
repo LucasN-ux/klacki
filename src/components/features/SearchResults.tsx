@@ -8,6 +8,7 @@ import { ShortcutList } from "@/components/ui/ShortcutRow";
 import { SOFTWARE_LIST } from "@/data";
 import { localeHref, type Locale } from "@/domain/locale";
 import { summarizePlatformDifference } from "@/domain/platformDifference";
+import { inLocale } from "@/domain/schema";
 import { countHits, firstHits, searchShortcuts } from "@/domain/search";
 import { shownPlatform } from "@/domain/keys";
 import { usePlatform } from "@/hooks/usePlatform";
@@ -115,7 +116,7 @@ export function SearchResults({ locale }: { locale: Locale }) {
               </span>
             </Link>
             <ShortcutList
-              shortcuts={hit.shortcuts}
+              shortcuts={hit.shortcuts.map((one) => inLocale(one, locale))}
               softwareId={hit.software.id}
               softwareName={hit.software.name}
               platform={shownPlatform(hit.software.platforms, chosenPlatform)}
