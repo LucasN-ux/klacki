@@ -1,0 +1,705 @@
+{
+  "id": "inkscape",
+  "name": "Inkscape",
+  "initials": "IK",
+  "family": "design-layout",
+  "version": "1.4",
+  "docUrl": "https://inkscape.org/doc/keys.html",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Ctrl", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Y"]],
+        "mac": [["Ctrl", "Y"]]
+      }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New file",
+        "fr": "Nouveau fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Ctrl", "N"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a file",
+        "fr": "Ouvrir un fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Ctrl", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save",
+        "fr": "Enregistrer"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Ctrl", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Ctrl", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "save-copy",
+      "category": "file",
+      "action": {
+        "en": "Save a copy",
+        "fr": "Enregistrer une copie"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Alt", "S"]],
+        "mac": [["Ctrl", "Shift", "Option", "S"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import a file",
+        "fr": "Importer un fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "I"]],
+        "mac": [["Ctrl", "I"]]
+      }
+    },
+    {
+      "id": "export",
+      "category": "file",
+      "action": {
+        "en": "Export",
+        "fr": "Exporter"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "E"]],
+        "mac": [["Ctrl", "Shift", "E"]]
+      }
+    },
+    {
+      "id": "print",
+      "category": "file",
+      "action": {
+        "en": "Print",
+        "fr": "Imprimer"
+      },
+      "keys": {
+        "win": [["Ctrl", "P"]],
+        "mac": [["Ctrl", "P"]]
+      }
+    },
+    {
+      "id": "close-project",
+      "category": "file",
+      "action": {
+        "en": "Close the document window",
+        "fr": "Fermer la fenêtre du document"
+      },
+      "keys": {
+        "win": [
+          ["Ctrl", "W"],
+          ["Ctrl", "F4"]
+        ],
+        "mac": [
+          ["Ctrl", "W"],
+          ["Ctrl", "F4"]
+        ]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Ctrl", "Q"]]
+      }
+    },
+    {
+      "id": "command-palette",
+      "category": "general",
+      "action": {
+        "en": "Open the command palette",
+        "fr": "Ouvrir la palette de commandes"
+      },
+      "keys": {
+        "win": [["?"]],
+        "mac": [["?"]]
+      }
+    },
+    {
+      "id": "find",
+      "category": "general",
+      "action": {
+        "en": "Find and replace",
+        "fr": "Rechercher et remplacer"
+      },
+      "keys": {
+        "win": [["Ctrl", "F"]],
+        "mac": [["Ctrl", "F"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Ctrl", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Ctrl", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Ctrl", "V"]]
+      }
+    },
+    {
+      "id": "paste-in-place",
+      "category": "edit",
+      "action": {
+        "en": "Paste in place",
+        "fr": "Coller en place"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "V"]],
+        "mac": [["Ctrl", "Option", "V"]]
+      }
+    },
+    {
+      "id": "paste-style",
+      "category": "edit",
+      "action": {
+        "en": "Paste the style",
+        "fr": "Coller le style"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "V"]],
+        "mac": [["Ctrl", "Shift", "V"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Ctrl", "D"]]
+      }
+    },
+    {
+      "id": "clone",
+      "category": "edit",
+      "action": {
+        "en": "Clone the object",
+        "fr": "Cloner l'objet"
+      },
+      "keys": {
+        "win": [["Alt", "D"]],
+        "mac": [["Option", "D"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the selection",
+        "fr": "Grouper la sélection"
+      },
+      "keys": {
+        "win": [
+          ["Ctrl", "G"],
+          ["Ctrl", "Shift", "U"]
+        ],
+        "mac": [
+          ["Ctrl", "G"],
+          ["Ctrl", "Shift", "U"]
+        ]
+      }
+    },
+    {
+      "id": "ungroup",
+      "category": "edit",
+      "action": {
+        "en": "Ungroup the selection",
+        "fr": "Dégrouper la sélection"
+      },
+      "keys": {
+        "win": [
+          ["Ctrl", "U"],
+          ["Ctrl", "Shift", "G"]
+        ],
+        "mac": [
+          ["Ctrl", "U"],
+          ["Ctrl", "Shift", "G"]
+        ]
+      }
+    },
+    {
+      "id": "bring-to-front",
+      "category": "edit",
+      "action": {
+        "en": "Bring to the front",
+        "fr": "Mettre au premier plan"
+      },
+      "keys": {
+        "win": [["Home"]],
+        "mac": [["Home"]]
+      }
+    },
+    {
+      "id": "send-to-back",
+      "category": "edit",
+      "action": {
+        "en": "Send to the back",
+        "fr": "Mettre à l'arrière-plan"
+      },
+      "keys": {
+        "win": [["End"]],
+        "mac": [["End"]]
+      }
+    },
+    {
+      "id": "bring-forward",
+      "category": "edit",
+      "action": {
+        "en": "Bring the selection forward",
+        "fr": "Avancer la sélection"
+      },
+      "keys": {
+        "win": [["Page Up"]],
+        "mac": [["Page Up"]]
+      }
+    },
+    {
+      "id": "send-backward",
+      "category": "edit",
+      "action": {
+        "en": "Send the selection backward",
+        "fr": "Reculer la sélection"
+      },
+      "keys": {
+        "win": [["Page Down"]],
+        "mac": [["Page Down"]]
+      }
+    },
+    {
+      "id": "object-to-path",
+      "category": "edit",
+      "action": {
+        "en": "Convert the object to a path",
+        "fr": "Convertir l'objet en chemin"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "C"]],
+        "mac": [["Ctrl", "Shift", "C"]]
+      }
+    },
+    {
+      "id": "swap-fill-stroke",
+      "category": "tools",
+      "action": {
+        "en": "Swap fill and stroke",
+        "fr": "Intervertir fond et contour"
+      },
+      "keys": {
+        "win": [["Shift", "X"]],
+        "mac": [["Shift", "X"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "context": {
+        "en": "In the current layer",
+        "fr": "Dans le calque courant"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Ctrl", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Esc"]],
+        "mac": [["Esc"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["S"], ["F1"]],
+        "mac": [["S"], ["F1"]]
+      }
+    },
+    {
+      "id": "node-tool",
+      "category": "tools",
+      "action": {
+        "en": "Node tool",
+        "fr": "Outil nœuds"
+      },
+      "keys": {
+        "win": [["N"], ["F2"]],
+        "mac": [["N"], ["F2"]]
+      }
+    },
+    {
+      "id": "shape-builder-tool",
+      "category": "tools",
+      "action": {
+        "en": "Shape builder tool",
+        "fr": "Outil concepteur de formes"
+      },
+      "keys": {
+        "win": [["X"]],
+        "mac": [["X"]]
+      }
+    },
+    {
+      "id": "rectangle-tool",
+      "category": "tools",
+      "action": {
+        "en": "Rectangle tool",
+        "fr": "Outil rectangle"
+      },
+      "keys": {
+        "win": [["R"], ["F4"]],
+        "mac": [["R"], ["F4"]]
+      }
+    },
+    {
+      "id": "ellipse-tool",
+      "category": "tools",
+      "action": {
+        "en": "Ellipse tool",
+        "fr": "Outil ellipse"
+      },
+      "keys": {
+        "win": [["E"], ["F5"]],
+        "mac": [["E"], ["F5"]]
+      }
+    },
+    {
+      "id": "pen-tool",
+      "category": "tools",
+      "action": {
+        "en": "Pen tool",
+        "fr": "Outil plume"
+      },
+      "keys": {
+        "win": [["B"]],
+        "mac": [["B"]]
+      }
+    },
+    {
+      "id": "pencil-tool",
+      "category": "tools",
+      "action": {
+        "en": "Pencil tool",
+        "fr": "Outil crayon"
+      },
+      "keys": {
+        "win": [["P"], ["F6"]],
+        "mac": [["P"], ["F6"]]
+      }
+    },
+    {
+      "id": "calligraphy-tool",
+      "category": "tools",
+      "action": {
+        "en": "Calligraphy tool",
+        "fr": "Outil calligraphie"
+      },
+      "keys": {
+        "win": [["C"], ["Ctrl", "F6"]],
+        "mac": [["C"], ["Ctrl", "F6"]]
+      }
+    },
+    {
+      "id": "type-tool",
+      "category": "tools",
+      "action": {
+        "en": "Type tool",
+        "fr": "Outil texte"
+      },
+      "keys": {
+        "win": [["T"], ["F8"]],
+        "mac": [["T"], ["F8"]]
+      }
+    },
+    {
+      "id": "gradient-tool",
+      "category": "tools",
+      "action": {
+        "en": "Gradient tool",
+        "fr": "Outil dégradé"
+      },
+      "keys": {
+        "win": [["G"], ["Ctrl", "F1"]],
+        "mac": [["G"], ["Ctrl", "F1"]]
+      }
+    },
+    {
+      "id": "eyedropper-tool",
+      "category": "tools",
+      "action": {
+        "en": "Eyedropper tool",
+        "fr": "Outil pipette"
+      },
+      "keys": {
+        "win": [["D"], ["F7"]],
+        "mac": [["D"], ["F7"]]
+      }
+    },
+    {
+      "id": "paint-bucket-tool",
+      "category": "tools",
+      "action": {
+        "en": "Paint bucket tool",
+        "fr": "Outil pot de peinture"
+      },
+      "keys": {
+        "win": [["U"], ["Shift", "F7"]],
+        "mac": [["U"], ["Shift", "F7"]]
+      }
+    },
+    {
+      "id": "select-eraser-tool",
+      "category": "tools",
+      "action": {
+        "en": "Eraser tool",
+        "fr": "Outil gomme"
+      },
+      "keys": {
+        "win": [["Shift", "E"]],
+        "mac": [["Shift", "E"]]
+      }
+    },
+    {
+      "id": "measure-tool",
+      "category": "tools",
+      "action": {
+        "en": "Measure tool",
+        "fr": "Outil mesure"
+      },
+      "keys": {
+        "win": [["M"]],
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["="], ["+"]],
+        "mac": [["="], ["+"]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["-"]],
+        "mac": [["-"]]
+      }
+    },
+    {
+      "id": "actual-size",
+      "category": "navigation",
+      "action": {
+        "en": "View at 100%",
+        "fr": "Afficher à 100 %"
+      },
+      "keys": {
+        "win": [["1"]],
+        "mac": [["1"]]
+      }
+    },
+    {
+      "id": "frame-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the selection",
+        "fr": "Cadrer la sélection"
+      },
+      "keys": {
+        "win": [["3"]],
+        "mac": [["3"]]
+      }
+    },
+    {
+      "id": "frame-all",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom to the drawing",
+        "fr": "Cadrer tout le dessin"
+      },
+      "keys": {
+        "win": [["4"]],
+        "mac": [["4"]]
+      }
+    },
+    {
+      "id": "zoom-page",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom to the page",
+        "fr": "Cadrer la page"
+      },
+      "keys": {
+        "win": [["5"]],
+        "mac": [["5"]]
+      }
+    },
+    {
+      "id": "show-rulers",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the rulers",
+        "fr": "Afficher ou masquer les règles"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Ctrl", "R"]]
+      }
+    },
+    {
+      "id": "fullscreen",
+      "category": "view",
+      "action": {
+        "en": "Full screen window",
+        "fr": "Fenêtre en plein écran"
+      },
+      "keys": {
+        "win": [["F11"]],
+        "mac": [["F11"]]
+      }
+    },
+    {
+      "id": "fill-stroke-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Fill and Stroke dialog",
+        "fr": "Ouvrir le dialogue Fond et contour"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "F"]],
+        "mac": [["Ctrl", "Shift", "F"]]
+      }
+    },
+    {
+      "id": "layers-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Layers and Objects dialog",
+        "fr": "Ouvrir le dialogue Calques et objets"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "L"]],
+        "mac": [["Ctrl", "Shift", "L"]]
+      }
+    },
+    {
+      "id": "align-panel",
+      "category": "view",
+      "action": {
+        "en": "Open the Align and Distribute dialog",
+        "fr": "Ouvrir le dialogue Aligner et distribuer"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "A"]],
+        "mac": [["Ctrl", "Shift", "A"]]
+      }
+    }
+  ]
+}
