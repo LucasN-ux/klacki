@@ -247,5 +247,10 @@
     "caption": "QWERTY américain",
     "pc": "PC",
     "mac": "Mac"
+  },
+  "data": {
+    "loading": "Chargement…",
+    "failed": "Impossible de charger les raccourcis.",
+    "retry": "Réessayer"
   }
 }

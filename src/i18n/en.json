@@ -247,5 +247,10 @@
     "caption": "US QWERTY",
     "pc": "PC",
     "mac": "Mac"
+  },
+  "data": {
+    "loading": "Loading…",
+    "failed": "Couldn't load the shortcuts.",
+    "retry": "Try again"
   }
 }
