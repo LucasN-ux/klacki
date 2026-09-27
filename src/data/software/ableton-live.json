@@ -1,0 +1,515 @@
+{
+  "id": "ableton-live",
+  "name": "Ableton Live",
+  "initials": "AL",
+  "family": "audio",
+  "version": "12",
+  "docUrl": "https://www.ableton.com/en/manual/live-keyboard-shortcuts/",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Y"]],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New Live Set",
+        "fr": "Nouveau Live Set"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a Live Set",
+        "fr": "Ouvrir un Live Set"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save",
+        "fr": "Enregistrer"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "export-media",
+      "category": "file",
+      "action": {
+        "en": "Export audio or video",
+        "fr": "Exporter l'audio ou la vidéo"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "R"]],
+        "mac": [["Cmd", "Shift", "R"]]
+      }
+    },
+    {
+      "id": "export-midi",
+      "category": "file",
+      "action": {
+        "en": "Export a MIDI file",
+        "fr": "Exporter un fichier MIDI"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "E"]],
+        "mac": [["Cmd", "Shift", "E"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Cmd", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Cmd", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Cmd", "V"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "keys": {
+        "win": [["Delete"]],
+        "mac": [["Delete"]]
+      }
+    },
+    {
+      "id": "rename",
+      "category": "edit",
+      "action": {
+        "en": "Rename the selection",
+        "fr": "Renommer la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the devices",
+        "fr": "Grouper les périphériques"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Cmd", "G"]]
+      }
+    },
+    {
+      "id": "ungroup",
+      "category": "edit",
+      "action": {
+        "en": "Ungroup the devices",
+        "fr": "Dégrouper les périphériques"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "G"]],
+        "mac": [["Cmd", "Shift", "G"]]
+      }
+    },
+    {
+      "id": "split-clip",
+      "category": "edit",
+      "action": {
+        "en": "Split the clip at the selection",
+        "fr": "Scinder le clip à la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "E"]],
+        "mac": [["Cmd", "E"]]
+      }
+    },
+    {
+      "id": "consolidate",
+      "category": "edit",
+      "action": {
+        "en": "Consolidate the selection into a clip",
+        "fr": "Consolider la sélection en un clip"
+      },
+      "keys": {
+        "win": [["Ctrl", "J"]],
+        "mac": [["Cmd", "J"]]
+      }
+    },
+    {
+      "id": "quantize",
+      "category": "edit",
+      "action": {
+        "en": "Quantize",
+        "fr": "Quantifier"
+      },
+      "keys": {
+        "win": [["Ctrl", "U"]],
+        "mac": [["Cmd", "U"]]
+      }
+    },
+    {
+      "id": "insert-audio-track",
+      "category": "edit",
+      "action": {
+        "en": "Insert an audio track",
+        "fr": "Insérer une piste audio"
+      },
+      "keys": {
+        "win": [["Ctrl", "T"]],
+        "mac": [["Cmd", "T"]]
+      }
+    },
+    {
+      "id": "insert-midi-track",
+      "category": "edit",
+      "action": {
+        "en": "Insert a MIDI track",
+        "fr": "Insérer une piste MIDI"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "T"]],
+        "mac": [["Cmd", "Shift", "T"]]
+      }
+    },
+    {
+      "id": "freeze-track",
+      "category": "edit",
+      "action": {
+        "en": "Freeze or unfreeze the tracks",
+        "fr": "Figer ou libérer les pistes"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Shift", "F"]],
+        "mac": [["Cmd", "Option", "Shift", "F"]]
+      }
+    },
+    {
+      "id": "arm-track",
+      "category": "edit",
+      "action": {
+        "en": "Arm the selected tracks",
+        "fr": "Armer les pistes sélectionnées"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "solo-track",
+      "category": "edit",
+      "action": {
+        "en": "Solo the selected tracks",
+        "fr": "Mettre les pistes sélectionnées en solo"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "draw-mode",
+      "category": "tools",
+      "action": {
+        "en": "Turn draw mode on or off",
+        "fr": "Activer ou désactiver le mode dessin"
+      },
+      "keys": {
+        "win": [["B"]],
+        "mac": [["B"]]
+      }
+    },
+    {
+      "id": "automation-mode",
+      "category": "tools",
+      "action": {
+        "en": "Turn automation mode on or off",
+        "fr": "Activer ou désactiver le mode automation"
+      },
+      "keys": {
+        "win": [["A"]],
+        "mac": [["A"]]
+      }
+    },
+    {
+      "id": "toggle-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop playback",
+        "fr": "Lancer ou arrêter la lecture"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "continue-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Continue from the stop point",
+        "fr": "Reprendre depuis le point d'arrêt"
+      },
+      "keys": {
+        "win": [["Shift", "Space"]],
+        "mac": [["Shift", "Space"]]
+      }
+    },
+    {
+      "id": "record",
+      "category": "general",
+      "action": {
+        "en": "Record",
+        "fr": "Enregistrer une prise"
+      },
+      "keys": {
+        "win": [["F9"]],
+        "mac": [["F9"]]
+      }
+    },
+    {
+      "id": "back-to-arrangement",
+      "category": "navigation",
+      "action": {
+        "en": "Back to the arrangement",
+        "fr": "Retour à l'arrangement"
+      },
+      "keys": {
+        "win": [["F10"]],
+        "mac": [["F10"]]
+      }
+    },
+    {
+      "id": "switch-view",
+      "category": "view",
+      "action": {
+        "en": "Switch between Session and Arrangement views",
+        "fr": "Basculer entre les vues Session et Arrangement"
+      },
+      "keys": {
+        "win": [["Tab"]],
+        "mac": [["Tab"]]
+      }
+    },
+    {
+      "id": "show-browser",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the browser",
+        "fr": "Afficher ou masquer le navigateur"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "B"]],
+        "mac": [["Cmd", "Option", "B"]]
+      }
+    },
+    {
+      "id": "show-mixer",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Mixer",
+        "fr": "Afficher ou masquer la table de mixage"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "M"]],
+        "mac": [["Cmd", "Option", "M"]]
+      }
+    },
+    {
+      "id": "show-info",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Info view",
+        "fr": "Afficher ou masquer la vue Info"
+      },
+      "keys": {
+        "win": [["Shift", "?"]],
+        "mac": [["Shift", "?"]]
+      }
+    },
+    {
+      "id": "show-plugins",
+      "category": "view",
+      "action": {
+        "en": "Show or hide all plug-in windows",
+        "fr": "Afficher ou masquer toutes les fenêtres de plug-in"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "P"]],
+        "mac": [["Cmd", "Option", "P"]]
+      }
+    },
+    {
+      "id": "find",
+      "category": "general",
+      "action": {
+        "en": "Search in the browser",
+        "fr": "Rechercher dans le navigateur"
+      },
+      "keys": {
+        "win": [["Ctrl", "F"]],
+        "mac": [["Cmd", "F"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["+"]],
+        "mac": [["+"]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["-"]],
+        "mac": [["-"]]
+      }
+    },
+    {
+      "id": "frame-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom to the clip selection",
+        "fr": "Cadrer la sélection de clip"
+      },
+      "keys": {
+        "win": [["Z"]],
+        "mac": [["Z"]]
+      }
+    },
+    {
+      "id": "fullscreen",
+      "category": "view",
+      "action": {
+        "en": "Full screen window",
+        "fr": "Fenêtre en plein écran"
+      },
+      "keys": {
+        "win": [["F11"]],
+        "mac": [["Ctrl", "Cmd", "F"]]
+      }
+    }
+  ]
+}

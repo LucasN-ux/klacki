@@ -1,0 +1,618 @@
+{
+  "id": "final-cut-pro",
+  "name": "Final Cut Pro",
+  "initials": "FC",
+  "family": "compositing-video",
+  "platforms": ["mac"],
+  "version": "12.2",
+  "docUrl": "https://support.apple.com/guide/final-cut-pro/keyboard-shortcuts-ver90ba5929/mac",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["save-file"],
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a library",
+        "fr": "Ouvrir une bibliothèque"
+      },
+      "keys": {
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New project",
+        "fr": "Nouveau projet"
+      },
+      "keys": {
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "new-event",
+      "category": "file",
+      "action": {
+        "en": "New event",
+        "fr": "Nouvel événement"
+      },
+      "keys": {
+        "mac": [["Option", "N"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import media",
+        "fr": "Importer des médias"
+      },
+      "keys": {
+        "mac": [["Cmd", "I"]]
+      }
+    },
+    {
+      "id": "export-media",
+      "category": "file",
+      "action": {
+        "en": "Share to the default destination",
+        "fr": "Partager vers la destination par défaut"
+      },
+      "keys": {
+        "mac": [["Cmd", "E"]]
+      }
+    },
+    {
+      "id": "render-selected",
+      "category": "file",
+      "action": {
+        "en": "Render the selection",
+        "fr": "Rendre la sélection"
+      },
+      "keys": {
+        "mac": [["Ctrl", "R"]]
+      }
+    },
+    {
+      "id": "render-all",
+      "category": "file",
+      "action": {
+        "en": "Render everything",
+        "fr": "Tout rendre"
+      },
+      "keys": {
+        "mac": [["Ctrl", "Shift", "R"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "preferences",
+      "category": "general",
+      "action": {
+        "en": "Open the settings",
+        "fr": "Ouvrir les réglages"
+      },
+      "keys": {
+        "mac": [["Cmd", ","]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "mac": [["Cmd", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "mac": [["Cmd", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "mac": [["Cmd", "V"]]
+      }
+    },
+    {
+      "id": "paste-attributes",
+      "category": "edit",
+      "action": {
+        "en": "Paste attributes",
+        "fr": "Coller les attributs"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "V"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "keys": {
+        "mac": [["Delete"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "mac": [["Cmd", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "A"]]
+      }
+    },
+    {
+      "id": "blade",
+      "category": "edit",
+      "action": {
+        "en": "Blade the clip at the playhead",
+        "fr": "Couper le clip à la tête de lecture"
+      },
+      "keys": {
+        "mac": [["Cmd", "B"]]
+      }
+    },
+    {
+      "id": "blade-all",
+      "category": "edit",
+      "action": {
+        "en": "Blade every clip at the playhead",
+        "fr": "Couper tous les clips à la tête de lecture"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "B"]]
+      }
+    },
+    {
+      "id": "append-clip",
+      "category": "edit",
+      "action": {
+        "en": "Append to the storyline",
+        "fr": "Ajouter à la fin du scénario"
+      },
+      "keys": {
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "insert-clip",
+      "category": "edit",
+      "action": {
+        "en": "Insert",
+        "fr": "Insérer"
+      },
+      "keys": {
+        "mac": [["W"]]
+      }
+    },
+    {
+      "id": "overwrite-clip",
+      "category": "edit",
+      "action": {
+        "en": "Overwrite",
+        "fr": "Écraser"
+      },
+      "keys": {
+        "mac": [["D"]]
+      }
+    },
+    {
+      "id": "connect-clip",
+      "category": "edit",
+      "action": {
+        "en": "Connect to the primary storyline",
+        "fr": "Connecter au scénario principal"
+      },
+      "keys": {
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "detach-audio",
+      "category": "edit",
+      "action": {
+        "en": "Detach the audio",
+        "fr": "Détacher l'audio"
+      },
+      "keys": {
+        "mac": [["Ctrl", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "create-storyline",
+      "category": "edit",
+      "action": {
+        "en": "Create a storyline",
+        "fr": "Créer un scénario"
+      },
+      "keys": {
+        "mac": [["Cmd", "G"]]
+      }
+    },
+    {
+      "id": "add-transition",
+      "category": "edit",
+      "action": {
+        "en": "Add the default transition",
+        "fr": "Ajouter la transition par défaut"
+      },
+      "keys": {
+        "mac": [["Cmd", "T"]]
+      }
+    },
+    {
+      "id": "retime-editor",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the retime editor",
+        "fr": "Afficher ou masquer l'éditeur de vitesse"
+      },
+      "keys": {
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "toggle-snapping",
+      "category": "tools",
+      "action": {
+        "en": "Turn snapping on or off",
+        "fr": "Activer ou désactiver le magnétisme"
+      },
+      "keys": {
+        "mac": [["N"]]
+      }
+    },
+    {
+      "id": "toggle-skimming",
+      "category": "tools",
+      "action": {
+        "en": "Turn skimming on or off",
+        "fr": "Activer ou désactiver le survol"
+      },
+      "keys": {
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "mac": [["A"]]
+      }
+    },
+    {
+      "id": "blade-tool",
+      "category": "tools",
+      "action": {
+        "en": "Blade tool",
+        "fr": "Outil lame"
+      },
+      "keys": {
+        "mac": [["B"]]
+      }
+    },
+    {
+      "id": "trim-tool",
+      "category": "tools",
+      "action": {
+        "en": "Trim tool",
+        "fr": "Outil découpe"
+      },
+      "keys": {
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "position-tool",
+      "category": "tools",
+      "action": {
+        "en": "Position tool",
+        "fr": "Outil position"
+      },
+      "keys": {
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "range-tool",
+      "category": "tools",
+      "action": {
+        "en": "Range selection tool",
+        "fr": "Outil sélection de plage"
+      },
+      "keys": {
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "transform-tool",
+      "category": "tools",
+      "action": {
+        "en": "Transform tool",
+        "fr": "Outil transformation"
+      },
+      "keys": {
+        "mac": [["Shift", "T"]]
+      }
+    },
+    {
+      "id": "crop-tool",
+      "category": "tools",
+      "action": {
+        "en": "Crop tool",
+        "fr": "Outil recadrage"
+      },
+      "keys": {
+        "mac": [["Shift", "C"]]
+      }
+    },
+    {
+      "id": "hand-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Hand tool",
+        "fr": "Outil main"
+      },
+      "keys": {
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "zoom-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom tool",
+        "fr": "Outil zoom"
+      },
+      "keys": {
+        "mac": [["Z"]]
+      }
+    },
+    {
+      "id": "play-pause",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop the preview",
+        "fr": "Lancer ou arrêter l'aperçu"
+      },
+      "keys": {
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "play-backward",
+      "category": "navigation",
+      "action": {
+        "en": "Play backward",
+        "fr": "Lire en arrière"
+      },
+      "keys": {
+        "mac": [["J"]]
+      }
+    },
+    {
+      "id": "pause-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Pause playback",
+        "fr": "Mettre en pause"
+      },
+      "keys": {
+        "mac": [["K"]]
+      }
+    },
+    {
+      "id": "play-forward",
+      "category": "navigation",
+      "action": {
+        "en": "Play forward",
+        "fr": "Lire en avant"
+      },
+      "keys": {
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "go-to-start",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the start of the timeline",
+        "fr": "Aller au début de la timeline"
+      },
+      "keys": {
+        "mac": [["Home"]]
+      }
+    },
+    {
+      "id": "go-to-end",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the end of the timeline",
+        "fr": "Aller à la fin de la timeline"
+      },
+      "keys": {
+        "mac": [["End"]]
+      }
+    },
+    {
+      "id": "mark-in",
+      "category": "navigation",
+      "action": {
+        "en": "Set the in point",
+        "fr": "Poser le point d'entrée"
+      },
+      "keys": {
+        "mac": [["I"]]
+      }
+    },
+    {
+      "id": "mark-out",
+      "category": "navigation",
+      "action": {
+        "en": "Set the out point",
+        "fr": "Poser le point de sortie"
+      },
+      "keys": {
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "add-marker",
+      "category": "navigation",
+      "action": {
+        "en": "Add a marker",
+        "fr": "Ajouter un repère"
+      },
+      "keys": {
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "loop-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Loop playback",
+        "fr": "Lire en boucle"
+      },
+      "keys": {
+        "mac": [["Cmd", "L"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in on the timeline",
+        "fr": "Zoomer dans la timeline"
+      },
+      "keys": {
+        "mac": [["Cmd", "+"]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out on the timeline",
+        "fr": "Dézoomer dans la timeline"
+      },
+      "keys": {
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "fit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Fit the project in the timeline",
+        "fr": "Adapter le projet à la timeline"
+      },
+      "keys": {
+        "mac": [["Shift", "Z"]]
+      }
+    },
+    {
+      "id": "fullscreen-playback",
+      "category": "view",
+      "action": {
+        "en": "Play full screen",
+        "fr": "Lire en plein écran"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "F"]]
+      }
+    },
+    {
+      "id": "inspector",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the inspector",
+        "fr": "Afficher ou masquer l'inspecteur"
+      },
+      "keys": {
+        "mac": [["Cmd", "4"]]
+      }
+    }
+  ]
+}

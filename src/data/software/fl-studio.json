@@ -1,0 +1,451 @@
+{
+  "id": "fl-studio",
+  "name": "FL Studio",
+  "initials": "FL",
+  "family": "audio",
+  "version": "2025",
+  "docUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/basics_shortcuts.htm",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo or redo the last edit",
+        "fr": "Annuler ou rétablir la dernière modification"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo the last edit",
+        "fr": "Rétablir la dernière modification"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "undo-step",
+      "category": "general",
+      "action": {
+        "en": "Undo step by step",
+        "fr": "Annuler pas à pas"
+      },
+      "keys": {
+        "win": [["Ctrl", "Alt", "Z"]],
+        "mac": [["Cmd", "Option", "Z"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a file",
+        "fr": "Ouvrir un fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save",
+        "fr": "Enregistrer"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "save-new-version",
+      "category": "file",
+      "action": {
+        "en": "Save a new version",
+        "fr": "Enregistrer une nouvelle version"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "export-wav",
+      "category": "file",
+      "action": {
+        "en": "Export a WAV file",
+        "fr": "Exporter un fichier WAV"
+      },
+      "keys": {
+        "win": [["Ctrl", "R"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "export-mp3",
+      "category": "file",
+      "action": {
+        "en": "Export an MP3 file",
+        "fr": "Exporter un fichier MP3"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "R"]],
+        "mac": [["Cmd", "Shift", "R"]]
+      }
+    },
+    {
+      "id": "export-midi",
+      "category": "file",
+      "action": {
+        "en": "Export a MIDI file",
+        "fr": "Exporter un fichier MIDI"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "M"]],
+        "mac": [["Cmd", "Shift", "M"]]
+      }
+    },
+    {
+      "id": "help",
+      "category": "general",
+      "action": {
+        "en": "Show the help",
+        "fr": "Afficher l'aide"
+      },
+      "keys": {
+        "win": [["F1"]],
+        "mac": [["F1"]]
+      }
+    },
+    {
+      "id": "toggle-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop playback",
+        "fr": "Lancer ou arrêter la lecture"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "pause-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or pause playback",
+        "fr": "Lancer ou mettre en pause la lecture"
+      },
+      "keys": {
+        "win": [["Ctrl", "Space"]],
+        "mac": [["Cmd", "Space"]]
+      }
+    },
+    {
+      "id": "record",
+      "category": "general",
+      "action": {
+        "en": "Turn recording on or off",
+        "fr": "Activer ou désactiver l'enregistrement"
+      },
+      "keys": {
+        "win": [["R"]],
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "pattern-song-mode",
+      "category": "general",
+      "action": {
+        "en": "Switch between pattern and song mode",
+        "fr": "Basculer entre mode motif et mode morceau"
+      },
+      "keys": {
+        "win": [["L"]],
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "toggle-metronome",
+      "category": "general",
+      "action": {
+        "en": "Turn the metronome on or off",
+        "fr": "Activer ou désactiver le métronome"
+      },
+      "keys": {
+        "win": [["Ctrl", "M"]],
+        "mac": [["Cmd", "M"]]
+      }
+    },
+    {
+      "id": "stop-sound",
+      "category": "general",
+      "action": {
+        "en": "Stop all sound",
+        "fr": "Couper tout le son"
+      },
+      "keys": {
+        "win": [["Ctrl", "H"]],
+        "mac": [["Cmd", "H"]]
+      }
+    },
+    {
+      "id": "typing-keyboard",
+      "category": "general",
+      "action": {
+        "en": "Turn the typing keyboard to piano on or off",
+        "fr": "Activer ou désactiver le clavier vers piano"
+      },
+      "keys": {
+        "win": [["Ctrl", "T"]],
+        "mac": [["Cmd", "T"]]
+      }
+    },
+    {
+      "id": "show-playlist",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Playlist",
+        "fr": "Afficher ou masquer la Playlist"
+      },
+      "keys": {
+        "win": [["F5"]],
+        "mac": [["F5"]]
+      }
+    },
+    {
+      "id": "show-channel-rack",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Channel Rack",
+        "fr": "Afficher ou masquer le Channel Rack"
+      },
+      "keys": {
+        "win": [["F6"]],
+        "mac": [["F6"]]
+      }
+    },
+    {
+      "id": "show-piano-roll",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Piano Roll",
+        "fr": "Afficher ou masquer le Piano Roll"
+      },
+      "keys": {
+        "win": [["F7"]],
+        "mac": [["F7"]]
+      }
+    },
+    {
+      "id": "plugin-picker",
+      "category": "view",
+      "action": {
+        "en": "Open the plugin picker",
+        "fr": "Ouvrir le sélecteur de plugins"
+      },
+      "keys": {
+        "win": [["F8"]],
+        "mac": [["F8"]]
+      }
+    },
+    {
+      "id": "show-mixer",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Mixer",
+        "fr": "Afficher ou masquer la table de mixage"
+      },
+      "keys": {
+        "win": [["F9"]],
+        "mac": [["F9"]]
+      }
+    },
+    {
+      "id": "show-browser",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the browser",
+        "fr": "Afficher ou masquer le navigateur"
+      },
+      "keys": {
+        "win": [["Alt", "F8"]],
+        "mac": [["Option", "F8"]]
+      }
+    },
+    {
+      "id": "close-all-windows",
+      "category": "view",
+      "action": {
+        "en": "Close all windows",
+        "fr": "Fermer toutes les fenêtres"
+      },
+      "keys": {
+        "win": [["F12"]],
+        "mac": [["F12"]]
+      }
+    },
+    {
+      "id": "arrange-windows",
+      "category": "view",
+      "action": {
+        "en": "Arrange the windows",
+        "fr": "Réorganiser les fenêtres"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "H"]],
+        "mac": [["Cmd", "Shift", "H"]]
+      }
+    },
+    {
+      "id": "clone-channel",
+      "category": "edit",
+      "action": {
+        "en": "Clone the selected channels",
+        "fr": "Cloner les canaux sélectionnés"
+      },
+      "context": {
+        "en": "Channel Rack",
+        "fr": "Channel Rack"
+      },
+      "keys": {
+        "win": [["Alt", "C"]],
+        "mac": [["Option", "C"]]
+      }
+    },
+    {
+      "id": "group-channels",
+      "category": "edit",
+      "action": {
+        "en": "Group the selected channels",
+        "fr": "Grouper les canaux sélectionnés"
+      },
+      "context": {
+        "en": "Channel Rack",
+        "fr": "Channel Rack"
+      },
+      "keys": {
+        "win": [["Alt", "G"]],
+        "mac": [["Option", "G"]]
+      }
+    },
+    {
+      "id": "delete-channel",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selected channels",
+        "fr": "Supprimer les canaux sélectionnés"
+      },
+      "context": {
+        "en": "Channel Rack",
+        "fr": "Channel Rack"
+      },
+      "keys": {
+        "win": [["Alt", "Delete"]],
+        "mac": [["Option", "Forward Delete"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "context": {
+        "en": "Channel Rack",
+        "fr": "Channel Rack"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Cmd", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "context": {
+        "en": "Channel Rack",
+        "fr": "Channel Rack"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Cmd", "V"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "context": {
+        "en": "Channel Rack",
+        "fr": "Channel Rack"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Cmd", "X"]]
+      }
+    },
+    {
+      "id": "solo-track",
+      "category": "edit",
+      "action": {
+        "en": "Solo the current track",
+        "fr": "Mettre la piste en solo"
+      },
+      "context": {
+        "en": "Mixer",
+        "fr": "Table de mixage"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "rename-track",
+      "category": "edit",
+      "action": {
+        "en": "Rename the selected mixer track",
+        "fr": "Renommer la piste de mixage sélectionnée"
+      },
+      "context": {
+        "en": "Mixer",
+        "fr": "Table de mixage"
+      },
+      "keys": {
+        "win": [["F2"]],
+        "mac": [["F2"]]
+      }
+    }
+  ]
+}

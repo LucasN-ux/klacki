@@ -1,0 +1,264 @@
+{
+  "id": "sketchup",
+  "name": "SketchUp",
+  "initials": "SU",
+  "family": "3d-sculpt",
+  "version": "2026",
+  "docUrl": "https://help.sketchup.com/en/default-keyboard-shortcuts",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "lasso-tool",
+      "category": "tools",
+      "action": {
+        "en": "Lasso select tool",
+        "fr": "Outil sélection lasso"
+      },
+      "keys": {
+        "win": [["Shift", "Space"]],
+        "mac": [["Shift", "Space"]]
+      }
+    },
+    {
+      "id": "paint-bucket-tool",
+      "category": "tools",
+      "action": {
+        "en": "Paint bucket tool",
+        "fr": "Outil pot de peinture"
+      },
+      "keys": {
+        "win": [["B"]],
+        "mac": [["B"]]
+      }
+    },
+    {
+      "id": "select-eraser-tool",
+      "category": "tools",
+      "action": {
+        "en": "Eraser tool",
+        "fr": "Outil gomme"
+      },
+      "keys": {
+        "win": [["E"]],
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "line-tool",
+      "category": "tools",
+      "action": {
+        "en": "Line segment tool",
+        "fr": "Outil segment de droite"
+      },
+      "keys": {
+        "win": [["L"]],
+        "mac": [["L"]]
+      }
+    },
+    {
+      "id": "rectangle-tool",
+      "category": "tools",
+      "action": {
+        "en": "Rectangle tool",
+        "fr": "Outil rectangle"
+      },
+      "keys": {
+        "win": [["R"]],
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "circle-tool",
+      "category": "tools",
+      "action": {
+        "en": "Circle tool",
+        "fr": "Outil cercle"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "arc-tool",
+      "category": "tools",
+      "action": {
+        "en": "Two-point arc tool",
+        "fr": "Outil arc deux points"
+      },
+      "keys": {
+        "win": [["A"]],
+        "mac": [["A"]]
+      }
+    },
+    {
+      "id": "move",
+      "category": "tools",
+      "action": {
+        "en": "Move",
+        "fr": "Déplacer"
+      },
+      "keys": {
+        "win": [["M"]],
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "push-pull-tool",
+      "category": "tools",
+      "action": {
+        "en": "Push/pull tool",
+        "fr": "Outil pousser/tirer"
+      },
+      "keys": {
+        "win": [["P"]],
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "rotate",
+      "category": "tools",
+      "action": {
+        "en": "Rotate",
+        "fr": "Faire pivoter"
+      },
+      "keys": {
+        "win": [["Q"]],
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "scale",
+      "category": "tools",
+      "action": {
+        "en": "Scale",
+        "fr": "Mettre à l'échelle"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "offset-tool",
+      "category": "tools",
+      "action": {
+        "en": "Offset tool",
+        "fr": "Outil décalage"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
+      }
+    },
+    {
+      "id": "tape-measure-tool",
+      "category": "tools",
+      "action": {
+        "en": "Tape measure tool",
+        "fr": "Outil mètre"
+      },
+      "keys": {
+        "win": [["T"]],
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "orbit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Orbit the camera",
+        "fr": "Orbiter la caméra"
+      },
+      "keys": {
+        "win": [["O"]],
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "pan-view",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the camera",
+        "fr": "Déplacer la caméra"
+      },
+      "keys": {
+        "win": [["H"]],
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "zoom-view",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the camera",
+        "fr": "Zoomer la caméra"
+      },
+      "keys": {
+        "win": [["Z"], ["MouseWheel"]],
+        "mac": [["Z"], ["MouseWheel"]]
+      }
+    },
+    {
+      "id": "frame-all",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the whole scene",
+        "fr": "Cadrer toute la scène"
+      },
+      "keys": {
+        "win": [["Shift", "Z"]],
+        "mac": [["Shift", "Z"]]
+      }
+    },
+    {
+      "id": "make-component",
+      "category": "edit",
+      "action": {
+        "en": "Make a component",
+        "fr": "Créer un composant"
+      },
+      "keys": {
+        "win": [["G"]],
+        "mac": [["G"]]
+      }
+    },
+    {
+      "id": "back-edges",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the back edges",
+        "fr": "Afficher ou masquer les arêtes arrière"
+      },
+      "keys": {
+        "win": [["K"]],
+        "mac": [["K"]]
+      }
+    },
+    {
+      "id": "find",
+      "category": "general",
+      "action": {
+        "en": "Search",
+        "fr": "Rechercher"
+      },
+      "keys": {
+        "win": [["Shift", "S"]],
+        "mac": [["Shift", "S"]]
+      }
+    }
+  ]
+}
