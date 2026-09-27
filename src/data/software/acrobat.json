@@ -1,0 +1,356 @@
+{
+  "id": "acrobat",
+  "name": "Acrobat",
+  "initials": "AC",
+  "family": "web-docs",
+  "version": "2026",
+  "docUrl": "https://helpx.adobe.com/acrobat/desktop/get-started/preferences-and-settings/keyboard-shortcuts.html",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo", "save-file", "open-file"],
+  "shortcuts": [
+    {
+      "id": "close-project",
+      "category": "file",
+      "action": {
+        "en": "Close the document",
+        "fr": "Fermer le document"
+      },
+      "keys": {
+        "win": [["Ctrl", "F4"]],
+        "mac": [["Cmd", "F4"]]
+      }
+    },
+    {
+      "id": "find",
+      "category": "general",
+      "action": {
+        "en": "Find in the document",
+        "fr": "Rechercher dans le document"
+      },
+      "keys": {
+        "win": [["Ctrl", "F"]],
+        "mac": [["Cmd", "F"]]
+      }
+    },
+    {
+      "id": "help",
+      "category": "general",
+      "action": {
+        "en": "Show the help",
+        "fr": "Afficher l'aide"
+      },
+      "keys": {
+        "win": [["F1"]],
+        "mac": [["F1"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["V"]],
+        "mac": [["V"]]
+      }
+    },
+    {
+      "id": "hand-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Hand tool, while held",
+        "fr": "Outil main, tant qu'on maintient"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "zoom-tool",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom tool",
+        "fr": "Outil zoom"
+      },
+      "keys": {
+        "win": [["Z"]],
+        "mac": [["Z"]]
+      }
+    },
+    {
+      "id": "select-object-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select object tool",
+        "fr": "Outil sélection d'objet"
+      },
+      "keys": {
+        "win": [["R"]],
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "edit-object-tool",
+      "category": "tools",
+      "action": {
+        "en": "Edit object tool",
+        "fr": "Outil modification d'objet"
+      },
+      "keys": {
+        "win": [["O"]],
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "edit-text-tool",
+      "category": "tools",
+      "action": {
+        "en": "Edit text",
+        "fr": "Modifier le texte"
+      },
+      "keys": {
+        "win": [["T"]],
+        "mac": [["T"]]
+      }
+    },
+    {
+      "id": "text-field-tool",
+      "category": "tools",
+      "action": {
+        "en": "Text field tool",
+        "fr": "Outil champ de texte"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
+      }
+    },
+    {
+      "id": "add-comment",
+      "category": "tools",
+      "action": {
+        "en": "Add a comment",
+        "fr": "Ajouter un commentaire"
+      },
+      "keys": {
+        "win": [["S"]],
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "highlight-tool",
+      "category": "tools",
+      "action": {
+        "en": "Highlighting tool",
+        "fr": "Outil de surlignage"
+      },
+      "keys": {
+        "win": [["U"]],
+        "mac": [["U"]]
+      }
+    },
+    {
+      "id": "cloud-tool",
+      "category": "tools",
+      "action": {
+        "en": "Cloud tool",
+        "fr": "Outil nuage"
+      },
+      "keys": {
+        "win": [["Q"]],
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "text-comment",
+      "category": "tools",
+      "action": {
+        "en": "Add a text comment",
+        "fr": "Ajouter un commentaire texte"
+      },
+      "keys": {
+        "win": [["X"]],
+        "mac": [["X"]]
+      }
+    },
+    {
+      "id": "first-page",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the first page",
+        "fr": "Aller à la première page"
+      },
+      "keys": {
+        "win": [["Home"], ["Shift", "Ctrl", "Page Up"]],
+        "mac": [["Home"], ["Shift", "Cmd", "Page Up"]]
+      }
+    },
+    {
+      "id": "last-page",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the last page",
+        "fr": "Aller à la dernière page"
+      },
+      "keys": {
+        "win": [["End"], ["Shift", "Ctrl", "Page Down"]],
+        "mac": [["End"], ["Shift", "Cmd", "Page Down"]]
+      }
+    },
+    {
+      "id": "previous-page",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the previous page",
+        "fr": "Aller à la page précédente"
+      },
+      "keys": {
+        "win": [["Left"], ["Ctrl", "Page Up"]],
+        "mac": [["Left"], ["Cmd", "Page Up"]]
+      }
+    },
+    {
+      "id": "next-page",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the next page",
+        "fr": "Aller à la page suivante"
+      },
+      "keys": {
+        "win": [["Right"], ["Ctrl", "Page Down"]],
+        "mac": [["Right"], ["Cmd", "Page Down"]]
+      }
+    },
+    {
+      "id": "go-to-page",
+      "category": "navigation",
+      "action": {
+        "en": "Go to a page",
+        "fr": "Aller à une page"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "N"]],
+        "mac": [["Cmd", "Shift", "N"]]
+      }
+    },
+    {
+      "id": "previous-screen",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the previous screen",
+        "fr": "Aller à l'écran précédent"
+      },
+      "keys": {
+        "win": [["Page Up"]],
+        "mac": [["Page Up"]]
+      }
+    },
+    {
+      "id": "next-screen",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the next screen",
+        "fr": "Aller à l'écran suivant"
+      },
+      "keys": {
+        "win": [["Page Down"]],
+        "mac": [["Page Down"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Cmd", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "task-pane",
+      "category": "view",
+      "action": {
+        "en": "Open or close the Task pane",
+        "fr": "Ouvrir ou fermer le volet Tâches"
+      },
+      "keys": {
+        "win": [["Shift", "F4"]],
+        "mac": [["Shift", "F4"]]
+      }
+    },
+    {
+      "id": "navigation-pane",
+      "category": "view",
+      "action": {
+        "en": "Open the navigation pane",
+        "fr": "Ouvrir le volet de navigation"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "F5"]],
+        "mac": [["Cmd", "Shift", "F5"]]
+      }
+    },
+    {
+      "id": "read-out-loud",
+      "category": "general",
+      "action": {
+        "en": "Turn Read Out Loud on or off",
+        "fr": "Activer ou désactiver la lecture audio"
+      },
+      "keys": {
+        "win": [["Shift", "Ctrl", "Y"]],
+        "mac": [["Shift", "Cmd", "Y"]]
+      }
+    },
+    {
+      "id": "form-preview",
+      "category": "view",
+      "action": {
+        "en": "Switch between editing and previewing the form",
+        "fr": "Basculer entre modification et aperçu du formulaire"
+      },
+      "context": {
+        "en": "In a form",
+        "fr": "Dans un formulaire"
+      },
+      "keys": {
+        "win": [["P"]],
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "toggle-guides",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the guides",
+        "fr": "Afficher ou masquer les repères"
+      },
+      "context": {
+        "en": "In a form",
+        "fr": "Dans un formulaire"
+      },
+      "keys": {
+        "win": [["G"]],
+        "mac": [["G"]]
+      }
+    }
+  ]
+}

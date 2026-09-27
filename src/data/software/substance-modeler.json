@@ -1,0 +1,507 @@
+{
+  "id": "substance-modeler",
+  "name": "Substance 3D Modeler",
+  "initials": "SM",
+  "family": "3d-sculpt",
+  "version": "1.22",
+  "docUrl": "https://helpx.adobe.com/substance-3d-modeler/desktop/getting-started/controls/desktop-shortcuts-and-controls.html",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Ctrl", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Z"]],
+        "mac": [["Ctrl", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New file",
+        "fr": "Nouveau fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "N"]],
+        "mac": [["Ctrl", "Shift", "N"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a file",
+        "fr": "Ouvrir un fichier"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Ctrl", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save",
+        "fr": "Enregistrer"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Ctrl", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save as",
+        "fr": "Enregistrer sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Ctrl", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "export",
+      "category": "file",
+      "action": {
+        "en": "Export",
+        "fr": "Exporter"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "E"]],
+        "mac": [["Ctrl", "Shift", "E"]]
+      }
+    },
+    {
+      "id": "preferences",
+      "category": "general",
+      "action": {
+        "en": "Open the preferences",
+        "fr": "Ouvrir les préférences"
+      },
+      "keys": {
+        "win": [["Ctrl", "K"]],
+        "mac": [["Ctrl", "K"]]
+      }
+    },
+    {
+      "id": "toggle-vr",
+      "category": "view",
+      "action": {
+        "en": "Turn VR on or off",
+        "fr": "Activer ou désactiver la réalité virtuelle"
+      },
+      "keys": {
+        "win": [["F4"]],
+        "mac": [["F4"]]
+      }
+    },
+    {
+      "id": "select-all",
+      "category": "selection",
+      "action": {
+        "en": "Select everything",
+        "fr": "Tout sélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "A"]],
+        "mac": [["Ctrl", "A"]]
+      }
+    },
+    {
+      "id": "deselect-all",
+      "category": "selection",
+      "action": {
+        "en": "Deselect everything",
+        "fr": "Tout désélectionner"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "A"]],
+        "mac": [["Ctrl", "Shift", "A"]]
+      }
+    },
+    {
+      "id": "invert-selection",
+      "category": "selection",
+      "action": {
+        "en": "Invert the selection",
+        "fr": "Inverser la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "I"]],
+        "mac": [["Ctrl", "I"]]
+      }
+    },
+    {
+      "id": "cut",
+      "category": "edit",
+      "action": {
+        "en": "Cut",
+        "fr": "Couper"
+      },
+      "keys": {
+        "win": [["Ctrl", "X"]],
+        "mac": [["Ctrl", "X"]]
+      }
+    },
+    {
+      "id": "copy",
+      "category": "edit",
+      "action": {
+        "en": "Copy",
+        "fr": "Copier"
+      },
+      "keys": {
+        "win": [["Ctrl", "C"]],
+        "mac": [["Ctrl", "C"]]
+      }
+    },
+    {
+      "id": "paste",
+      "category": "edit",
+      "action": {
+        "en": "Paste",
+        "fr": "Coller"
+      },
+      "keys": {
+        "win": [["Ctrl", "V"]],
+        "mac": [["Ctrl", "V"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Ctrl", "D"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "keys": {
+        "win": [["Backspace"], ["Delete"]],
+        "mac": [["Backspace"], ["Delete"]]
+      }
+    },
+    {
+      "id": "group",
+      "category": "edit",
+      "action": {
+        "en": "Group the selection",
+        "fr": "Grouper la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Ctrl", "G"]]
+      }
+    },
+    {
+      "id": "ungroup",
+      "category": "edit",
+      "action": {
+        "en": "Ungroup the selection",
+        "fr": "Dégrouper la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "G"]],
+        "mac": [["Ctrl", "Shift", "G"]]
+      }
+    },
+    {
+      "id": "merge",
+      "category": "edit",
+      "action": {
+        "en": "Merge the selection",
+        "fr": "Fusionner la sélection"
+      },
+      "keys": {
+        "win": [["Ctrl", "E"]],
+        "mac": [["Ctrl", "E"]]
+      }
+    },
+    {
+      "id": "new-layer",
+      "category": "edit",
+      "action": {
+        "en": "New layer",
+        "fr": "Nouveau calque"
+      },
+      "keys": {
+        "win": [["Ctrl", "N"]],
+        "mac": [["Ctrl", "N"]]
+      }
+    },
+    {
+      "id": "hide-selection",
+      "category": "view",
+      "action": {
+        "en": "Hide the selection",
+        "fr": "Masquer la sélection"
+      },
+      "context": {
+        "en": "With an object selected",
+        "fr": "Avec un objet sélectionné"
+      },
+      "keys": {
+        "win": [["H"]],
+        "mac": [["H"]]
+      }
+    },
+    {
+      "id": "increase-resolution",
+      "category": "view",
+      "action": {
+        "en": "Increase the resolution",
+        "fr": "Augmenter la résolution"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Ctrl", "="]]
+      }
+    },
+    {
+      "id": "decrease-resolution",
+      "category": "view",
+      "action": {
+        "en": "Decrease the resolution",
+        "fr": "Diminuer la résolution"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Ctrl", "-"]]
+      }
+    },
+    {
+      "id": "quick-swap-tool",
+      "category": "tools",
+      "action": {
+        "en": "Swap to the previous tool",
+        "fr": "Revenir à l'outil précédent"
+      },
+      "keys": {
+        "win": [["Tab"]],
+        "mac": [["Tab"]]
+      }
+    },
+    {
+      "id": "clay-tool",
+      "category": "tools",
+      "action": {
+        "en": "Clay tool",
+        "fr": "Outil argile"
+      },
+      "keys": {
+        "win": [["C"]],
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "erase-tool",
+      "category": "tools",
+      "action": {
+        "en": "Erase tool",
+        "fr": "Outil effacement"
+      },
+      "keys": {
+        "win": [["E"]],
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "warp-tool",
+      "category": "tools",
+      "action": {
+        "en": "Warp tool",
+        "fr": "Outil déformation"
+      },
+      "keys": {
+        "win": [["W"]],
+        "mac": [["W"]]
+      }
+    },
+    {
+      "id": "buildup-tool",
+      "category": "tools",
+      "action": {
+        "en": "Buildup tool",
+        "fr": "Outil accumulation"
+      },
+      "keys": {
+        "win": [["B"]],
+        "mac": [["B"]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["V"]],
+        "mac": [["V"]]
+      }
+    },
+    {
+      "id": "crease-tool",
+      "category": "tools",
+      "action": {
+        "en": "Crease tool",
+        "fr": "Outil pli"
+      },
+      "keys": {
+        "win": [["X"]],
+        "mac": [["X"]]
+      }
+    },
+    {
+      "id": "flatten-tool",
+      "category": "tools",
+      "action": {
+        "en": "Flatten tool",
+        "fr": "Outil aplatissement"
+      },
+      "keys": {
+        "win": [["D"]],
+        "mac": [["D"]]
+      }
+    },
+    {
+      "id": "increase-brush-size",
+      "category": "tools",
+      "action": {
+        "en": "Increase the brush radius",
+        "fr": "Agrandir le rayon de la brosse"
+      },
+      "keys": {
+        "win": [["]"]],
+        "mac": [["]"]]
+      }
+    },
+    {
+      "id": "decrease-brush-size",
+      "category": "tools",
+      "action": {
+        "en": "Decrease the brush radius",
+        "fr": "Réduire le rayon de la brosse"
+      },
+      "keys": {
+        "win": [["["]],
+        "mac": [["["]]
+      }
+    },
+    {
+      "id": "toggle-gizmo",
+      "category": "tools",
+      "action": {
+        "en": "Switch between gizmo and surface modes",
+        "fr": "Basculer entre gizmo et mode surface"
+      },
+      "keys": {
+        "win": [["G"]],
+        "mac": [["G"]]
+      }
+    },
+    {
+      "id": "color-picker",
+      "category": "tools",
+      "action": {
+        "en": "Pick a colour from the scene",
+        "fr": "Prélever une couleur dans la scène"
+      },
+      "keys": {
+        "win": [["Q"]],
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "orbit-view",
+      "category": "navigation",
+      "action": {
+        "en": "Orbit the camera",
+        "fr": "Orbiter la caméra"
+      },
+      "keys": {
+        "win": [["Alt", "MouseLeft"]],
+        "mac": [["Option", "MouseLeft"]]
+      }
+    },
+    {
+      "id": "pan-view",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the camera",
+        "fr": "Déplacer la caméra"
+      },
+      "keys": {
+        "win": [["Alt", "MouseMiddle"]],
+        "mac": [["Option", "MouseMiddle"]]
+      }
+    },
+    {
+      "id": "zoom-view",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom the camera",
+        "fr": "Zoomer la caméra"
+      },
+      "keys": {
+        "win": [["Alt", "MouseRight"]],
+        "mac": [["Option", "MouseRight"]]
+      }
+    },
+    {
+      "id": "frame-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the selection",
+        "fr": "Cadrer la sélection"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
+      }
+    },
+    {
+      "id": "toggle-orthographic",
+      "category": "view",
+      "action": {
+        "en": "Switch between orthographic and perspective",
+        "fr": "Basculer entre orthographique et perspective"
+      },
+      "keys": {
+        "win": [["Numpad 5"]],
+        "mac": [["Numpad 5"]]
+      }
+    }
+  ]
+}
