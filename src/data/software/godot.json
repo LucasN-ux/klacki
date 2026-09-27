@@ -1,0 +1,623 @@
+{
+  "id": "godot",
+  "name": "Godot",
+  "initials": "GO",
+  "family": "2d-realtime",
+  "version": "4.6",
+  "docUrl": "https://docs.godotengine.org/en/4.6/getting_started/editor/default_key_mapping.html",
+  "verifiedAt": "2026-09-27",
+  "shortcuts": [
+    {
+      "id": "undo",
+      "category": "general",
+      "action": {
+        "en": "Undo",
+        "fr": "Annuler"
+      },
+      "keys": {
+        "win": [["Ctrl", "Z"]],
+        "mac": [["Cmd", "Z"]]
+      }
+    },
+    {
+      "id": "redo",
+      "category": "general",
+      "action": {
+        "en": "Redo",
+        "fr": "Rétablir"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Z"]],
+        "mac": [["Cmd", "Shift", "Z"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a scene",
+        "fr": "Ouvrir une scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "O"]],
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save the scene",
+        "fr": "Enregistrer la scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "S"]],
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save the scene as",
+        "fr": "Enregistrer la scène sous"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "S"]],
+        "mac": [["Cmd", "Shift", "S"]]
+      }
+    },
+    {
+      "id": "save-all",
+      "category": "file",
+      "action": {
+        "en": "Save all scenes",
+        "fr": "Enregistrer toutes les scènes"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "Alt", "S"]],
+        "mac": [["Cmd", "Shift", "Option", "S"]]
+      }
+    },
+    {
+      "id": "close-project",
+      "category": "file",
+      "action": {
+        "en": "Close the scene",
+        "fr": "Fermer la scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "W"]],
+        "mac": [["Cmd", "W"]]
+      }
+    },
+    {
+      "id": "quick-open",
+      "category": "file",
+      "action": {
+        "en": "Quick open",
+        "fr": "Ouverture rapide"
+      },
+      "keys": {
+        "win": [["Shift", "Alt", "O"]],
+        "mac": [["Cmd", "Ctrl", "O"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "win": [["Ctrl", "Q"]],
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "command-palette",
+      "category": "general",
+      "action": {
+        "en": "Open the command palette",
+        "fr": "Ouvrir la palette de commandes"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "P"]],
+        "mac": [["Cmd", "Shift", "P"]]
+      }
+    },
+    {
+      "id": "help",
+      "category": "general",
+      "action": {
+        "en": "Search the help",
+        "fr": "Rechercher dans l'aide"
+      },
+      "keys": {
+        "win": [["F1"]],
+        "mac": [["Option", "Space"]]
+      }
+    },
+    {
+      "id": "workspace-2d",
+      "category": "view",
+      "action": {
+        "en": "Open the 2D workspace",
+        "fr": "Ouvrir l'espace de travail 2D"
+      },
+      "keys": {
+        "win": [["Ctrl", "F1"]],
+        "mac": [["Cmd", "Ctrl", "1"]]
+      }
+    },
+    {
+      "id": "workspace-3d",
+      "category": "view",
+      "action": {
+        "en": "Open the 3D workspace",
+        "fr": "Ouvrir l'espace de travail 3D"
+      },
+      "keys": {
+        "win": [["Ctrl", "F2"]],
+        "mac": [["Cmd", "Ctrl", "2"]]
+      }
+    },
+    {
+      "id": "workspace-script",
+      "category": "view",
+      "action": {
+        "en": "Open the script editor",
+        "fr": "Ouvrir l'éditeur de script"
+      },
+      "keys": {
+        "win": [["Ctrl", "F3"]],
+        "mac": [["Cmd", "Ctrl", "3"]]
+      }
+    },
+    {
+      "id": "distraction-free",
+      "category": "view",
+      "action": {
+        "en": "Distraction-free mode",
+        "fr": "Mode sans distraction"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "F11"]],
+        "mac": [["Cmd", "Shift", "D"]]
+      }
+    },
+    {
+      "id": "fullscreen",
+      "category": "view",
+      "action": {
+        "en": "Full screen window",
+        "fr": "Fenêtre en plein écran"
+      },
+      "keys": {
+        "win": [["Shift", "F11"]],
+        "mac": [["Cmd", "Ctrl", "F"]]
+      }
+    },
+    {
+      "id": "run-project",
+      "category": "general",
+      "action": {
+        "en": "Run the project",
+        "fr": "Lancer le projet"
+      },
+      "keys": {
+        "win": [["F5"]],
+        "mac": [["Cmd", "B"]]
+      }
+    },
+    {
+      "id": "run-scene",
+      "category": "general",
+      "action": {
+        "en": "Run the current scene",
+        "fr": "Lancer la scène courante"
+      },
+      "keys": {
+        "win": [["F6"]],
+        "mac": [["Cmd", "R"]]
+      }
+    },
+    {
+      "id": "pause-run",
+      "category": "general",
+      "action": {
+        "en": "Pause the running scene",
+        "fr": "Mettre en pause la scène lancée"
+      },
+      "keys": {
+        "win": [["F7"]],
+        "mac": [["Cmd", "Ctrl", "Y"]]
+      }
+    },
+    {
+      "id": "stop-run",
+      "category": "general",
+      "action": {
+        "en": "Stop the running project",
+        "fr": "Arrêter le projet lancé"
+      },
+      "keys": {
+        "win": [["F8"]],
+        "mac": [["Cmd", "."]]
+      }
+    },
+    {
+      "id": "select-tool",
+      "category": "tools",
+      "action": {
+        "en": "Select tool",
+        "fr": "Outil de sélection"
+      },
+      "keys": {
+        "win": [["Q"]],
+        "mac": [["Q"]]
+      }
+    },
+    {
+      "id": "move",
+      "category": "tools",
+      "action": {
+        "en": "Move",
+        "fr": "Déplacer"
+      },
+      "keys": {
+        "win": [["W"]],
+        "mac": [["W"]]
+      }
+    },
+    {
+      "id": "rotate",
+      "category": "tools",
+      "action": {
+        "en": "Rotate",
+        "fr": "Faire pivoter"
+      },
+      "keys": {
+        "win": [["E"]],
+        "mac": [["E"]]
+      }
+    },
+    {
+      "id": "scale",
+      "category": "tools",
+      "action": {
+        "en": "Scale",
+        "fr": "Mettre à l'échelle"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["R"]],
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "toggle-snapping",
+      "category": "tools",
+      "action": {
+        "en": "Turn snapping on or off",
+        "fr": "Activer ou désactiver le magnétisme"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["Y"]],
+        "mac": [["Y"]]
+      }
+    },
+    {
+      "id": "frame-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Frame the selection",
+        "fr": "Cadrer la sélection"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["F"]],
+        "mac": [["F"]]
+      }
+    },
+    {
+      "id": "focus-origin",
+      "category": "navigation",
+      "action": {
+        "en": "Focus on the origin",
+        "fr": "Cadrer l'origine"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["O"]],
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "fly-navigation",
+      "category": "navigation",
+      "action": {
+        "en": "Fly through the scene",
+        "fr": "Survoler la scène"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["Shift", "F"]],
+        "mac": [["Shift", "F"]]
+      }
+    },
+    {
+      "id": "view-top",
+      "category": "navigation",
+      "action": {
+        "en": "Top view",
+        "fr": "Vue de dessus"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["Numpad 7"]],
+        "mac": [["Numpad 7"]]
+      }
+    },
+    {
+      "id": "view-front",
+      "category": "navigation",
+      "action": {
+        "en": "Front view",
+        "fr": "Vue de face"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["Numpad 1"]],
+        "mac": [["Numpad 1"]]
+      }
+    },
+    {
+      "id": "view-right",
+      "category": "navigation",
+      "action": {
+        "en": "Right view",
+        "fr": "Vue de droite"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["Numpad 3"]],
+        "mac": [["Numpad 3"]]
+      }
+    },
+    {
+      "id": "toggle-orthographic",
+      "category": "view",
+      "action": {
+        "en": "Switch between orthographic and perspective",
+        "fr": "Basculer entre orthographique et perspective"
+      },
+      "context": {
+        "en": "3D editor",
+        "fr": "Éditeur 3D"
+      },
+      "keys": {
+        "win": [["Numpad 5"]],
+        "mac": [["Numpad 5"]]
+      }
+    },
+    {
+      "id": "zoom-in-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom in one step",
+        "fr": "Zoomer d'un cran"
+      },
+      "context": {
+        "en": "2D editor",
+        "fr": "Éditeur 2D"
+      },
+      "keys": {
+        "win": [["Ctrl", "="]],
+        "mac": [["Cmd", "="]]
+      }
+    },
+    {
+      "id": "zoom-out-step",
+      "category": "navigation",
+      "action": {
+        "en": "Zoom out one step",
+        "fr": "Dézoomer d'un cran"
+      },
+      "context": {
+        "en": "2D editor",
+        "fr": "Éditeur 2D"
+      },
+      "keys": {
+        "win": [["Ctrl", "-"]],
+        "mac": [["Cmd", "-"]]
+      }
+    },
+    {
+      "id": "pan-view",
+      "category": "navigation",
+      "action": {
+        "en": "Pan the view",
+        "fr": "Déplacer la vue"
+      },
+      "context": {
+        "en": "2D editor",
+        "fr": "Éditeur 2D"
+      },
+      "keys": {
+        "win": [["Space"]],
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "toggle-grid",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the grid",
+        "fr": "Afficher ou masquer la grille"
+      },
+      "context": {
+        "en": "2D editor",
+        "fr": "Éditeur 2D"
+      },
+      "keys": {
+        "win": [["G"]],
+        "mac": [["G"]]
+      }
+    },
+    {
+      "id": "duplicate",
+      "category": "edit",
+      "action": {
+        "en": "Duplicate",
+        "fr": "Dupliquer"
+      },
+      "context": {
+        "en": "Scene tree",
+        "fr": "Arborescence de la scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "D"]],
+        "mac": [["Cmd", "D"]]
+      }
+    },
+    {
+      "id": "delete",
+      "category": "edit",
+      "action": {
+        "en": "Delete the selection",
+        "fr": "Supprimer la sélection"
+      },
+      "context": {
+        "en": "Scene tree",
+        "fr": "Arborescence de la scène"
+      },
+      "keys": {
+        "win": [["Delete"]],
+        "mac": [["Cmd", "Backspace"]]
+      }
+    },
+    {
+      "id": "batch-rename",
+      "category": "edit",
+      "action": {
+        "en": "Rename several nodes",
+        "fr": "Renommer plusieurs nœuds"
+      },
+      "context": {
+        "en": "Scene tree",
+        "fr": "Arborescence de la scène"
+      },
+      "keys": {
+        "win": [["Ctrl", "F2"]],
+        "mac": [["Cmd", "F2"]]
+      }
+    },
+    {
+      "id": "find",
+      "category": "general",
+      "action": {
+        "en": "Find",
+        "fr": "Rechercher"
+      },
+      "context": {
+        "en": "Script editor",
+        "fr": "Éditeur de script"
+      },
+      "keys": {
+        "win": [["Ctrl", "F"]],
+        "mac": [["Cmd", "F"]]
+      }
+    },
+    {
+      "id": "find-in-files",
+      "category": "general",
+      "action": {
+        "en": "Find and replace in files",
+        "fr": "Rechercher et remplacer dans les fichiers"
+      },
+      "context": {
+        "en": "Script editor",
+        "fr": "Éditeur de script"
+      },
+      "keys": {
+        "win": [["Ctrl", "Shift", "F"]],
+        "mac": [["Cmd", "Shift", "F"]]
+      }
+    },
+    {
+      "id": "toggle-line-comment",
+      "category": "edit",
+      "action": {
+        "en": "Comment or uncomment the line",
+        "fr": "Commenter ou décommenter la ligne"
+      },
+      "context": {
+        "en": "Script editor",
+        "fr": "Éditeur de script"
+      },
+      "keys": {
+        "win": [["Ctrl", "K"]],
+        "mac": [["Cmd", "K"]]
+      }
+    },
+    {
+      "id": "go-to-line",
+      "category": "navigation",
+      "action": {
+        "en": "Go to a line",
+        "fr": "Aller à une ligne"
+      },
+      "context": {
+        "en": "Script editor",
+        "fr": "Éditeur de script"
+      },
+      "keys": {
+        "win": [["Ctrl", "G"]],
+        "mac": [["Cmd", "L"]]
+      }
+    },
+    {
+      "id": "toggle-breakpoint",
+      "category": "edit",
+      "action": {
+        "en": "Add or remove a breakpoint",
+        "fr": "Ajouter ou retirer un point d'arrêt"
+      },
+      "context": {
+        "en": "Script editor",
+        "fr": "Éditeur de script"
+      },
+      "keys": {
+        "win": [["F9"]],
+        "mac": [["Cmd", "Shift", "B"]]
+      }
+    }
+  ]
+}
