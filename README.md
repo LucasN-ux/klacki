@@ -33,6 +33,7 @@
 - [Challenges](#challenges)
 - [Quality](#quality)
 - [Data sources](#data-sources)
+- [License](#license)
 - [About](#about)
 
 ## Why
@@ -242,6 +243,13 @@ Every shortcut is read in the publisher's official documentation for the
 stated version. Keys are facts; every description is written for this site.
 Each app page links to the page it was checked against, and the full list is
 on the [sources page](https://klacki.vercel.app/sources).
+
+## License
+
+- **Code**: [MIT](LICENSE).
+- **Shortcut data** (`src/data/software/`): [CC BY 4.0](src/data/software/LICENSE).
+  Reuse it freely, with credit to Klacki.
+- The ghost illustrations and the Klacki name are not covered by these licences.
 
 ## About
 
