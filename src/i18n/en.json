@@ -102,6 +102,8 @@
     "publisher": "Lucas Nevano, an individual, publishes this site as a personal, non-commercial project.",
     "contactTitle": "Contact",
     "contact": "Through the issues page of the public repository of the site.",
+    "codeTitle": "Source code",
+    "code": "github.com/LucasN-ux/klacki",
     "hostTitle": "Host",
     "host": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States.",
     "trademarksTitle": "Trademarks",

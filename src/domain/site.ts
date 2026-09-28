@@ -7,7 +7,10 @@ export const SITE_URL =
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
     : "http://localhost:3000");
 
-// Public repository of the site, where visitors report a wrong shortcut.
+// Public repository of the site: its code, linked from the legal notice.
+export const REPO_URL = "https://github.com/LucasN-ux/klacki";
+
+// Where visitors report a wrong shortcut.
 // Public since 21/09/2026, with issues enabled: the link works for visitors.
 export const SUGGEST_URL =
   process.env.NEXT_PUBLIC_REPO_URL ??

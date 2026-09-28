@@ -4,7 +4,7 @@ import shell from "@/components/ui/PageShell.module.css";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
 import styles from "@/components/ui/TextPage.module.css";
 import { LOCALES, isLocale, localeHref } from "@/domain/locale";
-import { SUGGEST_URL } from "@/domain/site";
+import { REPO_URL, SUGGEST_URL } from "@/domain/site";
 import { getDictionary } from "@/i18n";
 
 export function generateStaticParams() {
@@ -42,6 +42,13 @@ export default async function LegalPage({
           <p>
             <a href={SUGGEST_URL} target="_blank" rel="noreferrer">
               {legal.contact}
+            </a>
+          </p>
+
+          <h2>{legal.codeTitle}</h2>
+          <p>
+            <a href={REPO_URL} target="_blank" rel="noreferrer">
+              {legal.code}
             </a>
           </p>
 
