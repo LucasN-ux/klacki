@@ -7,7 +7,9 @@
   border: var(--stroke-3) solid var(--ink);
   box-shadow: 2px 2px 0 var(--ink);
   color: var(--ink);
-  font-size: 15px;
+  /* The size sets the base, the type style scales it: both on one rule. */
+  --badge-font: 15px;
+  font-size: calc(var(--badge-font) * var(--type-scale, 1));
   line-height: 1;
 }
 
@@ -16,13 +18,13 @@
   height: 24px;
   border-width: var(--stroke-2);
   box-shadow: none;
-  font-size: 9px;
+  --badge-font: 9px;
 }
 
 .badge[data-size="lg"] {
   width: 64px;
   height: 64px;
-  font-size: 22px;
+  --badge-font: 22px;
 }
 
 /* One shape per software, from its id. */
@@ -57,14 +59,14 @@
 
 .badge[data-type="black"] {
   font-family: var(--font-sans);
-  font-size: 1.15em;
+  --type-scale: 1.15;
   font-style: italic;
   font-weight: 900;
 }
 
 .badge[data-type="wide"] {
   font-family: var(--font-sans);
-  font-size: 0.85em;
+  --type-scale: 0.85;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-indent: 0.14em;
