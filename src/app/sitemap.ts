@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/legal",
     "/privacy",
+    "/terms",
     ...SOFTWARE_LIST.map((software) => `/${software.id}`),
   ];
 

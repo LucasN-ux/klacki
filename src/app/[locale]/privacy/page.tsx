@@ -37,6 +37,9 @@ export default async function PrivacyPage({
           <h2>{privacy.shortTitle}</h2>
           <p>{privacy.short}</p>
 
+          <h2>{privacy.controllerTitle}</h2>
+          <p>{privacy.controller}</p>
+
           <h2>{privacy.storageTitle}</h2>
           <p>{privacy.storage}</p>
 

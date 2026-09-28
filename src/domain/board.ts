@@ -2,6 +2,7 @@ import { keysFor, shownPlatform } from "./keys";
 import {
   CATEGORIES,
   type Category,
+  type Family,
   type LocalizedText,
   type Platform,
   type Shortcut,
@@ -48,7 +49,12 @@ function comboKey(combo: readonly string[]): string {
 
 // ---- Cards: one per action, one line per distinct combination -------------
 
-export type SoftwareRef = { id: string; name: string; initials: string };
+export type SoftwareRef = {
+  id: string;
+  name: string;
+  initials: string;
+  family: Family;
+};
 
 // What a key does in the software that bind it to another action.
 export type Clash = {
@@ -81,6 +87,7 @@ function toRef(software: Software): SoftwareRef {
     id: software.id,
     name: software.name,
     initials: software.initials,
+    family: software.family,
   };
 }
 

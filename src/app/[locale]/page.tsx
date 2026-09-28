@@ -3,11 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ghost from "@/../public/ghost.png";
 import { HeaderSearch } from "@/components/features/HeaderSearch";
-import { PlatformShowcase } from "@/components/features/PlatformShowcase";
+import { LandingTour } from "@/components/features/LandingTour";
 import { SiteFooter, SiteHeader } from "@/components/ui/SiteChrome";
 import { SOFTWARE_LIST, softwareByFamily } from "@/data";
 import { isLocale, localeHref } from "@/domain/locale";
-import { platformShowcase } from "@/domain/showcase";
 import { getDictionary } from "@/i18n";
 import styles from "./page.module.css";
 
@@ -23,8 +22,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     (total, software) => total + software.shortcuts.length,
     0,
   );
-  const demoRows = platformShowcase(SOFTWARE_LIST, 4);
-
   return (
     <>
       <SiteHeader locale={locale} showSearch={false} />
@@ -86,40 +83,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </Link>
         </nav>
 
-        <div className={styles.wrap}>
-          {/* The flagship feature, right after the catalogue band. */}
-          <section className={styles.boardPromo}>
-            <h2 className={styles.demoTitle}>{home.boardTitle}</h2>
-            <p>{home.boardText}</p>
-            <Link
-              className={styles.boardCta}
-              href={localeHref(locale, "/board")}
-            >
-              {home.boardCta} →
-            </Link>
-          </section>
-
-          <section className={styles.demo}>
-            <div className={styles.demoText}>
-              <h2 className={styles.demoTitle}>{home.demoTitle}</h2>
-              <p>{home.demoText}</p>
-              <Link
-                className={styles.demoLink}
-                href={localeHref(locale, "/windows-mac")}
-              >
-                {home.demoCta} →
-              </Link>
-            </div>
-            <PlatformShowcase rows={demoRows} locale={locale} />
-          </section>
-
-          <p className={styles.trust}>
-            {home.trust.text}{" "}
-            <Link href={localeHref(locale, "/sources")}>
-              {home.trust.cta} →
-            </Link>
-          </p>
-        </div>
+        <LandingTour locale={locale} />
       </main>
       <SiteFooter locale={locale} />
     </>

@@ -1,0 +1,464 @@
+{
+  "id": "logic-pro",
+  "name": "Logic Pro",
+  "initials": "LO",
+  "family": "audio",
+  "platforms": ["mac"],
+  "version": "12",
+  "docUrl": "https://support.apple.com/guide/logicpro/global-commands-lgcp02bf31b6/mac",
+  "verifiedAt": "2026-09-27",
+  "undocumented": ["undo", "redo"],
+  "shortcuts": [
+    {
+      "id": "new-project",
+      "category": "file",
+      "action": {
+        "en": "New from a template",
+        "fr": "Nouveau depuis un modèle"
+      },
+      "keys": {
+        "mac": [["Cmd", "N"]]
+      }
+    },
+    {
+      "id": "new-empty-project",
+      "category": "file",
+      "action": {
+        "en": "New empty project",
+        "fr": "Nouveau projet vide"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "N"]]
+      }
+    },
+    {
+      "id": "open-file",
+      "category": "file",
+      "action": {
+        "en": "Open a project",
+        "fr": "Ouvrir un projet"
+      },
+      "keys": {
+        "mac": [["Cmd", "O"]]
+      }
+    },
+    {
+      "id": "save-file",
+      "category": "file",
+      "action": {
+        "en": "Save",
+        "fr": "Enregistrer"
+      },
+      "keys": {
+        "mac": [["Cmd", "S"]]
+      }
+    },
+    {
+      "id": "save-as",
+      "category": "file",
+      "action": {
+        "en": "Save the project as",
+        "fr": "Enregistrer le projet sous"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "S"]]
+      }
+    },
+    {
+      "id": "close-project",
+      "category": "file",
+      "action": {
+        "en": "Close the project",
+        "fr": "Fermer le projet"
+      },
+      "keys": {
+        "mac": [["Option", "Cmd", "W"]]
+      }
+    },
+    {
+      "id": "import",
+      "category": "file",
+      "action": {
+        "en": "Import a file",
+        "fr": "Importer un fichier"
+      },
+      "keys": {
+        "mac": [["Cmd", "I"]]
+      }
+    },
+    {
+      "id": "bounce-track",
+      "category": "file",
+      "action": {
+        "en": "Export the track as an audio file",
+        "fr": "Exporter la piste en fichier audio"
+      },
+      "keys": {
+        "mac": [["Cmd", "E"]]
+      }
+    },
+    {
+      "id": "bounce-all",
+      "category": "file",
+      "action": {
+        "en": "Export all tracks as audio files",
+        "fr": "Exporter toutes les pistes en fichiers audio"
+      },
+      "keys": {
+        "mac": [["Shift", "Cmd", "E"]]
+      }
+    },
+    {
+      "id": "print",
+      "category": "file",
+      "action": {
+        "en": "Print",
+        "fr": "Imprimer"
+      },
+      "keys": {
+        "mac": [["Cmd", "P"]]
+      }
+    },
+    {
+      "id": "quit",
+      "category": "file",
+      "action": {
+        "en": "Quit the application",
+        "fr": "Quitter l'application"
+      },
+      "keys": {
+        "mac": [["Cmd", "Q"]]
+      }
+    },
+    {
+      "id": "preferences",
+      "category": "general",
+      "action": {
+        "en": "Open the settings",
+        "fr": "Ouvrir les réglages"
+      },
+      "keys": {
+        "mac": [["Cmd", ","]]
+      }
+    },
+    {
+      "id": "key-commands",
+      "category": "general",
+      "action": {
+        "en": "Open the key command assignments",
+        "fr": "Ouvrir les raccourcis clavier"
+      },
+      "keys": {
+        "mac": [["Option", "K"]]
+      }
+    },
+    {
+      "id": "record",
+      "category": "general",
+      "action": {
+        "en": "Record",
+        "fr": "Enregistrer une prise"
+      },
+      "keys": {
+        "mac": [["R"]]
+      }
+    },
+    {
+      "id": "toggle-playback",
+      "category": "navigation",
+      "action": {
+        "en": "Start or stop playback",
+        "fr": "Lancer ou arrêter la lecture"
+      },
+      "keys": {
+        "mac": [["Space"]]
+      }
+    },
+    {
+      "id": "play-from-selection",
+      "category": "navigation",
+      "action": {
+        "en": "Play from the selection",
+        "fr": "Lire depuis la sélection"
+      },
+      "keys": {
+        "mac": [["Shift", "Space"]]
+      }
+    },
+    {
+      "id": "rewind",
+      "category": "navigation",
+      "action": {
+        "en": "Rewind",
+        "fr": "Reculer"
+      },
+      "keys": {
+        "mac": [[","]]
+      }
+    },
+    {
+      "id": "forward",
+      "category": "navigation",
+      "action": {
+        "en": "Forward",
+        "fr": "Avancer"
+      },
+      "keys": {
+        "mac": [["."]]
+      }
+    },
+    {
+      "id": "go-to-start",
+      "category": "navigation",
+      "action": {
+        "en": "Go to the beginning",
+        "fr": "Aller au début"
+      },
+      "keys": {
+        "mac": [["Return"]]
+      }
+    },
+    {
+      "id": "go-to-position",
+      "category": "navigation",
+      "action": {
+        "en": "Go to a position",
+        "fr": "Aller à une position"
+      },
+      "keys": {
+        "mac": [["/"]]
+      }
+    },
+    {
+      "id": "toggle-cycle",
+      "category": "navigation",
+      "action": {
+        "en": "Turn the cycle mode on or off",
+        "fr": "Activer ou désactiver le mode Cycle"
+      },
+      "keys": {
+        "mac": [["C"]]
+      }
+    },
+    {
+      "id": "toggle-metronome",
+      "category": "general",
+      "action": {
+        "en": "Turn the metronome on or off",
+        "fr": "Activer ou désactiver le métronome"
+      },
+      "keys": {
+        "mac": [["K"]]
+      }
+    },
+    {
+      "id": "toggle-count-in",
+      "category": "general",
+      "action": {
+        "en": "Turn the count-in on or off",
+        "fr": "Activer ou désactiver le décompte"
+      },
+      "keys": {
+        "mac": [["Shift", "K"]]
+      }
+    },
+    {
+      "id": "add-marker",
+      "category": "navigation",
+      "action": {
+        "en": "Add a marker",
+        "fr": "Ajouter un repère"
+      },
+      "keys": {
+        "mac": [["Option", "'"]]
+      }
+    },
+    {
+      "id": "delete-marker",
+      "category": "navigation",
+      "action": {
+        "en": "Delete the marker",
+        "fr": "Supprimer le repère"
+      },
+      "keys": {
+        "mac": [["Option", "Delete"]]
+      }
+    },
+    {
+      "id": "previous-track",
+      "category": "selection",
+      "action": {
+        "en": "Select the previous track",
+        "fr": "Sélectionner la piste précédente"
+      },
+      "keys": {
+        "mac": [["Up"]]
+      }
+    },
+    {
+      "id": "next-track",
+      "category": "selection",
+      "action": {
+        "en": "Select the next track",
+        "fr": "Sélectionner la piste suivante"
+      },
+      "keys": {
+        "mac": [["Down"]]
+      }
+    },
+    {
+      "id": "mute-track",
+      "category": "edit",
+      "action": {
+        "en": "Mute or unmute the channel strip",
+        "fr": "Couper ou rétablir la tranche"
+      },
+      "keys": {
+        "mac": [["M"]]
+      }
+    },
+    {
+      "id": "solo-track",
+      "category": "edit",
+      "action": {
+        "en": "Solo the channel strip",
+        "fr": "Mettre la tranche en solo"
+      },
+      "keys": {
+        "mac": [["S"]]
+      }
+    },
+    {
+      "id": "show-mixer",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Mixer",
+        "fr": "Afficher ou masquer la table de mixage"
+      },
+      "keys": {
+        "mac": [["X"]]
+      }
+    },
+    {
+      "id": "show-piano-roll",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Piano Roll",
+        "fr": "Afficher ou masquer le Piano Roll"
+      },
+      "keys": {
+        "mac": [["P"]]
+      }
+    },
+    {
+      "id": "show-library",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Library",
+        "fr": "Afficher ou masquer la bibliothèque"
+      },
+      "keys": {
+        "mac": [["Y"]]
+      }
+    },
+    {
+      "id": "show-loops",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Loop Browser",
+        "fr": "Afficher ou masquer le navigateur de boucles"
+      },
+      "keys": {
+        "mac": [["O"]]
+      }
+    },
+    {
+      "id": "show-smart-controls",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Smart Controls",
+        "fr": "Afficher ou masquer les commandes intelligentes"
+      },
+      "keys": {
+        "mac": [["B"]]
+      }
+    },
+    {
+      "id": "show-audio-editor",
+      "category": "view",
+      "action": {
+        "en": "Show or hide the Audio File Editor",
+        "fr": "Afficher ou masquer l'éditeur de fichier audio"
+      },
+      "keys": {
+        "mac": [["W"]]
+      }
+    },
+    {
+      "id": "show-plugins",
+      "category": "view",
+      "action": {
+        "en": "Show or hide all plug-in windows",
+        "fr": "Afficher ou masquer toutes les fenêtres de plug-in"
+      },
+      "keys": {
+        "mac": [["V"]]
+      }
+    },
+    {
+      "id": "musical-typing",
+      "category": "view",
+      "action": {
+        "en": "Show or hide Musical Typing",
+        "fr": "Afficher ou masquer la saisie musicale"
+      },
+      "keys": {
+        "mac": [["Cmd", "K"]]
+      }
+    },
+    {
+      "id": "main-window",
+      "category": "view",
+      "action": {
+        "en": "Open the main window",
+        "fr": "Ouvrir la fenêtre principale"
+      },
+      "keys": {
+        "mac": [["Cmd", "1"]]
+      }
+    },
+    {
+      "id": "mixer-window",
+      "category": "view",
+      "action": {
+        "en": "Open the Mixer",
+        "fr": "Ouvrir la table de mixage"
+      },
+      "keys": {
+        "mac": [["Cmd", "2"]]
+      }
+    },
+    {
+      "id": "fullscreen",
+      "category": "view",
+      "action": {
+        "en": "Full screen window",
+        "fr": "Fenêtre en plein écran"
+      },
+      "keys": {
+        "mac": [["Ctrl", "Cmd", "F"]]
+      }
+    },
+    {
+      "id": "close-panel",
+      "category": "view",
+      "action": {
+        "en": "Close the active window",
+        "fr": "Fermer la fenêtre active"
+      },
+      "keys": {
+        "mac": [["Cmd", "W"]]
+      }
+    }
+  ]
+}

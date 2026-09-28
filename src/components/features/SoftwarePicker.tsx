@@ -6,6 +6,7 @@ import type { Locale } from "@/domain/locale";
 import { FAMILY_ORDER, type SoftwareSummary } from "@/domain/summary";
 import { getDictionary } from "@/i18n";
 import styles from "./SoftwarePicker.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 // A combobox rather than a wall of chips: it lists only what the visitor
 // types, grouped by family, however large the catalogue grows.
@@ -111,8 +112,8 @@ export function SoftwarePicker({
         <ul className={styles.chips} aria-label={board.pickedLabel}>
           {picked.map((software) => (
             <li key={software.id} className={styles.chip}>
-              <span className={styles.initials} aria-hidden="true">
-                {software.initials}
+              <span className={styles.initials}>
+                <SoftwareBadge software={software} size="sm" />
               </span>
               {software.name}
               {!readOnly && (
@@ -199,8 +200,8 @@ export function SoftwarePicker({
                     // One highlight for mouse and keyboard alike.
                     onMouseEnter={() => setHighlight(flat.indexOf(software))}
                   >
-                    <span className={styles.initials} aria-hidden="true">
-                      {software.initials}
+                    <span className={styles.initials}>
+                      <SoftwareBadge software={software} size="sm" />
                     </span>
                     {software.name}
                   </div>

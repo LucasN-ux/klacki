@@ -9,6 +9,7 @@ import type { Keys } from "@/domain/schema";
 import { getDictionary } from "@/i18n";
 import { KeyboardBubble } from "./KeyboardBubble";
 import styles from "./ActionCard.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 // Past eight badges a line folds behind "+N": a hundred software agreeing on
 // Ctrl+Z must still read as one line.
@@ -109,8 +110,8 @@ function Badges({
     <span className={styles.badges}>
       {shown.map((one) => (
         <span key={one.id} className={styles.badge} title={one.name}>
-          <span className={styles.initials} aria-hidden="true">
-            {one.initials}
+          <span className={styles.initials}>
+            <SoftwareBadge software={one} size="sm" />
           </span>
           <span className={styles.name}>{one.name}</span>
         </span>

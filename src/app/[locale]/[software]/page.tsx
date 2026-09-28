@@ -13,6 +13,7 @@ import { CATEGORIES, inLocale } from "@/domain/schema";
 import { getDictionary } from "@/i18n";
 import shell from "@/components/ui/PageShell.module.css";
 import styles from "./page.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 // One page per software and per language, all built ahead of time.
 export function generateStaticParams() {
@@ -83,9 +84,7 @@ export default async function SoftwarePage({
         </p>
 
         <div className={styles.titleRow}>
-          <span className={styles.badge} aria-hidden="true">
-            {software.initials}
-          </span>
+          <SoftwareBadge software={software} size="lg" />
           <div>
             <h1 className={styles.title}>{software.name}</h1>
             <p className={styles.meta}>

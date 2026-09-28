@@ -50,33 +50,3 @@ src/app/data/              the static data files the browser downloads
 src/components/            drawing (ui/) and stateful pieces (features/)
 src/i18n/{en,fr}.json      every word a visitor reads
 ```
-
-## Adding a software
-
-1. Write `src/data/software/<id>.json` following the schema in
-   `src/domain/schema.ts`. Reuse the action ids other files already use
-   (`undo`, `save-file`, `frame-selection`…): that is what lines software up
-   on My board.
-2. Run `npm run check`.
-
-Nothing else to register. Shortcuts come from the publisher's official
-documentation, one by one: the keys are facts, every description is written
-for this site, and each software page links to the documentation it was
-checked against.
-
-## Run it
-
-```bash
-npm install
-npm run dev      # http://localhost:3000
-```
-
-| Command          | What it does                                     |
-| ---------------- | ------------------------------------------------ |
-| `npm run dev`    | Starts the site locally                          |
-| `npm run build`  | Builds the site as in production                 |
-| `npm run check`  | Lint, types, formatting and unit tests in one go |
-| `npm run format` | Fixes the formatting                             |
-
-The unit and browser tests (Vitest, Playwright) are kept out of this
-repository.
