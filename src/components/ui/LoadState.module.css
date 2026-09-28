@@ -6,8 +6,10 @@
   color: var(--ink-muted);
 }
 
-/* Nothing to say: the line takes no room, but stays in the page. */
+/* Nothing to say: the line leaves the flow (no gap in a grid or flex
+   parent) but stays in the page, so the live region keeps working. */
 .line:empty {
+  position: absolute;
   margin: 0;
 }
 

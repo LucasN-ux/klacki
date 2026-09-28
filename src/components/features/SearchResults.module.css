@@ -23,6 +23,10 @@
   margin-top: var(--space-4);
 }
 
+.group:first-child {
+  margin-top: 0;
+}
+
 .groupHead {
   display: flex;
   align-items: center;
