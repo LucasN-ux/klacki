@@ -56,3 +56,7 @@ playwright-report/
 # Design specs and plans (local only)
 docs/
 .superpowers/
+
+# Assistant rules written by next dev, and the local test setup
+AGENTS.md
+vitest.config.mts

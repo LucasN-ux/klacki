@@ -90,15 +90,6 @@ export function searchIndex(index: SearchIndex, rawQuery: string): SearchHit[] {
     .filter((hit) => hit.shortcuts.length > 0);
 }
 
-// The same search straight on the catalogue, for server code and tests.
-export function searchShortcuts(
-  softwareList: Software[],
-  rawQuery: string,
-  locale: Locale,
-): SearchHit[] {
-  return searchIndex(buildSearchIndex(softwareList, locale), rawQuery);
-}
-
 export function countHits(hits: SearchHit[]): number {
   return hits.reduce((total, hit) => total + hit.shortcuts.length, 0);
 }
