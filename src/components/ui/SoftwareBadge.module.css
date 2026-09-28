@@ -1,0 +1,114 @@
+.badge {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: var(--stroke-3) solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1;
+}
+
+.badge[data-size="sm"] {
+  width: 24px;
+  height: 24px;
+  border-width: var(--stroke-2);
+  box-shadow: none;
+  font-size: 9px;
+}
+
+.badge[data-size="lg"] {
+  width: 64px;
+  height: 64px;
+  font-size: 22px;
+}
+
+/* One shape per software, from its id. */
+.badge[data-shape="square"] {
+  border-radius: var(--radius-sm);
+}
+
+.badge[data-shape="round"] {
+  border-radius: 50%;
+}
+
+.badge[data-shape="leaf"] {
+  border-radius: 40% 12% 40% 12%;
+}
+
+.badge[data-shape="tilt"] {
+  border-radius: var(--radius-sm);
+  transform: rotate(-6deg);
+}
+
+/* One type style per software, from its id. */
+.badge[data-type="display"] {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.badge[data-type="mono"] {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.badge[data-type="black"] {
+  font-family: var(--font-sans);
+  font-size: 1.15em;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.badge[data-type="wide"] {
+  font-family: var(--font-sans);
+  font-size: 0.85em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-indent: 0.14em;
+}
+
+/* One colour per family: the family reads at a glance. */
+.badge[data-family="3d-sculpt"] {
+  background: #34b189;
+}
+
+.badge[data-family="texture"] {
+  background: #f4c619;
+}
+
+.badge[data-family="render-sim-terrain"] {
+  background: #f8511d;
+}
+
+.badge[data-family="cloth"] {
+  background: #e79bb0;
+}
+
+.badge[data-family="compositing-video"] {
+  background: #123126;
+  color: #f3e7cf;
+}
+
+.badge[data-family="2d-realtime"] {
+  background: #7fb3e0;
+}
+
+.badge[data-family="photo-image"] {
+  background: #c9a24a;
+}
+
+.badge[data-family="design-layout"] {
+  background: #b784d6;
+}
+
+.badge[data-family="audio"] {
+  background: #12100d;
+  color: #f4c619;
+}
+
+.badge[data-family="web-docs"] {
+  background: #fbf4e3;
+}

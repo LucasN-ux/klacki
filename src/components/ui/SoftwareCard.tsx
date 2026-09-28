@@ -2,6 +2,7 @@ import type { Locale } from "@/domain/locale";
 import type { Software } from "@/domain/schema";
 import { getDictionary } from "@/i18n";
 import styles from "./SoftwareCard.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 export function SoftwareCard({
   software,
@@ -22,9 +23,7 @@ export function SoftwareCard({
 
   return (
     <article className={styles.card}>
-      <span className={styles.badge} aria-hidden="true">
-        {software.initials}
-      </span>
+      <SoftwareBadge software={software} />
       <span>
         <span className={styles.name}>{software.name}</span>
         {onlyOn && <span className={styles.only}>{onlyOn}</span>}

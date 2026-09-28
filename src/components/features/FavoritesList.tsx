@@ -14,6 +14,7 @@ import { useLoaded } from "@/hooks/useLoaded";
 import { usePlatform } from "@/hooks/usePlatform";
 import { getDictionary } from "@/i18n";
 import styles from "./SearchResults.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 export function FavoritesList({
   locale,
@@ -83,9 +84,7 @@ export function FavoritesList({
             href={localeHref(locale, `/${group.software.id}`)}
             className={styles.groupHead}
           >
-            <span className={styles.badge} aria-hidden="true">
-              {group.software.initials}
-            </span>
+            <SoftwareBadge software={group.software} size="sm" />
             {group.software.name}
             <span className={styles.groupCount}>{group.shortcuts.length}</span>
           </Link>

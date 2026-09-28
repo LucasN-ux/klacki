@@ -15,6 +15,7 @@ import { useLoaded } from "@/hooks/useLoaded";
 import { usePlatform } from "@/hooks/usePlatform";
 import { getDictionary } from "@/i18n";
 import styles from "./SearchResults.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 const MIN_QUERY_LENGTH = 2;
 // Results shown at first, and added by each "Show more".
@@ -133,9 +134,7 @@ export function SearchResults({
                 href={localeHref(locale, `/${software.id}`)}
                 className={styles.groupHead}
               >
-                <span className={styles.badge} aria-hidden="true">
-                  {software.initials}
-                </span>
+                <SoftwareBadge software={software} size="sm" />
                 {software.name}
                 <span className={styles.groupCount}>
                   {/* The whole group, even when the page cuts it. */}

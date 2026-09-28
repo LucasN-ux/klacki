@@ -18,6 +18,7 @@ import { comboLabel } from "@/domain/keys";
 import { platformShowcase } from "@/domain/showcase";
 import { getDictionary } from "@/i18n";
 import styles from "./page.module.css";
+import { SoftwareBadge } from "@/components/ui/SoftwareBadge";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -165,9 +166,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 </p>
                 {searchRows.map(({ software, shortcut }) => (
                   <p key={software.id} className={styles.sampleRow}>
-                    <span className={styles.sampleBadge}>
-                      {software.initials}
-                    </span>
+                    <SoftwareBadge software={software} size="sm" />
                     <span className={styles.sampleName}>{software.name}</span>
                     <KeyCombos
                       keys={shortcut.keys}
@@ -283,9 +282,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               <div className={`${styles.sample} ${styles.demo}`}>
                 {sourceRows.map((software) => (
                   <p key={software.id} className={styles.sampleRow}>
-                    <span className={styles.sampleBadge}>
-                      {software.initials}
-                    </span>
+                    <SoftwareBadge software={software} size="sm" />
                     <span className={styles.sampleName}>
                       {software.name} {software.version}
                     </span>
