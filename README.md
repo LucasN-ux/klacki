@@ -24,6 +24,17 @@
 | 38 apps | 1,517 shortcuts | 10 families | 2 languages × 2 platforms | 0 server, cookie or tracker |
 | :-----: | :-------------: | :---------: | :-----------------------: | :-------------------------: |
 
+## Contents
+
+- [Why](#why)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Technical decisions](#technical-decisions)
+- [Challenges](#challenges)
+- [Quality](#quality)
+- [Data sources](#data-sources)
+- [About](#about)
+
 ## Why
 
 Someone who works in Blender, ZBrush, Substance Painter and Nuke has four
@@ -174,9 +185,9 @@ The dictionary type comes from `en.json`, so a key missing in `fr.json` is a Typ
 </details>
 
 <details>
-<summary><b>A design system, not a theme</b> — Tattoo-flash look on CSS custom properties and CSS Modules, self-hosted fonts.</summary>
+<summary><b>A design system, not a theme</b> — CSS custom properties and CSS Modules, self-hosted fonts.</summary>
 
-The look comes from old-school tattoo flash sheets: thick outlines, hard offset shadows, flat colours taken from the ghost. It is built on CSS custom properties and CSS Modules, with self-hosted fonts (Bungee, Archivo, Space Mono) through `next/font`. Each app gets a badge whose shape and type style come from a hash of its id, and whose colour comes from its family.
+Thick outlines, hard offset shadows, flat colours taken from the ghost. It is built on CSS custom properties and CSS Modules, with self-hosted fonts (Bungee, Archivo, Space Mono) through `next/font`. Each app gets a badge whose shape and type style come from a hash of its id, and whose colour comes from its family.
 
 </details>
 
@@ -232,6 +243,15 @@ stated version. Keys are facts; every description is written for this site.
 Each app page links to the page it was checked against, and the full list is
 on the [sources page](https://klacki.vercel.app/sources).
 
-## Author
+## About
 
-Designed and built by **Lucas Nevano**.
+Klacki is a solo portfolio project: product idea, data collection, design
+and code. It started from a daily annoyance, switching between 3D and VFX
+apps whose shortcuts contradict each other, and grew into a catalogue meant
+for every kind of creative software. It runs on free tiers only (Vercel
+Hobby), with no tracking and no ads.
+
+**Lucas Nevano**, developer
+
+- Portfolio: _coming soon_
+- LinkedIn: _coming soon_
