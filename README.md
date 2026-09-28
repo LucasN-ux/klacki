@@ -17,7 +17,7 @@
 ![Static](https://img.shields.io/badge/backend-none-2ea44f)
 ![No tracking](https://img.shields.io/badge/cookies%20%C2%B7%20trackers-0-2ea44f)
 
-<img src="screenshots/home.png" alt="Klacki landing page" width="880" />
+<img src="screenshots/board-demo.gif" alt="Picking Blender, Maya and Houdini in My board: every action becomes a card, the traps flagged" width="880" />
 
 </div>
 
@@ -40,6 +40,8 @@ official documentation on every page) and with tools built around using
 several apps at once.
 
 ## Features
+
+<img src="screenshots/home.png" alt="Klacki landing page" width="880" />
 
 ### My board: compare the apps you use
 
@@ -129,42 +131,79 @@ src/i18n/{en,fr}.json      every word a visitor reads
 
 ## Technical decisions
 
-**JSON in Git, not a database.** The data changes a few times a month and
-is written by hand from documentation, so it is versioned, reviewed and
-diffed like code, the way MDN's browser-compat-data is. A Zod schema checks
-every file at build time: a wrong or incomplete file stops the build instead
-of reaching a visitor. A database would only make sense with public
-contributions and accounts.
+<details>
+<summary><b>JSON in Git, not a database</b> — Versioned, reviewed and diffed like code; Zod stops the build on a bad file.</summary>
 
-**Keys stored per platform, never converted.** Each shortcut carries its own
-Windows and Mac keys. `isSameOnBothPlatforms` knows that Alt and Option are
-the same physical key, so the site can mark "same on Mac" honestly.
+The data changes a few times a month and is written by hand from documentation, so it is versioned, reviewed and diffed like code, the way MDN's browser-compat-data is. A Zod schema checks every file at build time: a wrong or incomplete file stops the build instead of reaching a visitor. A database would only make sense with public contributions and accounts.
 
-**Built for a catalogue that grows.** Adding an app means dropping one JSON
-file, and nothing in the code assumes a count. Pages never bundle the
-catalogue: they receive small summaries as props and fetch only the data they
-show. My board groups apps through a per-app combo index, and a benchmark
-keeps 100 apps under 150 ms.
+</details>
 
-**Rules without React.** Search, board cards and traps, platform
-differences and the keyboard layout live in `src/domain/` as plain
-functions. They are tested without rendering anything, and the components
-stay thin.
+<details>
+<summary><b>Keys stored per platform, never converted</b> — Blender keeps Ctrl on Mac, Premiere switches to ⌘: guessing is wrong half the time.</summary>
 
-**Browser state done right.** Platform, favourites and board live in
-`localStorage`, read through `useSyncExternalStore` (no hydration mismatch,
-no `setState` in effects) and validated with Zod, since anything read back
-from the browser is untrusted input.
+Each shortcut carries its own Windows and Mac keys. `isSameOnBothPlatforms` knows that Alt and Option are the same physical key, so the site can mark "same on Mac" honestly.
 
-**Type-safe translations.** The dictionary type comes from `en.json`, so a
-key missing in `fr.json` is a TypeScript error, not a blank on the page.
+</details>
 
-**A design system, not a theme.** The look comes from old-school tattoo
-flash sheets: thick outlines, hard offset shadows, flat colours taken from
-the ghost. It is built on CSS custom properties and CSS Modules, with
-self-hosted fonts (Bungee, Archivo, Space Mono) through `next/font`. Each app
-gets a badge whose shape and type style come from a hash of its id, and whose
-colour comes from its family.
+<details>
+<summary><b>Built for a catalogue that grows</b> — One JSON file adds an app; pages fetch only what they show; 100 apps under 150 ms.</summary>
+
+Adding an app means dropping one JSON file, and nothing in the code assumes a count. Pages never bundle the catalogue: they receive small summaries as props and fetch only the data they show. My board groups apps through a per-app combo index, and a benchmark keeps 100 apps under 150 ms.
+
+</details>
+
+<details>
+<summary><b>Rules without React</b> — Search, board and keyboard logic are plain functions, tested without rendering.</summary>
+
+Search, board cards and traps, platform differences and the keyboard layout live in `src/domain/` as plain functions. They are tested without rendering anything, and the components stay thin.
+
+</details>
+
+<details>
+<summary><b>Browser state done right</b> — `useSyncExternalStore` plus Zod: no hydration mismatch, no trusted browser input.</summary>
+
+Platform, favourites and board live in `localStorage`, read through `useSyncExternalStore` (no hydration mismatch, no `setState` in effects) and validated with Zod, since anything read back from the browser is untrusted input.
+
+</details>
+
+<details>
+<summary><b>Type-safe translations</b> — A key missing in French is a TypeScript error, not a blank on the page.</summary>
+
+The dictionary type comes from `en.json`, so a key missing in `fr.json` is a TypeScript error, not a blank on the page.
+
+</details>
+
+<details>
+<summary><b>A design system, not a theme</b> — Tattoo-flash look on CSS custom properties and CSS Modules, self-hosted fonts.</summary>
+
+The look comes from old-school tattoo flash sheets: thick outlines, hard offset shadows, flat colours taken from the ghost. It is built on CSS custom properties and CSS Modules, with self-hosted fonts (Bungee, Archivo, Space Mono) through `next/font`. Each app gets a badge whose shape and type style come from a hash of its id, and whose colour comes from its family.
+
+</details>
+
+## Challenges
+
+**Ctrl is not always ⌘.** Most shortcut sites store Windows keys and
+convert them for Mac. The documentation shows why that fails: Blender keeps
+Ctrl on a Mac, Premiere switches to ⌘, and Alt and Option are one key under
+two names. So the data model stores both platforms explicitly from day one,
+and the comparison that decides "same on Mac" treats Alt and Option as equal.
+
+**My board had to survive a big catalogue.** The first version was a table
+with one column per app: fine with 5 apps, unreadable with 14. It became one card per action with the apps grouped by key
+combination, computed from a per-app combo index. A benchmark with 100 apps
+keeps it under 150 ms.
+
+**One JSON file per app, without shipping them all.** Once the catalogue
+passed 1,000 shortcuts, importing it in client components would have put
+every app in every page's bundle. The catalogue is now server-only; route
+handlers write one static file per app and one search index per language at
+build time, and the browser fetches only what a page shows, with a retry
+when the network drops.
+
+**A flaky dev server.** Under a burst of requests, a cold Next.js dev server
+sometimes answered 500 ("Unexpected end of JSON input" in its manifest
+loader). After confirming that production never does it, the end-to-end
+suite warms every page before running instead of retrying tests blindly.
 
 ## Quality
 
@@ -172,6 +211,8 @@ colour comes from its family.
   105 end-to-end tests (Playwright) covering search, board, favourites,
   keyboard, both languages, loading errors, and no sideways scroll at 360 px
   on every page. The suites are kept out of this public repository.
+- **Lighthouse** (mobile, live site): Accessibility 100, SEO 100, Best
+  practices 96, Performance 74 to 90 depending on the page.
 - **Accessibility**: skip link, full keyboard use, visible focus, `aria-live`
   announcements for loading and results, `prefers-reduced-motion` respected.
 - **Security**: OWASP review with nothing exploitable found, `npm audit`
