@@ -170,6 +170,11 @@ export function SiteFooter({ locale }: { locale: Locale }) {
                 </Link>
               </li>
               <li>
+                <Link href={localeHref(locale, "/terms")}>
+                  {footer.links.terms}
+                </Link>
+              </li>
+              <li>
                 <a href={SUGGEST_URL} target="_blank" rel="noreferrer">
                   {footer.suggest}
                 </a>

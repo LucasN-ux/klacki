@@ -59,7 +59,8 @@
       "legal": "Legal notice",
       "privacy": "Privacy",
       "sources": "Sources",
-      "about": "About"
+      "about": "About",
+      "terms": "Terms of use"
     },
     "publishedBy": "Published by Lucas Nevano."
   },
@@ -113,13 +114,15 @@
     "shortTitle": "In short",
     "short": "This site has no account, no database and no tracking. It asks for nothing about you.",
     "storageTitle": "What stays in your browser",
-    "storage": "Your favourites and your Windows / Mac choice are kept in your own browser, on your own device. They never reach a server, they are not shared between your devices, and clearing your browser data erases them.",
+    "storage": "Your favourites, your board (the software you ticked) and your Windows / Mac choice are kept in your browser, on your device. They never go to a server, do not travel between devices, and disappear if you clear the browser's data.",
     "cookiesTitle": "Cookies",
     "cookies": "None. What the site keeps is needed to make it work as you asked, so no consent banner is required.",
     "logsTitle": "Host logs",
-    "logs": "Vercel, the host, writes technical logs of every visit, which include IP addresses. They serve to run and protect the service. Klacki neither reads nor uses them.",
+    "logs": "Vercel, the host, records technical logs of each visit, which contain IP addresses, to run and protect the service (legitimate interest). These logs may be processed in the United States, under the safeguards Vercel provides (Data Privacy Framework and standard contractual clauses), and are kept for a limited time set by the host. Klacki neither reads nor uses them.",
     "rightsTitle": "Your rights",
-    "rights": "Since nothing about you is stored on a server, there is nothing to access, correct or delete. To erase what your browser keeps, clear the site data."
+    "rights": "As nothing about you is kept on a Klacki server, there is nothing to access, correct or delete on its side. To erase what your browser keeps, clear the site's data. For the host's logs, contact Vercel. You may also lodge a complaint with your data protection authority (in France, the CNIL: cnil.fr).",
+    "controllerTitle": "Controller",
+    "controller": "Lucas Nevano, publisher of the site (see the legal notice), reachable through the issues page of the public repository."
   },
   "sources": {
     "title": "Sources",
@@ -280,5 +283,38 @@
     "loading": "Loading…",
     "failed": "Couldn't load the shortcuts.",
     "retry": "Try again"
+  },
+  "terms": {
+    "title": "Terms of use",
+    "sections": [
+      {
+        "title": "Purpose",
+        "text": "Klacki gathers the keyboard shortcuts of creative software. These terms govern the use of klacki.vercel.app. Using the site means accepting them."
+      },
+      {
+        "title": "Access",
+        "text": "The site is free, with no sign-up and no account. It is provided as is: it may be interrupted, changed or stopped at any time, without notice."
+      },
+      {
+        "title": "Accuracy of the shortcuts",
+        "text": "Every shortcut is taken from the publisher's official documentation, whose version and check date are shown. A publisher may change its shortcuts, and your own setup may differ: check in the software before relying on one. Report a mistake with the \"Suggest a correction\" link."
+      },
+      {
+        "title": "Intellectual property",
+        "text": "Software names and trademarks belong to their publishers; Klacki is not affiliated with them. Key combinations are facts. The texts, design, ghost illustrations and code of the site belong to its publisher: reproducing them requires permission."
+      },
+      {
+        "title": "Data in your browser",
+        "text": "Your favourites, your board and your Windows / Mac choice stay in your browser. You can erase them at any time by clearing the site's data. The details are on the Privacy page."
+      },
+      {
+        "title": "Liability",
+        "text": "The publisher cannot be held liable for any damage arising from the use of the site or from a shortcut that does not work as described. Links to publishers' documentation lead to sites it does not control."
+      },
+      {
+        "title": "Changes and governing law",
+        "text": "These terms may change; the online version prevails. They are governed by French law."
+      }
+    ]
   }
 }

@@ -59,7 +59,8 @@
       "legal": "Mentions légales",
       "privacy": "Confidentialité",
       "sources": "Sources",
-      "about": "À propos"
+      "about": "À propos",
+      "terms": "Conditions d'utilisation"
     },
     "publishedBy": "Édité par Lucas Nevano."
   },
@@ -113,13 +114,15 @@
     "shortTitle": "En résumé",
     "short": "Ce site n'a ni compte, ni base de données, ni traceur. Il ne vous demande rien.",
     "storageTitle": "Ce qui reste dans votre navigateur",
-    "storage": "Vos favoris et votre choix Windows / Mac sont gardés dans votre navigateur, sur votre appareil. Ils ne partent jamais vers un serveur, ne passent pas d'un appareil à l'autre, et disparaissent si vous videz les données du navigateur.",
+    "storage": "Vos favoris, votre tableau (les logiciels cochés) et votre choix Windows / Mac sont gardés dans votre navigateur, sur votre appareil. Ils ne partent jamais vers un serveur, ne passent pas d'un appareil à l'autre, et disparaissent si vous videz les données du navigateur.",
     "cookiesTitle": "Cookies",
     "cookies": "Aucun. Ce que le site garde sert uniquement à le faire fonctionner comme vous l'avez demandé : aucun bandeau de consentement n'est donc nécessaire.",
     "logsTitle": "Journaux de l'hébergeur",
-    "logs": "Vercel, l'hébergeur, enregistre des journaux techniques de chaque visite, qui contiennent des adresses IP. Ils servent à faire tourner et à protéger le service. Klacki ne les lit pas et ne s'en sert pas.",
+    "logs": "Vercel, l'hébergeur, enregistre des journaux techniques de chaque visite, qui contiennent des adresses IP, pour faire tourner et protéger le service (intérêt légitime). Ces journaux peuvent être traités aux États-Unis, dans le cadre des garanties prévues par Vercel (Data Privacy Framework et clauses contractuelles types), et sont conservés pour une durée limitée fixée par l'hébergeur. Klacki ne les lit pas et ne s'en sert pas.",
     "rightsTitle": "Vos droits",
-    "rights": "Comme rien vous concernant n'est conservé sur un serveur, il n'y a rien à consulter, corriger ou supprimer. Pour effacer ce que garde votre navigateur, videz les données du site."
+    "rights": "Comme rien vous concernant n'est conservé sur un serveur de Klacki, il n'y a rien à consulter, corriger ou supprimer de son côté. Pour effacer ce que garde votre navigateur, videz les données du site. Pour les journaux de l'hébergeur, adressez-vous à Vercel. Vous pouvez aussi saisir la CNIL (cnil.fr).",
+    "controllerTitle": "Responsable",
+    "controller": "Lucas Nevano, éditeur du site (voir les mentions légales), joignable par la page des tickets du dépôt public."
   },
   "sources": {
     "title": "Sources",
@@ -280,5 +283,38 @@
     "loading": "Chargement…",
     "failed": "Impossible de charger les raccourcis.",
     "retry": "Réessayer"
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "sections": [
+      {
+        "title": "Objet",
+        "text": "Klacki rassemble les raccourcis clavier de logiciels de création. Ces conditions encadrent l'utilisation du site klacki.vercel.app. Utiliser le site vaut acceptation de ces conditions."
+      },
+      {
+        "title": "Accès",
+        "text": "Le site est gratuit, sans inscription ni compte. Il est proposé tel quel : il peut être interrompu, modifié ou arrêté à tout moment, sans préavis."
+      },
+      {
+        "title": "Exactitude des raccourcis",
+        "text": "Chaque raccourci est relevé dans la documentation officielle de l'éditeur, dont la version et la date de contrôle sont indiquées. Un éditeur peut changer ses raccourcis, et votre propre configuration peut différer : vérifiez dans le logiciel avant de vous y fier. Une erreur se signale par le lien « Proposer une correction »."
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "text": "Les noms et marques des logiciels appartiennent à leurs éditeurs ; Klacki n'a aucun lien avec eux. Les combinaisons de touches sont des faits. Les textes, le design, les illustrations du fantôme et le code du site appartiennent à son éditeur : leur reproduction demande son accord."
+      },
+      {
+        "title": "Données dans votre navigateur",
+        "text": "Vos favoris, votre tableau et votre choix Windows / Mac restent dans votre navigateur. Vous pouvez les effacer à tout moment en vidant les données du site. Le détail figure dans la page Confidentialité."
+      },
+      {
+        "title": "Responsabilité",
+        "text": "L'éditeur ne saurait être tenu responsable d'un dommage lié à l'utilisation du site ou d'un raccourci qui ne fonctionnerait pas comme décrit. Les liens vers les documentations des éditeurs mènent à des sites qu'il ne contrôle pas."
+      },
+      {
+        "title": "Modification et droit applicable",
+        "text": "Ces conditions peuvent évoluer ; la version en ligne fait foi. Elles sont soumises au droit français."
+      }
+    ]
   }
 }
