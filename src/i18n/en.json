@@ -100,8 +100,6 @@
     "title": "Legal notice",
     "publisherTitle": "Publisher",
     "publisher": "Lucas Nevano, an individual, publishes this site as a personal, non-commercial project.",
-    "contactTitle": "Contact",
-    "contact": "Through the issues page of the public repository of the site.",
     "codeTitle": "Source code",
     "code": "github.com/LucasN-ux/klacki",
     "hostTitle": "Host",
@@ -124,7 +122,7 @@
     "rightsTitle": "Your rights",
     "rights": "As nothing about you is kept on a Klacki server, there is nothing to access, correct or delete on its side. To erase what your browser keeps, clear the site's data. For the host's logs, contact Vercel. You may also lodge a complaint with your data protection authority (in France, the CNIL: cnil.fr).",
     "controllerTitle": "Controller",
-    "controller": "Lucas Nevano, publisher of the site (see the legal notice), reachable through the issues page of the public repository."
+    "controller": "Lucas Nevano, publisher of the site (see the legal notice)."
   },
   "sources": {
     "title": "Sources",

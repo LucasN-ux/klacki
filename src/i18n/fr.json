@@ -100,8 +100,6 @@
     "title": "Mentions légales",
     "publisherTitle": "Éditeur",
     "publisher": "Lucas Nevano, personne physique, édite ce site comme projet personnel, sans but commercial.",
-    "contactTitle": "Contact",
-    "contact": "Par la page des tickets du dépôt public du site.",
     "codeTitle": "Code source",
     "code": "github.com/LucasN-ux/klacki",
     "hostTitle": "Hébergeur",
@@ -124,7 +122,7 @@
     "rightsTitle": "Vos droits",
     "rights": "Comme rien vous concernant n'est conservé sur un serveur de Klacki, il n'y a rien à consulter, corriger ou supprimer de son côté. Pour effacer ce que garde votre navigateur, videz les données du site. Pour les journaux de l'hébergeur, adressez-vous à Vercel. Vous pouvez aussi saisir la CNIL (cnil.fr).",
     "controllerTitle": "Responsable",
-    "controller": "Lucas Nevano, éditeur du site (voir les mentions légales), joignable par la page des tickets du dépôt public."
+    "controller": "Lucas Nevano, éditeur du site (voir les mentions légales)."
   },
   "sources": {
     "title": "Sources",
