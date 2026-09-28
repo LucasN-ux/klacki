@@ -1,6 +1,15 @@
 .title {
   font-size: 34px;
   line-height: 36px;
+  overflow-wrap: break-word;
+}
+
+/* One long word ("Confidentialité") must still fit a narrow phone. */
+@media (max-width: 420px) {
+  .title {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 .prose {
