@@ -245,12 +245,6 @@ on the [sources page](https://klacki.vercel.app/sources).
 
 ## About
 
-Klacki is a solo portfolio project: product idea, data collection, design
-and code. It started from a daily annoyance, switching between 3D and VFX
-apps whose shortcuts contradict each other, and grew into a catalogue meant
-for every kind of creative software. It runs on free tiers only (Vercel
-Hobby), with no tracking and no ads.
-
 **Lucas Nevano**, developer
 
 - Portfolio: _coming soon_
