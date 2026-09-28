@@ -54,7 +54,6 @@
   },
   "footer": {
     "trademarks": "Les noms des logiciels appartiennent à leurs éditeurs.",
-    "suggest": "Proposer une correction",
     "links": {
       "legal": "Mentions légales",
       "privacy": "Confidentialité",
@@ -138,9 +137,7 @@
     "howTitle": "Comment c'est fait",
     "how": "Les raccourcis tiennent dans un fichier par logiciel, vérifié à la construction du site : un fichier faux ou incomplet arrête la construction au lieu d'arriver jusqu'à vous. Les pages sont générées à l'avance, donc le site reste rapide.",
     "whoTitle": "Qui l'a fait",
-    "who": "Lucas Nevano, développeur full-stack junior en France. Klacki est un projet de portfolio.",
-    "correctionTitle": "Une erreur ?",
-    "correction": "Les raccourcis changent d'une version à l'autre. Si l'un d'eux est faux, signalez-le et il sera corrigé."
+    "who": "Lucas Nevano, développeur full-stack junior en France. Klacki est un projet de portfolio."
   },
   "home": {
     "titleTop": "Le bon raccourci",
@@ -187,10 +184,7 @@
   "catalogue": {
     "title": "Les logiciels couverts",
     "lede": "Un logiciel, une page : ses raccourcis rangés par catégorie, sa version, et le lien vers la documentation qui a servi de référence.",
-    "jumpLabel": "Aller à une famille",
-    "missingTitle": "Il manque ton logiciel ?",
-    "missingText": "Dis-le, avec un lien vers sa documentation officielle. C'est comme ça que la liste grandit.",
-    "missingCta": "Proposer un logiciel"
+    "jumpLabel": "Aller à une famille"
   },
   "platforms": {
     "title": "Windows ou Mac, sans piège",
@@ -297,7 +291,7 @@
       },
       {
         "title": "Exactitude des raccourcis",
-        "text": "Chaque raccourci est relevé dans la documentation officielle de l'éditeur, dont la version et la date de contrôle sont indiquées. Un éditeur peut changer ses raccourcis, et votre propre configuration peut différer : vérifiez dans le logiciel avant de vous y fier. Une erreur se signale par le lien « Proposer une correction »."
+        "text": "Chaque raccourci est relevé dans la documentation officielle de l'éditeur, dont la version et la date de contrôle sont indiquées. Un éditeur peut changer ses raccourcis, et votre propre configuration peut différer : vérifiez dans le logiciel avant de vous y fier."
       },
       {
         "title": "Propriété intellectuelle",

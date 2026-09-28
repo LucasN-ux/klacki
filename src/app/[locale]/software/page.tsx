@@ -8,7 +8,6 @@ import { SoftwareCard } from "@/components/ui/SoftwareCard";
 import { softwareByFamily } from "@/data";
 import { DEFAULT_LOCALE, LOCALES, isLocale, localeHref } from "@/domain/locale";
 import { getDictionary } from "@/i18n";
-import { SUGGEST_URL } from "@/domain/site";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {
@@ -105,21 +104,6 @@ export default async function CataloguePage({
             </div>
           </section>
         ))}
-
-        <section className={styles.missing}>
-          <div>
-            <h2 className={styles.missingTitle}>{catalogue.missingTitle}</h2>
-            <p className={styles.missingText}>{catalogue.missingText}</p>
-          </div>
-          <a
-            className={styles.missingButton}
-            href={SUGGEST_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {catalogue.missingCta}
-          </a>
-        </section>
       </main>
       <SiteFooter locale={locale} />
     </>

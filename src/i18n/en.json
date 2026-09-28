@@ -54,7 +54,6 @@
   },
   "footer": {
     "trademarks": "Software names belong to their publishers.",
-    "suggest": "Suggest a correction",
     "links": {
       "legal": "Legal notice",
       "privacy": "Privacy",
@@ -138,9 +137,7 @@
     "howTitle": "How it is made",
     "how": "Shortcuts live in one file per software, checked when the site is built: a wrong or incomplete file stops the build instead of reaching you. Pages are generated ahead of time, so the site stays fast.",
     "whoTitle": "Who made it",
-    "who": "Lucas Nevano, a junior full-stack developer in France. Klacki is a portfolio project.",
-    "correctionTitle": "Found a mistake?",
-    "correction": "Shortcuts change from one version to the next. If one is wrong, tell me and it gets fixed."
+    "who": "Lucas Nevano, a junior full-stack developer in France. Klacki is a portfolio project."
   },
   "home": {
     "titleTop": "The right shortcut",
@@ -187,10 +184,7 @@
   "catalogue": {
     "title": "The software covered",
     "lede": "One software, one page: its shortcuts sorted by category, its version, and the link to the documentation used as the reference.",
-    "jumpLabel": "Jump to a family",
-    "missingTitle": "Is your software missing?",
-    "missingText": "Say so, with a link to its official documentation. That is how the list grows.",
-    "missingCta": "Suggest a software"
+    "jumpLabel": "Jump to a family"
   },
   "platforms": {
     "title": "Windows or Mac, without the traps",
@@ -297,7 +291,7 @@
       },
       {
         "title": "Accuracy of the shortcuts",
-        "text": "Every shortcut is taken from the publisher's official documentation, whose version and check date are shown. A publisher may change its shortcuts, and your own setup may differ: check in the software before relying on one. Report a mistake with the \"Suggest a correction\" link."
+        "text": "Every shortcut is taken from the publisher's official documentation, whose version and check date are shown. A publisher may change its shortcuts, and your own setup may differ: check in the software before relying on one."
       },
       {
         "title": "Intellectual property",

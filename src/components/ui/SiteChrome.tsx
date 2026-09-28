@@ -3,7 +3,6 @@ import { FavoritesLink } from "@/components/features/FavoritesLink";
 import { HeaderSearch } from "@/components/features/HeaderSearch";
 import { PlatformToggle } from "@/components/features/PlatformToggle";
 import { LOCALES, localeHref, type Locale } from "@/domain/locale";
-import { SUGGEST_URL } from "@/domain/site";
 import { getDictionary } from "@/i18n";
 import styles from "./SiteChrome.module.css";
 
@@ -173,11 +172,6 @@ export function SiteFooter({ locale }: { locale: Locale }) {
                 <Link href={localeHref(locale, "/terms")}>
                   {footer.links.terms}
                 </Link>
-              </li>
-              <li>
-                <a href={SUGGEST_URL} target="_blank" rel="noreferrer">
-                  {footer.suggest}
-                </a>
               </li>
             </ul>
           </div>
