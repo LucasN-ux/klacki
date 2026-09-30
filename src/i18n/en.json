@@ -59,7 +59,9 @@
       "privacy": "Privacy",
       "sources": "Sources",
       "about": "About",
-      "terms": "Terms of use"
+      "terms": "Terms of use",
+      "cookies": "Cookies",
+      "faq": "FAQ"
     },
     "publishedBy": "Published by Lucas Nevano."
   },
@@ -308,6 +310,72 @@
       {
         "title": "Changes and governing law",
         "text": "These terms may change; the online version prevails. They are governed by French law."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookies",
+    "sections": [
+      {
+        "title": "No cookies",
+        "text": "Klacki sets no cookies: no analytics, no advertising, no social media buttons."
+      },
+      {
+        "title": "What your browser keeps",
+        "text": "Three pieces of information, in your browser's local storage, when you use the feature concerned: your Windows or Mac choice (klacki.platform), your favourites (klacki.favorites) and the software on My board (klacki.board). They stay on your device and are never sent to a server."
+      },
+      {
+        "title": "Why there is no banner",
+        "text": "This information only makes the features you asked for work. The French data protection act (article 82) and the CNIL's guidelines exempt it from consent."
+      },
+      {
+        "title": "Erasing it",
+        "text": "Remove your favourites or your software from the site, or clear the site's data in your browser settings: everything is gone."
+      },
+      {
+        "title": "If this changes",
+        "text": "Should an analytics or third-party service ever be added, this page would be updated and your consent asked before anything is stored."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "sections": [
+      {
+        "title": "What is Klacki?",
+        "text": "A site that gathers the keyboard shortcuts of creative software, for Windows and Mac, in English and French."
+      },
+      {
+        "title": "Is it free?",
+        "text": "Yes. No account, no ads and no tracking."
+      },
+      {
+        "title": "Where do the shortcuts come from?",
+        "text": "From each publisher's official documentation. Every software page shows the version, the check date and a link to the documentation."
+      },
+      {
+        "title": "A shortcut does not work for me. Why?",
+        "text": "Your version of the software, your settings or a custom shortcut may differ. Your keyboard layout matters too: the Windows or Mac page explains what changes on a non-US keyboard."
+      },
+      {
+        "title": "Why are some actions \"not documented\"?",
+        "text": "Because the publisher does not publish that shortcut. Klacki would rather say so than guess a key."
+      },
+      {
+        "title": "What is My board for?",
+        "text": "You pick your software and the site compares their shortcuts action by action. It flags the traps: the same keys doing something else in another of your apps. A board can be shared with a link."
+      },
+      {
+        "title": "Why is the keyboard drawn as QWERTY?",
+        "text": "It is the layout the publishers' documentation assumes. Drawing another keyboard would mean guessing, which Klacki avoids."
+      },
+      {
+        "title": "Where are my favourites kept?",
+        "text": "In your browser, on this device. They do not travel between devices and disappear if you clear the site's data."
+      },
+      {
+        "title": "My software is not on the list",
+        "text": "The catalogue grows over time, one family after another."
       }
     ]
   }

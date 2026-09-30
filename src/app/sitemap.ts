@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/legal",
     "/privacy",
     "/terms",
+    "/cookies",
+    "/faq",
     ...SOFTWARE_LIST.map((software) => `/${software.id}`),
   ];
 

@@ -59,7 +59,9 @@
       "privacy": "Confidentialité",
       "sources": "Sources",
       "about": "À propos",
-      "terms": "Conditions d'utilisation"
+      "terms": "Conditions d'utilisation",
+      "cookies": "Cookies",
+      "faq": "FAQ"
     },
     "publishedBy": "Édité par Lucas Nevano."
   },
@@ -308,6 +310,72 @@
       {
         "title": "Modification et droit applicable",
         "text": "Ces conditions peuvent évoluer ; la version en ligne fait foi. Elles sont soumises au droit français."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookies",
+    "sections": [
+      {
+        "title": "Aucun cookie",
+        "text": "Klacki ne dépose aucun cookie : ni mesure d'audience, ni publicité, ni bouton de réseau social."
+      },
+      {
+        "title": "Ce que garde votre navigateur",
+        "text": "Trois informations, dans le stockage local de votre navigateur, quand vous utilisez la fonction concernée : votre choix Windows ou Mac (klacki.platform), vos favoris (klacki.favorites) et les logiciels de Mon tableau (klacki.board). Elles restent sur votre appareil et ne sont jamais envoyées à un serveur."
+      },
+      {
+        "title": "Pourquoi il n'y a pas de bandeau",
+        "text": "Ces informations servent uniquement à faire fonctionner ce que vous avez demandé. La loi Informatique et Libertés (article 82) et les recommandations de la CNIL les dispensent de consentement."
+      },
+      {
+        "title": "Les effacer",
+        "text": "Retirez vos favoris ou vos logiciels depuis le site, ou videz les données du site dans les réglages de votre navigateur : tout disparaît."
+      },
+      {
+        "title": "Si cela change",
+        "text": "Si un service de mesure d'audience ou un service tiers devait être ajouté, cette page serait mise à jour et votre accord serait demandé avant tout dépôt."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "sections": [
+      {
+        "title": "C'est quoi, Klacki ?",
+        "text": "Un site qui rassemble les raccourcis clavier des logiciels de création, pour Windows et Mac, en français et en anglais."
+      },
+      {
+        "title": "C'est gratuit ?",
+        "text": "Oui. Sans compte, sans publicité et sans pistage."
+      },
+      {
+        "title": "D'où viennent les raccourcis ?",
+        "text": "De la documentation officielle de chaque éditeur. Chaque page de logiciel indique la version, la date de vérification et le lien vers la documentation."
+      },
+      {
+        "title": "Un raccourci ne marche pas chez moi, pourquoi ?",
+        "text": "Votre version du logiciel, vos réglages ou un raccourci personnalisé peuvent être différents. La disposition de votre clavier compte aussi : la page Windows ou Mac explique ce qui change sur un clavier AZERTY."
+      },
+      {
+        "title": "Pourquoi certaines actions sont « non documentées » ?",
+        "text": "Parce que l'éditeur ne publie pas ce raccourci. Klacki préfère le dire plutôt que deviner une touche."
+      },
+      {
+        "title": "À quoi sert Mon tableau ?",
+        "text": "Vous choisissez vos logiciels, et le site compare leurs raccourcis action par action. Il signale les pièges : une même touche qui fait autre chose dans un autre de vos logiciels. Un tableau se partage par un lien."
+      },
+      {
+        "title": "Pourquoi le clavier dessiné est en QWERTY ?",
+        "text": "C'est la disposition que supposent les documentations des éditeurs. Dessiner un autre clavier obligerait à deviner, ce que Klacki évite."
+      },
+      {
+        "title": "Où sont gardés mes favoris ?",
+        "text": "Dans votre navigateur, sur cet appareil. Ils ne passent pas d'un appareil à l'autre et disparaissent si vous videz les données du site."
+      },
+      {
+        "title": "Mon logiciel n'est pas dans la liste",
+        "text": "Le catalogue s'agrandit au fil du temps, famille par famille."
       }
     ]
   }

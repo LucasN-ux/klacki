@@ -10,25 +10,23 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: PageProps<"/[locale]/terms">): Promise<Metadata> {
+}: PageProps<"/[locale]/faq">): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   return {
-    title: `${getDictionary(locale).terms.title} — Klacki`,
-    alternates: { canonical: localeHref(locale, "/terms") },
+    title: `${getDictionary(locale).faq.title} — Klacki`,
+    alternates: { canonical: localeHref(locale, "/faq") },
   };
 }
 
-export default async function TermsPage({
-  params,
-}: PageProps<"/[locale]/terms">) {
+export default async function FaqPage({ params }: PageProps<"/[locale]/faq">) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  const { title, sections } = getDictionary(locale).terms;
+  const { title, sections } = getDictionary(locale).faq;
   return (
     <SectionsPage
       locale={locale}
-      path="/terms"
+      path="/faq"
       title={title}
       sections={sections}
     />

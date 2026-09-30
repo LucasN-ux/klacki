@@ -154,6 +154,11 @@ export function SiteFooter({ locale }: { locale: Locale }) {
                 <Link href={localeHref(locale, "/about")}>{nav.about}</Link>
               </li>
               <li>
+                <Link href={localeHref(locale, "/faq")}>
+                  {footer.links.faq}
+                </Link>
+              </li>
+              <li>
                 <Link href={localeHref(locale, "/sources")}>
                   {footer.links.sources}
                 </Link>
@@ -166,6 +171,11 @@ export function SiteFooter({ locale }: { locale: Locale }) {
               <li>
                 <Link href={localeHref(locale, "/privacy")}>
                   {footer.links.privacy}
+                </Link>
+              </li>
+              <li>
+                <Link href={localeHref(locale, "/cookies")}>
+                  {footer.links.cookies}
                 </Link>
               </li>
               <li>
